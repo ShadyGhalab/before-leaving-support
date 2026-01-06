@@ -3,35 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Before Leaving - Never forget anything when leaving home, work, or any location. Smart reminders with weather awareness, gamification, and Apple Watch support.">
-    <meta name="keywords" content="Before Leaving, reminder app, iOS app, location reminders, never forget, checklist app">
+    <meta name="description" content="Before Leaving - Never forget anything when leaving home, work, or any location. Smart reminders with weather awareness, family sharing, gamification, and Apple Watch support.">
+    <meta name="keywords" content="Before Leaving, reminder app, iOS app, location reminders, never forget, checklist app, family sharing, Apple Watch">
     <meta name="author" content="Shady Ghalab">
+    <meta name="theme-color" content="#FF6B6B">
     
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="Before Leaving - Never Forget!">
-    <meta property="og:description" content="The smart reminder app that helps you never forget anything when leaving any location.">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/home-screen.png">
+    <meta property="og:url" content="https://shadyghalab.github.io/before-leaving-support/">
+    <meta property="og:title" content="Before Leaving - Never Forget!">
+    <meta property="og:description" content="The smart reminder app that helps you never forget anything when leaving any location. Weather-aware, family sharing, Apple Watch support.">
+    <meta property="og:image" content="https://shadyghalab.github.io/before-leaving-support/images/og-image.png">
     
-    <title>Before Leaving - Never Forget! | Support</title>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Before Leaving - Never Forget!">
+    <meta name="twitter:description" content="Smart reminder app with weather awareness, family sharing & Apple Watch support.">
+    <meta name="twitter:image" content="https://shadyghalab.github.io/before-leaving-support/images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <title>Before Leaving - Never Forget! | Smart Reminder App for iOS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Before Leaving",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+        },
+        "description": "Never forget anything when leaving home, work, or any location. Smart reminders with weather awareness, family sharing, and Apple Watch support.",
+        "screenshot": "https://shadyghalab.github.io/before-leaving-support/images/home-screen.png",
+        "author": {
+            "@type": "Person",
+            "name": "Shady Ghalab"
+        }
+    }
+    </script>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="images/app-icon.png" alt="Before Leaving" class="loader-icon">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">🎒</span>
+                <img src="images/app-icon.png" alt="Before Leaving" class="nav-icon">
                 <span class="logo-text">Before Leaving</span>
             </a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="#screenshots" class="nav-link">Screenshots</a>
+                <a href="#features" class="nav-link">Features</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="privacy.html" class="nav-link">Privacy</a>
+                <a href="press.html" class="nav-link">Press</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation">
@@ -53,17 +102,24 @@
             <div class="particle"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">✨ Version 2.0 — Now with Groups!</div>
+            <div class="hero-badge">✨ Version 2.0 — Now with Family Groups!</div>
             <h1 class="hero-title">Never Forget.<br><span class="gradient-text">Stay Prepared.</span></h1>
             <p class="hero-subtitle">The smart reminder app that helps you remember everything before leaving home, work, gym, or anywhere. Weather-aware suggestions, family sharing, and gamification make staying organized fun.</p>
             <div class="hero-buttons">
-                <a href="https://apps.apple.com/app/before-leaving" class="btn btn-primary">
+                <a href="https://apps.apple.com/app/before-leaving" class="btn btn-appstore">
                     <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
-                    Download on App Store
+                    <div class="appstore-text">
+                        <span class="appstore-small">Download on the</span>
+                        <span class="appstore-large">App Store</span>
+                    </div>
                 </a>
                 <a href="#screenshots" class="btn btn-secondary">See Screenshots</a>
+            </div>
+            <div class="hero-rating">
+                <div class="stars">★★★★★</div>
+                <span class="rating-text">4.8 Rating on App Store</span>
             </div>
             <div class="hero-stats">
                 <div class="stat">
@@ -90,21 +146,100 @@
         <div class="hero-phones">
             <div class="phone-wrapper phone-left">
                 <div class="phone-mockup">
-                    <img src="images/groups.png" alt="Before Leaving Groups" class="phone-image">
+                    <img src="images/hero-groups.png" alt="Before Leaving Groups" class="phone-image" loading="lazy">
                 </div>
             </div>
             <div class="phone-wrapper phone-center">
                 <div class="phone-mockup featured">
-                    <img src="images/home-screen.png" alt="Before Leaving Home Screen" class="phone-image">
+                    <img src="images/hero-home.png" alt="Before Leaving Home Screen" class="phone-image">
                 </div>
             </div>
             <div class="phone-wrapper phone-right">
                 <div class="phone-mockup">
-                    <img src="images/home-hub.png" alt="Before Leaving Home Hub" class="phone-image">
+                    <img src="images/hero-hub.png" alt="Before Leaving Home Hub" class="phone-image" loading="lazy">
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- App Icon Feature -->
+    <section class="app-showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <div class="showcase-icon-wrapper">
+                    <img src="images/app-icon-large.png" alt="Before Leaving App Icon" class="showcase-icon">
+                    <div class="showcase-glow"></div>
+                </div>
+                <div class="showcase-info">
+                    <h2>Meet Your New<br><span class="gradient-text">Reminder Companion</span></h2>
+                    <p>Before Leaving's adorable goldfish mascot is always ready to help you remember what's important. With glasses for wisdom and a backpack full of essentials, he's the perfect companion for your daily adventures.</p>
+                    <div class="showcase-features">
+                        <div class="showcase-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Since 2013</span>
+                        </div>
+                        <div class="showcase-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Built with ❤️</span>
+                        </div>
+                        <div class="showcase-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Privacy First</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New Section -->
+    <section class="whats-new">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎉 What's New</span>
+                <h2 class="section-title">Version 2.0 is Here!</h2>
+                <p class="section-subtitle">The biggest update yet, packed with features you've been asking for.</p>
+            </div>
+            <div class="new-features-grid">
+                <div class="new-feature-card highlight">
+                    <div class="new-feature-icon">👨‍👩‍👧‍👦</div>
+                    <div class="new-feature-badge">NEW</div>
+                    <h3>Family Groups</h3>
+                    <p>Create groups for family, work, or friends. Share reminders and track everyone's progress in real-time. Perfect for household tasks, trip planning, or team coordination.</p>
+                </div>
+                <div class="new-feature-card">
+                    <div class="new-feature-icon">🌱</div>
+                    <div class="new-feature-badge">NEW</div>
+                    <h3>Plant Tracker</h3>
+                    <p>Never forget to water your plants. Track watering schedules, light requirements, and watch your plants thrive.</p>
+                </div>
+                <div class="new-feature-card">
+                    <div class="new-feature-icon">🐕</div>
+                    <div class="new-feature-badge">NEW</div>
+                    <h3>Pet Care</h3>
+                    <p>Track feeding, walks, grooming, and health for all your furry friends. Set reminders and monitor their wellbeing.</p>
+                </div>
+                <div class="new-feature-card">
+                    <div class="new-feature-icon">✈️</div>
+                    <div class="new-feature-badge">IMPROVED</div>
+                    <h3>Travel Mode</h3>
+                    <p>Enhanced trip planning with smart packing lists, flight tracking, and countdown to departure.</p>
+                </div>
+                <div class="new-feature-card">
+                    <div class="new-feature-icon">🏠</div>
+                    <div class="new-feature-badge">NEW</div>
+                    <h3>Home Hub</h3>
+                    <p>Your command center for routines, safety checklists, pet care, and plant tracking—all in one place.</p>
+                </div>
+                <div class="new-feature-card">
+                    <div class="new-feature-icon">🎨</div>
+                    <div class="new-feature-badge">NEW</div>
+                    <h3>7 Beautiful Themes</h3>
+                    <p>Express yourself with Pink, Green, Coral Reef, Cosmic Explorer, Forest Glow, Cherry Blossom, or Goldfish themes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Screenshots Gallery -->
     <section id="screenshots" class="screenshots">
@@ -126,110 +261,110 @@
                     <div class="carousel-track">
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/home-screen.png" alt="Home Screen">
+                                <img src="images/home-screen.png" alt="Home Screen" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Smart Dashboard</h3>
-                                <p>See all your reminders at a glance, organized by location with traffic-aware timing</p>
+                                <p>See all your reminders at a glance with traffic-aware timing</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/locations.png" alt="Locations">
+                                <img src="images/locations.png" alt="Locations" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>25+ Locations</h3>
-                                <p>Choose from preset locations or create your own custom places</p>
+                                <p>Choose from preset locations or create custom places</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/items.png" alt="Items">
+                                <img src="images/items.png" alt="Items" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>100+ Items</h3>
-                                <p>Extensive item library with beautiful icons for everything you need</p>
+                                <p>Extensive item library with beautiful icons</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/time-picker.png" alt="Time Picker">
+                                <img src="images/time-picker.png" alt="Time Picker" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Quick Scheduling</h3>
-                                <p>Set reminders in seconds with quick time presets</p>
+                                <p>Set reminders in seconds with quick presets</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/notes.png" alt="Notes">
+                                <img src="images/notes.png" alt="Notes" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Voice & Text Notes</h3>
-                                <p>Add voice recordings or text notes to any reminder</p>
+                                <p>Add voice recordings or notes to any reminder</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/home-hub.png" alt="Home Hub">
+                                <img src="images/home-hub.png" alt="Home Hub" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Home Hub</h3>
-                                <p>Track routines, pets, plants, and safety checklists in one place</p>
+                                <p>Track routines, pets, plants & safety checklists</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/groups.png" alt="Groups">
+                                <img src="images/groups.png" alt="Groups" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Family Groups</h3>
-                                <p>Share reminders with family, friends, or teams in real-time</p>
+                                <p>Share reminders with family & friends</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/group-detail.png" alt="Group Detail">
+                                <img src="images/group-detail.png" alt="Group Detail" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Group Dashboard</h3>
-                                <p>Track progress, members, and reminders for each group</p>
+                                <p>Track progress, members & reminders</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/travel.png" alt="Travel">
+                                <img src="images/travel.png" alt="Travel" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Travel Planning</h3>
-                                <p>Plan trips with smart packing lists and departure reminders</p>
+                                <p>Smart packing lists & departure reminders</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/pet-care.png" alt="Pet Care">
+                                <img src="images/pet-care.png" alt="Pet Care" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Pet Care</h3>
-                                <p>Track feeding, walks, grooming, and health for your pets</p>
+                                <p>Track feeding, walks & health for pets</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/plant-tracker.png" alt="Plant Tracker">
+                                <img src="images/plant-tracker.png" alt="Plant Tracker" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Plant Tracker</h3>
-                                <p>Never forget to water your plants with care reminders</p>
+                                <p>Never forget to water your plants</p>
                             </div>
                         </div>
                         <div class="screenshot-slide">
                             <div class="screenshot-phone">
-                                <img src="images/settings.png" alt="Settings">
+                                <img src="images/settings.png" alt="Settings" loading="lazy">
                             </div>
                             <div class="screenshot-info">
                                 <h3>Smart Features</h3>
-                                <p>Weather awareness, calendar sync, and traffic alerts built-in</p>
+                                <p>Weather, calendar sync & traffic alerts</p>
                             </div>
                         </div>
                     </div>
@@ -267,45 +402,91 @@
                         </ul>
                     </div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">👨‍👩‍👧‍👦</div>
                     <h3>Family Groups</h3>
                     <p>Create groups for family, work teams, or friends. Share reminders and see real-time progress together.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">🚗</div>
                     <h3>Traffic Alerts</h3>
                     <p>Get reminded earlier when traffic is heavy. Adjusts up to 30 minutes for your commute.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">📅</div>
                     <h3>Calendar Sync</h3>
                     <p>Auto-creates calendar events and suggests items based on your meetings and appointments.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">🐕</div>
                     <h3>Pet Care</h3>
                     <p>Track feeding schedules, walks, grooming, and health for your furry friends.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">🌱</div>
                     <h3>Plant Tracker</h3>
                     <p>Never forget to water your plants. Track watering, fertilizing, and light needs.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">✈️</div>
                     <h3>Travel Mode</h3>
                     <p>Plan trips with smart packing lists, flight info, and departure countdowns.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">🎮</div>
                     <h3>Gamification</h3>
                     <p>Earn achievements, build streaks, and level up as you complete reminders.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animated-card">
                     <div class="feature-icon">⌚</div>
                     <h3>Apple Watch</h3>
                     <p>Full companion app with complications. Check items off from your wrist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💬 Reviews</span>
+                <h2 class="section-title">Loved by Users</h2>
+                <p class="section-subtitle">See what people are saying about Before Leaving.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally an app that actually helps me remember things! The weather feature is genius—it reminded me to bring an umbrella and I would've been soaked without it."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah M.</span>
+                            <span class="author-title">App Store Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The family groups feature changed everything for our household. Now everyone knows what needs to be done and we can see who did what. No more arguments!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <span class="author-name">James K.</span>
+                            <span class="author-title">App Store Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Beautiful design and so intuitive. I love the gamification—my kids actually enjoy checking off their items now. The pet care feature is a bonus!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <span class="author-name">Maria L.</span>
+                            <span class="author-title">App Store Review</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -334,6 +515,10 @@
     <!-- Accessibility Section -->
     <section class="accessibility">
         <div class="container">
+            <div class="section-header">
+                <span class="section-badge">♿ Accessibility</span>
+                <h2 class="section-title">Designed for Everyone</h2>
+            </div>
             <div class="accessibility-grid">
                 <div class="accessibility-card">
                     <div class="accessibility-icon">👶</div>
@@ -381,6 +566,27 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <img src="images/app-icon.png" alt="Before Leaving" class="cta-icon">
+                <h2>Ready to Never Forget Again?</h2>
+                <p>Download Before Leaving today and start your journey to better organization.</p>
+                <a href="https://apps.apple.com/app/before-leaving" class="btn btn-appstore btn-large">
+                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div class="appstore-text">
+                        <span class="appstore-small">Download on the</span>
+                        <span class="appstore-large">App Store</span>
+                    </div>
+                </a>
+                <p class="cta-note">Free to download • In-app purchases available</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -403,6 +609,13 @@
                                 <span class="contact-value">Browse FAQs</span>
                             </div>
                         </a>
+                        <a href="press.html" class="contact-method">
+                            <span class="contact-icon">📰</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Press Kit</span>
+                                <span class="contact-value">Media Resources</span>
+                            </div>
+                        </a>
                     </div>
                     <p class="response-time">📬 We typically respond within 24-48 hours.</p>
                 </div>
@@ -420,9 +633,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-icon">🎒</span>
-                    <span class="logo-text">Before Leaving</span>
+                    <div class="footer-logo">
+                        <img src="images/app-icon.png" alt="Before Leaving" class="footer-icon">
+                        <span class="logo-text">Before Leaving</span>
+                    </div>
                     <p class="footer-tagline">Never forget anything important.</p>
+                    <div class="footer-social">
+                        <a href="https://apps.apple.com/app/before-leaving" class="social-link" aria-label="App Store">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -430,16 +650,18 @@
                         <a href="https://apps.apple.com/app/before-leaving">Download</a>
                         <a href="#features">Features</a>
                         <a href="#screenshots">Screenshots</a>
+                        <a href="changelog.html">Changelog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="faq.html">FAQ</a>
+                        <a href="press.html">Press Kit</a>
+                        <a href="mailto:shadyghalab@gmail.com">Contact</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>
                         <a href="privacy.html">Privacy Policy</a>
                         <a href="terms.html">Terms of Service</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="mailto:shadyghalab@gmail.com">Contact Us</a>
-                        <a href="faq.html">FAQ</a>
                     </div>
                 </div>
             </div>
@@ -451,6 +673,13 @@
     </footer>
 
     <script>
+        // Loading screen
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('loaded');
+            }, 500);
+        });
+
         // Mobile navigation toggle
         document.querySelector('.nav-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
@@ -464,7 +693,6 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // Close mobile menu
                     document.querySelector('.nav-links').classList.remove('active');
                     document.querySelector('.nav-toggle').classList.remove('active');
                 }
@@ -479,6 +707,24 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .new-feature-card, .testimonial-card').forEach(el => {
+            observer.observe(el);
         });
 
         // Screenshot Carousel
@@ -515,10 +761,8 @@
         }
         
         function updateCarousel() {
-            const slideWidth = slides[0].offsetWidth + 24; // including gap
+            const slideWidth = slides[0].offsetWidth + 24;
             track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-            
-            // Update dots
             document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentIndex);
             });
@@ -550,27 +794,14 @@
             clearInterval(autoplayInterval);
         }
         
-        prevBtn.addEventListener('click', () => {
-            prevSlide();
-            stopAutoplay();
-            startAutoplay();
-        });
+        prevBtn.addEventListener('click', () => { prevSlide(); stopAutoplay(); startAutoplay(); });
+        nextBtn.addEventListener('click', () => { nextSlide(); stopAutoplay(); startAutoplay(); });
         
-        nextBtn.addEventListener('click', () => {
-            nextSlide();
-            stopAutoplay();
-            startAutoplay();
-        });
-        
-        // Touch/swipe support
+        // Touch support
         let touchStartX = 0;
         let touchEndX = 0;
         
-        track.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-            stopAutoplay();
-        }, { passive: true });
-        
+        track.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; stopAutoplay(); }, { passive: true });
         track.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
             if (touchStartX - touchEndX > 50) nextSlide();
@@ -578,19 +809,12 @@
             startAutoplay();
         }, { passive: true });
         
-        // Initialize
         updateSlidesPerView();
         createDots();
         startAutoplay();
         
-        // Handle resize
-        window.addEventListener('resize', () => {
-            updateSlidesPerView();
-            createDots();
-            goToSlide(0);
-        });
+        window.addEventListener('resize', () => { updateSlidesPerView(); createDots(); goToSlide(0); });
         
-        // Pause autoplay on hover
         const carousel = document.querySelector('.screenshot-carousel');
         carousel.addEventListener('mouseenter', stopAutoplay);
         carousel.addEventListener('mouseleave', startAutoplay);

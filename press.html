@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Before Leaving Press Kit - Download app icon, screenshots, and media resources.">
+    <title>Press Kit - Before Leaving</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .press-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 60px; }
+        .press-card { background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; text-align: center; }
+        .press-card:hover { box-shadow: var(--shadow-lg); }
+        .press-icon { width: 120px; height: 120px; border-radius: 28px; margin: 0 auto 20px; box-shadow: var(--shadow-md); }
+        .press-card h3 { margin-bottom: 12px; }
+        .press-card p { color: var(--gray-500); margin-bottom: 20px; font-size: 0.95rem; }
+        .press-download { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: var(--primary); color: var(--white); border-radius: var(--radius-full); font-weight: 600; transition: all var(--transition-base); }
+        .press-download:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        .screenshots-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px; }
+        .screenshot-thumb { background: var(--gray-100); border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 9/19.5; }
+        .screenshot-thumb img { width: 100%; height: 100%; object-fit: cover; }
+        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+        .info-card { background: var(--gray-50); padding: 24px; border-radius: var(--radius-md); }
+        .info-card h4 { color: var(--gray-900); margin-bottom: 8px; }
+        .info-card p { color: var(--gray-600); font-size: 0.95rem; }
+        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/app-icon.png" alt="Before Leaving" class="nav-icon">
+                <span class="logo-text">Before Leaving</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#screenshots" class="nav-link">Screenshots</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="press.html" class="nav-link active">Press</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Press Kit</h1>
+            <p>Download media resources for Before Leaving. All assets are free to use for press and media coverage.</p>
+        </div>
+    </header>
+
+    <section class="legal-content">
+        <div class="container" style="max-width: 1000px;">
+            
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>App Icon</h2>
+                <p class="section-subtitle">High-resolution app icon in various sizes.</p>
+            </div>
+            
+            <div class="press-grid">
+                <div class="press-card">
+                    <img src="images/app-icon-large.png" alt="Before Leaving App Icon" class="press-icon">
+                    <h3>App Icon (1024x1024)</h3>
+                    <p>Full resolution app icon for print and high-DPI displays.</p>
+                    <a href="images/app-icon-large.png" download="before-leaving-icon-1024.png" class="press-download">
+                        📥 Download PNG
+                    </a>
+                </div>
+                <div class="press-card">
+                    <img src="images/app-icon.png" alt="Before Leaving App Icon" class="press-icon" style="width: 80px; height: 80px;">
+                    <h3>App Icon (180x180)</h3>
+                    <p>Web-optimized icon for websites and articles.</p>
+                    <a href="images/app-icon.png" download="before-leaving-icon-180.png" class="press-download">
+                        📥 Download PNG
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>Screenshots</h2>
+                <p class="section-subtitle">iPhone 17 Pro Max screenshots showcasing key features.</p>
+            </div>
+            
+            <div class="screenshots-grid">
+                <div class="screenshot-thumb"><img src="images/home-screen.png" alt="Home Screen" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/locations.png" alt="Locations" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/items.png" alt="Items" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/home-hub.png" alt="Home Hub" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/groups.png" alt="Groups" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/group-detail.png" alt="Group Detail" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/travel.png" alt="Travel" loading="lazy"></div>
+                <div class="screenshot-thumb"><img src="images/pet-care.png" alt="Pet Care" loading="lazy"></div>
+            </div>
+
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>App Information</h2>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>App Name</h4>
+                    <p>Before Leaving</p>
+                </div>
+                <div class="info-card">
+                    <h4>Tagline</h4>
+                    <p>Never Forget!</p>
+                </div>
+                <div class="info-card">
+                    <h4>Category</h4>
+                    <p>Lifestyle / Productivity</p>
+                </div>
+                <div class="info-card">
+                    <h4>Price</h4>
+                    <p>Free (with In-App Purchases)</p>
+                </div>
+                <div class="info-card">
+                    <h4>Platforms</h4>
+                    <p>iOS 14+, watchOS 10+, Widgets</p>
+                </div>
+                <div class="info-card">
+                    <h4>Languages</h4>
+                    <p>English, Spanish, French, German, Italian, Japanese, Chinese (Traditional)</p>
+                </div>
+                <div class="info-card">
+                    <h4>Developer</h4>
+                    <p>Shady Ghalab</p>
+                </div>
+                <div class="info-card">
+                    <h4>First Release</h4>
+                    <p>January 24, 2013</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <h2>About Before Leaving</h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    <strong>Before Leaving</strong> is a smart reminder app that helps users never forget anything when leaving home, work, gym, or any location. With features like weather-aware suggestions, family group sharing, gamification, and Apple Watch support, it transforms the tedious task of remembering essentials into an enjoyable experience.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 16px;">
+                    Version 2.0 introduces revolutionary features including Family Groups for shared reminders, Plant Tracker, Pet Care, Travel Mode, and the new Home Hub dashboard—making it the ultimate companion for staying organized.
+                </p>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <div class="section-header" style="margin-bottom: 40px;">
+                    <h2>Contact for Press Inquiries</h2>
+                </div>
+                <p>For interviews, reviews, or additional assets, please contact:</p>
+                <p style="margin-top: 16px;">
+                    <strong>Email:</strong> <a href="mailto:shadyghalab@gmail.com" style="color: var(--primary);">shadyghalab@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2013-2026 Shady Ghalab. All rights reserved.</p>
+                <p class="footer-made">Made with ❤️ for iOS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+

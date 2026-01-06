@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Before Leaving Changelog - See what's new in each version.">
+    <title>Changelog - Before Leaving</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .changelog { max-width: 800px; margin: 0 auto; }
+        .version { margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-200); }
+        .version:last-child { border-bottom: none; }
+        .version-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+        .version-number { font-size: 1.75rem; font-weight: 800; color: var(--gray-900); }
+        .version-date { color: var(--gray-500); font-size: 0.95rem; }
+        .version-badge { padding: 4px 12px; background: var(--primary); color: var(--white); border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; }
+        .version-badge.new { background: var(--accent-green); }
+        .version-badge.improved { background: var(--accent-blue); }
+        .change-category { margin-bottom: 20px; }
+        .change-category h4 { display: flex; align-items: center; gap: 8px; color: var(--gray-900); margin-bottom: 12px; font-size: 1rem; }
+        .change-category ul { list-style: none; }
+        .change-category li { padding: 8px 0; padding-left: 24px; position: relative; color: var(--gray-600); }
+        .change-category li::before { content: '•'; position: absolute; left: 8px; color: var(--primary); font-weight: bold; }
+        .emoji-icon { font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/app-icon.png" alt="Before Leaving" class="nav-icon">
+                <span class="logo-text">Before Leaving</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="press.html" class="nav-link">Press</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Changelog</h1>
+            <p>See what's new, improved, and fixed in each version of Before Leaving.</p>
+        </div>
+    </header>
+
+    <section class="legal-content">
+        <div class="container">
+            <div class="changelog">
+                
+                <!-- Version 2.0 -->
+                <div class="version">
+                    <div class="version-header">
+                        <span class="version-number">Version 2.0</span>
+                        <span class="version-badge">LATEST</span>
+                        <span class="version-date">January 2026</span>
+                    </div>
+                    <p style="margin-bottom: 24px; color: var(--gray-600); font-size: 1.05rem;">
+                        The biggest update yet! Introducing Family Groups, Plant Tracker, Pet Care, and much more.
+                    </p>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">✨</span> New Features</h4>
+                        <ul>
+                            <li><strong>Family Groups</strong> — Create groups with family, friends, or teams and share reminders in real-time</li>
+                            <li><strong>Home Hub</strong> — New dashboard for routines, safety checklists, pet care, and plant tracking</li>
+                            <li><strong>Plant Tracker</strong> — Track watering schedules, light requirements, and plant health</li>
+                            <li><strong>Pet Care</strong> — Manage feeding, walks, grooming, and health for your pets</li>
+                            <li><strong>Travel Mode</strong> — Enhanced trip planning with smart packing lists and flight tracking</li>
+                            <li><strong>Safety Checklist</strong> — Gamified home security checks before leaving</li>
+                            <li><strong>7 Beautiful Themes</strong> — Pink, Green, Coral Reef, Cosmic Explorer, Forest Glow, Cherry Blossom, Goldfish</li>
+                            <li><strong>Voice Notes</strong> — Record audio notes for any reminder item</li>
+                            <li><strong>Live Activities</strong> — Dynamic Island and Lock Screen widgets (iPhone 14 Pro+)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">🚀</span> Improvements</h4>
+                        <ul>
+                            <li>Enhanced reminder detail screen with interactive UI</li>
+                            <li>Better progress tracking and saving</li>
+                            <li>Select All / Deselect All functionality</li>
+                            <li>Enhanced animations and haptic feedback</li>
+                            <li>Improved localization support for all 7 languages</li>
+                            <li>Optimized performance and reduced battery usage</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">🐛</span> Bug Fixes</h4>
+                        <ul>
+                            <li>Fixed notification delivery issues on iOS 17</li>
+                            <li>Resolved Apple Watch sync delays</li>
+                            <li>Fixed widget refresh issues</li>
+                            <li>Various UI and stability improvements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.9 -->
+                <div class="version">
+                    <div class="version-header">
+                        <span class="version-number">Version 1.9</span>
+                        <span class="version-date">September 2025</span>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">✨</span> New Features</h4>
+                        <ul>
+                            <li><strong>Weather Awareness</strong> — Smart suggestions based on weather forecasts</li>
+                            <li><strong>Traffic Alerts</strong> — Get reminded earlier when traffic is heavy</li>
+                            <li><strong>Calendar Integration</strong> — Auto-create events and smart suggestions from calendar</li>
+                            <li>iOS 17 compatibility</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">🚀</span> Improvements</h4>
+                        <ul>
+                            <li>Redesigned home screen with new card layout</li>
+                            <li>Faster app launch time</li>
+                            <li>Improved notification reliability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.8 -->
+                <div class="version">
+                    <div class="version-header">
+                        <span class="version-number">Version 1.8</span>
+                        <span class="version-date">March 2025</span>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">✨</span> New Features</h4>
+                        <ul>
+                            <li><strong>Apple Watch App</strong> — Full companion app with complications</li>
+                            <li><strong>Home Screen Widgets</strong> — Small, medium, and large widget sizes</li>
+                            <li><strong>Siri Shortcuts</strong> — Voice commands for quick access</li>
+                            <li>watchOS 10 support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">🚀</span> Improvements</h4>
+                        <ul>
+                            <li>New achievement system with badges</li>
+                            <li>Streak tracking and points</li>
+                            <li>Enhanced notification sounds</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.5 -->
+                <div class="version">
+                    <div class="version-header">
+                        <span class="version-number">Version 1.5</span>
+                        <span class="version-date">August 2024</span>
+                    </div>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">✨</span> New Features</h4>
+                        <ul>
+                            <li><strong>Kid Mode</strong> — Simplified interface for children</li>
+                            <li><strong>Elderly Mode</strong> — Enhanced accessibility with larger text</li>
+                            <li>Added Japanese and Traditional Chinese languages</li>
+                            <li>Custom notification sounds</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Version 1.0 -->
+                <div class="version">
+                    <div class="version-header">
+                        <span class="version-number">Version 1.0</span>
+                        <span class="version-date">January 2013</span>
+                    </div>
+                    <p style="color: var(--gray-600);">
+                        🎉 Initial release of Before Leaving! The journey begins with basic reminder functionality for iOS.
+                    </p>
+                    
+                    <div class="change-category">
+                        <h4><span class="emoji-icon">✨</span> Features</h4>
+                        <ul>
+                            <li>Create location-based reminders</li>
+                            <li>Add items to remember</li>
+                            <li>Set one-time and recurring reminders</li>
+                            <li>Local notifications</li>
+                            <li>English language support</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2013-2026 Shady Ghalab. All rights reserved.</p>
+                <p class="footer-made">Made with ❤️ for iOS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
