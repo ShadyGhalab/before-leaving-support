@@ -11,10 +11,7 @@
     <meta property="og:title" content="Before Leaving - Never Forget!">
     <meta property="og:description" content="The smart reminder app that helps you never forget anything when leaving any location.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shadyghalab.github.io/Before-Leaving/">
-    
-    <!-- Apple Smart Banner -->
-    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <meta property="og:image" content="images/home-screen.png">
     
     <title>Before Leaving - Never Forget! | Support</title>
     <link rel="stylesheet" href="style.css">
@@ -32,6 +29,7 @@
             </a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="privacy.html" class="nav-link">Privacy</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -47,10 +45,17 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-bg"></div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
         <div class="hero-content">
-            <div class="hero-badge">✨ Version 2.0 Available</div>
+            <div class="hero-badge">✨ Version 2.0 — Now with Groups!</div>
             <h1 class="hero-title">Never Forget.<br><span class="gradient-text">Stay Prepared.</span></h1>
-            <p class="hero-subtitle">The smart reminder app that helps you remember everything you need before leaving home, work, gym, or anywhere else.</p>
+            <p class="hero-subtitle">The smart reminder app that helps you remember everything before leaving home, work, gym, or anywhere. Weather-aware suggestions, family sharing, and gamification make staying organized fun.</p>
             <div class="hero-buttons">
                 <a href="https://apps.apple.com/app/before-leaving" class="btn btn-primary">
                     <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -58,7 +63,7 @@
                     </svg>
                     Download on App Store
                 </a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+                <a href="#screenshots" class="btn btn-secondary">See Screenshots</a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
@@ -73,97 +78,234 @@
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-number">📱</span>
-                    <span class="stat-label">Widgets</span>
+                    <span class="stat-label">iOS Widgets</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">👨‍👩‍👧</span>
+                    <span class="stat-label">Family Groups</span>
                 </div>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <div class="app-preview">
-                        <div class="preview-header">
-                            <span class="preview-title">Leaving for Work</span>
-                            <span class="preview-progress">4/6 items</span>
-                        </div>
-                        <div class="preview-items">
-                            <div class="preview-item checked">
-                                <span class="item-check">✓</span>
-                                <span>Keys</span>
-                            </div>
-                            <div class="preview-item checked">
-                                <span class="item-check">✓</span>
-                                <span>Wallet</span>
-                            </div>
-                            <div class="preview-item checked">
-                                <span class="item-check">✓</span>
-                                <span>Laptop</span>
-                            </div>
-                            <div class="preview-item checked">
-                                <span class="item-check">✓</span>
-                                <span>Umbrella ☔</span>
-                            </div>
-                            <div class="preview-item">
-                                <span class="item-check"></span>
-                                <span>Lunch</span>
-                            </div>
-                            <div class="preview-item">
-                                <span class="item-check"></span>
-                                <span>Headphones</span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="hero-phones">
+            <div class="phone-wrapper phone-left">
+                <div class="phone-mockup">
+                    <img src="images/groups.png" alt="Before Leaving Groups" class="phone-image">
+                </div>
+            </div>
+            <div class="phone-wrapper phone-center">
+                <div class="phone-mockup featured">
+                    <img src="images/home-screen.png" alt="Before Leaving Home Screen" class="phone-image">
+                </div>
+            </div>
+            <div class="phone-wrapper phone-right">
+                <div class="phone-mockup">
+                    <img src="images/home-hub.png" alt="Before Leaving Home Hub" class="phone-image">
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Screenshots Gallery -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📱 App Preview</span>
+                <h2 class="section-title">Beautiful & Intuitive Design</h2>
+                <p class="section-subtitle">Explore Before Leaving's stunning interface designed to make staying organized a joy.</p>
+            </div>
+            
+            <div class="screenshot-carousel">
+                <button class="carousel-btn carousel-prev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/home-screen.png" alt="Home Screen">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Smart Dashboard</h3>
+                                <p>See all your reminders at a glance, organized by location with traffic-aware timing</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/locations.png" alt="Locations">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>25+ Locations</h3>
+                                <p>Choose from preset locations or create your own custom places</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/items.png" alt="Items">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>100+ Items</h3>
+                                <p>Extensive item library with beautiful icons for everything you need</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/time-picker.png" alt="Time Picker">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Quick Scheduling</h3>
+                                <p>Set reminders in seconds with quick time presets</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/notes.png" alt="Notes">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Voice & Text Notes</h3>
+                                <p>Add voice recordings or text notes to any reminder</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/home-hub.png" alt="Home Hub">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Home Hub</h3>
+                                <p>Track routines, pets, plants, and safety checklists in one place</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/groups.png" alt="Groups">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Family Groups</h3>
+                                <p>Share reminders with family, friends, or teams in real-time</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/group-detail.png" alt="Group Detail">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Group Dashboard</h3>
+                                <p>Track progress, members, and reminders for each group</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/travel.png" alt="Travel">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Travel Planning</h3>
+                                <p>Plan trips with smart packing lists and departure reminders</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/pet-care.png" alt="Pet Care">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Pet Care</h3>
+                                <p>Track feeding, walks, grooming, and health for your pets</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/plant-tracker.png" alt="Plant Tracker">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Plant Tracker</h3>
+                                <p>Never forget to water your plants with care reminders</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="screenshot-phone">
+                                <img src="images/settings.png" alt="Settings">
+                            </div>
+                            <div class="screenshot-info">
+                                <h3>Smart Features</h3>
+                                <p>Weather awareness, calendar sync, and traffic alerts built-in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-next" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Powerful Features</h2>
-                <p class="section-subtitle">Everything you need to stay organized and never forget anything important.</p>
+                <span class="section-badge">✨ Features</span>
+                <h2 class="section-title">Everything You Need</h2>
+                <p class="section-subtitle">Powerful features that make remembering effortless.</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3>Location-Based Reminders</h3>
-                    <p>Create custom reminders for Home, Work, Gym, Airport, and any location. Get notified exactly when you need it.</p>
+                <div class="feature-card feature-large">
+                    <div class="feature-icon-large">🌦️</div>
+                    <div class="feature-content">
+                        <h3>Weather Awareness</h3>
+                        <p>Automatically suggests umbrella when rain is expected, sunscreen on sunny days, or a jacket when it's cold. Stay prepared for any weather.</p>
+                        <ul class="feature-list">
+                            <li>Real-time weather data</li>
+                            <li>Smart item suggestions</li>
+                            <li>UV index alerts</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🌦️</div>
-                    <h3>Weather Awareness</h3>
-                    <p>Smart suggestions based on weather forecasts. Umbrella for rain, sunscreen for sunny days—automatically.</p>
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Groups</h3>
+                    <p>Create groups for family, work teams, or friends. Share reminders and see real-time progress together.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚗</div>
                     <h3>Traffic Alerts</h3>
-                    <p>Get notified earlier when there's heavy traffic to your destination. Never be late again.</p>
+                    <p>Get reminded earlier when traffic is heavy. Adjusts up to 30 minutes for your commute.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Calendar Sync</h3>
+                    <p>Auto-creates calendar events and suggests items based on your meetings and appointments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐕</div>
+                    <h3>Pet Care</h3>
+                    <p>Track feeding schedules, walks, grooming, and health for your furry friends.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Plant Tracker</h3>
+                    <p>Never forget to water your plants. Track watering, fertilizing, and light needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Travel Mode</h3>
+                    <p>Plan trips with smart packing lists, flight info, and departure countdowns.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎮</div>
                     <h3>Gamification</h3>
-                    <p>Unlock achievements, earn points, maintain streaks, and care for virtual pets and plants as you complete reminders.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Family Sharing</h3>
-                    <p>Create groups with family and friends. Share reminders and keep everyone organized together.</p>
+                    <p>Earn achievements, build streaks, and level up as you complete reminders.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⌚</div>
-                    <h3>Apple Watch App</h3>
-                    <p>Full companion app with complications. Check your reminders right from your wrist.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Home Screen Widgets</h3>
-                    <p>Beautiful widgets showing your upcoming reminders. Quick access without opening the app.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">♿</div>
-                    <h3>Accessibility Modes</h3>
-                    <p>Kid Mode with simplified interface and Elderly Mode with larger text and voice guidance.</p>
+                    <h3>Apple Watch</h3>
+                    <p>Full companion app with complications. Check items off from your wrist.</p>
                 </div>
             </div>
         </div>
@@ -173,17 +315,36 @@
     <section class="languages">
         <div class="container">
             <div class="section-header">
+                <span class="section-badge">🌍 Global</span>
                 <h2 class="section-title">Available in 7 Languages</h2>
                 <p class="section-subtitle">Use Before Leaving in your preferred language.</p>
             </div>
             <div class="languages-grid">
-                <div class="language-item">🇺🇸 English</div>
-                <div class="language-item">🇪🇸 Español</div>
-                <div class="language-item">🇫🇷 Français</div>
-                <div class="language-item">🇩🇪 Deutsch</div>
-                <div class="language-item">🇮🇹 Italiano</div>
-                <div class="language-item">🇯🇵 日本語</div>
-                <div class="language-item">🇹🇼 繁體中文</div>
+                <div class="language-item"><span class="flag">🇺🇸</span> English</div>
+                <div class="language-item"><span class="flag">🇪🇸</span> Español</div>
+                <div class="language-item"><span class="flag">🇫🇷</span> Français</div>
+                <div class="language-item"><span class="flag">🇩🇪</span> Deutsch</div>
+                <div class="language-item"><span class="flag">🇮🇹</span> Italiano</div>
+                <div class="language-item"><span class="flag">🇯🇵</span> 日本語</div>
+                <div class="language-item"><span class="flag">🇹🇼</span> 繁體中文</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section class="accessibility">
+        <div class="container">
+            <div class="accessibility-grid">
+                <div class="accessibility-card">
+                    <div class="accessibility-icon">👶</div>
+                    <h3>Kid Mode</h3>
+                    <p>Simplified interface with larger buttons and fun, colorful design perfect for children.</p>
+                </div>
+                <div class="accessibility-card">
+                    <div class="accessibility-icon">👴</div>
+                    <h3>Elderly Mode</h3>
+                    <p>Extra large text, high contrast, and voice guidance for enhanced accessibility.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -192,6 +353,7 @@
     <section class="faq-preview">
         <div class="container">
             <div class="section-header">
+                <span class="section-badge">❓ Help</span>
                 <h2 class="section-title">Frequently Asked Questions</h2>
                 <p class="section-subtitle">Quick answers to common questions.</p>
             </div>
@@ -210,7 +372,7 @@
                 </details>
                 <details class="faq-item">
                     <summary>How does weather awareness work?</summary>
-                    <p>The app checks the weather forecast for your location and automatically suggests relevant items—like an umbrella when rain is expected.</p>
+                    <p>The app checks the weather forecast for your location and automatically suggests relevant items—like an umbrella when rain is expected or sunscreen when UV is high.</p>
                 </details>
             </div>
             <div class="faq-more">
@@ -267,7 +429,7 @@
                         <h4>App</h4>
                         <a href="https://apps.apple.com/app/before-leaving">Download</a>
                         <a href="#features">Features</a>
-                        <a href="faq.html">FAQ</a>
+                        <a href="#screenshots">Screenshots</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>
@@ -277,7 +439,7 @@
                     <div class="footer-column">
                         <h4>Support</h4>
                         <a href="mailto:shadyghalab@gmail.com">Contact Us</a>
-                        <a href="faq.html">Help Center</a>
+                        <a href="faq.html">FAQ</a>
                     </div>
                 </div>
             </div>
@@ -302,6 +464,9 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu
+                    document.querySelector('.nav-links').classList.remove('active');
+                    document.querySelector('.nav-toggle').classList.remove('active');
                 }
             });
         });
@@ -315,7 +480,120 @@
                 navbar.classList.remove('scrolled');
             }
         });
+
+        // Screenshot Carousel
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.screenshot-slide');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        
+        let currentIndex = 0;
+        let slidesPerView = 3;
+        let autoplayInterval;
+        
+        function updateSlidesPerView() {
+            if (window.innerWidth <= 480) {
+                slidesPerView = 1;
+            } else if (window.innerWidth <= 768) {
+                slidesPerView = 2;
+            } else {
+                slidesPerView = 3;
+            }
+        }
+        
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            const numDots = Math.ceil(slides.length - slidesPerView + 1);
+            for (let i = 0; i < numDots; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        function updateCarousel() {
+            const slideWidth = slides[0].offsetWidth + 24; // including gap
+            track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            
+            // Update dots
+            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        function goToSlide(index) {
+            const maxIndex = slides.length - slidesPerView;
+            currentIndex = Math.max(0, Math.min(index, maxIndex));
+            updateCarousel();
+        }
+        
+        function nextSlide() {
+            const maxIndex = slides.length - slidesPerView;
+            currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            const maxIndex = slides.length - slidesPerView;
+            currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+            updateCarousel();
+        }
+        
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 4000);
+        }
+        
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoplay();
+            startAutoplay();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoplay();
+            startAutoplay();
+        });
+        
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        track.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+            stopAutoplay();
+        }, { passive: true });
+        
+        track.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) nextSlide();
+            if (touchEndX - touchStartX > 50) prevSlide();
+            startAutoplay();
+        }, { passive: true });
+        
+        // Initialize
+        updateSlidesPerView();
+        createDots();
+        startAutoplay();
+        
+        // Handle resize
+        window.addEventListener('resize', () => {
+            updateSlidesPerView();
+            createDots();
+            goToSlide(0);
+        });
+        
+        // Pause autoplay on hover
+        const carousel = document.querySelector('.screenshot-carousel');
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
     </script>
 </body>
 </html>
-
