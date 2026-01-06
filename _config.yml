@@ -1,0 +1,62 @@
+# GitHub Pages Configuration for Before Leaving Support Site
+# =========================================================
+
+# Site Settings
+title: Before Leaving - Support
+description: >-
+  Never forget anything when leaving home, work, or any location.
+  Smart reminders with weather awareness, gamification, and Apple Watch support.
+url: "https://shadyghalab.github.io"
+baseurl: "/before-leaving-support"
+
+# Author
+author:
+  name: Shady Ghalab
+  email: shadyghalab@gmail.com
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Theme (optional - we're using custom CSS)
+# theme: minima
+
+# Exclude from build
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include specific files
+include:
+  - _pages
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+
+# SEO Settings
+twitter:
+  card: summary
+
+# Social links (optional)
+social:
+  name: Before Leaving
+  links:
+    - https://apps.apple.com/app/before-leaving
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Permalink structure
+permalink: pretty
+
