@@ -697,60 +697,105 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 /* ===== Platforms Section ===== */
-.platforms { padding: var(--section-padding) 0; background: linear-gradient(180deg, var(--white) 0%, var(--bg-secondary) 100%); }
-.platforms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.platform-card {
-    background: var(--white);
-    padding: 40px 32px;
-    border-radius: var(--radius-xl);
+.platforms { 
+    padding: var(--section-padding) 0; 
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--white) 100%); 
+}
+.platforms-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.platform-device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    border: 2px solid var(--gray-100);
-    position: relative;
     transition: all var(--transition-base);
 }
-.platform-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: transparent; }
-.platform-card.featured {
-    background: linear-gradient(135deg, #FFF5F5 0%, #FFF0E6 100%);
-    border: 2px solid var(--primary-light);
-    transform: scale(1.05);
+.platform-device:hover { transform: translateY(-10px); }
+.platform-device.featured { transform: scale(1.05); }
+.platform-device.featured:hover { transform: scale(1.05) translateY(-10px); }
+
+/* Device Visuals */
+.device-visual {
+    background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 20px;
+    padding: 6px;
+    box-shadow: var(--shadow-xl);
+    margin-bottom: 20px;
+    position: relative;
 }
-.platform-card.featured:hover { transform: scale(1.05) translateY(-8px); }
-.platform-badge {
+.device-visual.iphone { width: 140px; border-radius: 24px; padding: 8px; }
+.device-visual.ipad { width: 200px; border-radius: 16px; padding: 8px; }
+.device-visual.watch { 
+    width: 90px; 
+    border-radius: 22px; 
+    padding: 8px;
+    box-shadow: var(--shadow-xl), 0 0 0 3px #4a4a4a;
+}
+.device-visual.watch::after {
+    content: '';
     position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 6px 16px;
-    background: var(--primary-gradient);
-    color: var(--white);
-    font-size: 0.75rem;
-    font-weight: 700;
-    border-radius: var(--radius-full);
-    white-space: nowrap;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 0 3px 3px 0;
 }
-.platform-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 24px;
-    background: var(--primary-gradient);
-    border-radius: 50%;
+.device-screen {
+    background: var(--gray-800);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.device-visual.iphone .device-screen { border-radius: 18px; }
+.device-visual.ipad .device-screen { border-radius: 10px; }
+.device-visual.watch .device-screen { border-radius: 16px; }
+.device-screen img { width: 100%; display: block; }
+
+/* Device Info */
+.device-info { max-width: 180px; }
+.device-emoji { font-size: 2rem; display: block; margin-bottom: 8px; }
+.device-info h3 { font-size: 1.25rem; margin-bottom: 6px; color: var(--gray-900); }
+.device-info > p { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 12px; }
+.device-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.device-tag {
+    padding: 4px 10px;
+    background: var(--gray-100);
+    color: var(--gray-600);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+}
+.platform-device.featured .device-tag {
+    background: rgba(255, 107, 107, 0.1);
+    color: var(--primary);
+}
+
+/* Sync Banner */
+.platforms-sync {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
+    padding: 20px 32px;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.08) 0%, rgba(78, 205, 196, 0.08) 100%);
+    border-radius: var(--radius-lg);
+    max-width: 600px;
+    margin: 0 auto;
 }
-.platform-icon svg { width: 40px; height: 40px; fill: var(--white); }
-.platform-card h3 { font-size: 1.5rem; margin-bottom: 12px; }
-.platform-card > p { color: var(--gray-500); margin-bottom: 24px; line-height: 1.6; }
-.platform-features { list-style: none; text-align: left; }
-.platform-features li {
-    padding: 8px 0;
-    color: var(--gray-600);
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.sync-icon { font-size: 2rem; }
+.platforms-sync p { 
+    color: var(--gray-600); 
+    font-size: 0.95rem; 
+    margin: 0;
+    text-align: left;
 }
-.platform-features li::before { content: '✓'; color: var(--accent-green); font-weight: 700; font-size: 1.1rem; }
+.platforms-sync strong { color: var(--gray-900); }
 
 /* ===== iPad Showcase ===== */
 .ipad-showcase { padding: var(--section-padding) 0; background: var(--bg-secondary); }
@@ -870,15 +915,32 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 /* ===== Responsive for New Sections ===== */
 @media (max-width: 1024px) {
-    .platforms-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
-    .platform-card.featured { transform: none; }
-    .platform-card.featured:hover { transform: translateY(-8px); }
+    .platforms-showcase { gap: 30px; }
+    .device-visual.iphone { width: 120px; }
+    .device-visual.ipad { width: 170px; }
+    .device-visual.watch { width: 80px; }
     .ipad-gallery { grid-template-columns: 1fr; gap: 30px; }
     .ipad-secondary { flex-direction: row; flex-wrap: wrap; justify-content: center; }
     .ipad-mockup.small { flex: 0 0 calc(50% - 12px); max-width: 250px; }
 }
 
 @media (max-width: 768px) {
+    .platforms-showcase { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 40px; 
+    }
+    .platform-device.featured { transform: none; }
+    .platform-device.featured:hover { transform: translateY(-10px); }
+    .device-visual.iphone { width: 160px; }
+    .device-visual.ipad { width: 220px; }
+    .device-visual.watch { width: 100px; }
+    .platforms-sync { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 24px 20px;
+    }
+    .platforms-sync p { text-align: center; }
     .watch-gallery { gap: 30px; }
     .watch-frame { width: 130px; height: 160px; border-radius: 35px; }
     .watch-features { gap: 16px; }
