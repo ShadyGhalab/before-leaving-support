@@ -504,37 +504,63 @@
                 <h2 class="section-title">Beautifully Designed for iPad</h2>
                 <p class="section-subtitle">Take advantage of the larger screen with optimized layouts and enhanced productivity features.</p>
             </div>
-            <div class="ipad-gallery">
-                <div class="ipad-mockup main">
-                    <div class="ipad-frame">
-                        <img src="images/ipad/ipad-home.png" alt="Before Leaving on iPad - Home Screen" loading="lazy">
-                    </div>
-                    <div class="ipad-info">
-                        <h3>Spacious Dashboard</h3>
-                        <p>See more reminders at a glance with the expanded iPad layout</p>
+            
+            <div class="ipad-carousel">
+                <button class="ipad-carousel-btn ipad-prev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="ipad-carousel-container">
+                    <div class="ipad-carousel-track">
+                        <div class="ipad-slide">
+                            <div class="ipad-device">
+                                <img src="images/ipad/ipad-home.png" alt="iPad Home Screen" loading="lazy">
+                            </div>
+                            <div class="ipad-slide-info">
+                                <h3>Spacious Dashboard</h3>
+                                <p>See more reminders at a glance</p>
+                            </div>
+                        </div>
+                        <div class="ipad-slide">
+                            <div class="ipad-device">
+                                <img src="images/ipad/ipad-locations.png" alt="iPad Locations" loading="lazy">
+                            </div>
+                            <div class="ipad-slide-info">
+                                <h3>25+ Locations</h3>
+                                <p>All your places, beautifully organized</p>
+                            </div>
+                        </div>
+                        <div class="ipad-slide">
+                            <div class="ipad-device">
+                                <img src="images/ipad/ipad-hub.png" alt="iPad Home Hub" loading="lazy">
+                            </div>
+                            <div class="ipad-slide-info">
+                                <h3>Home Hub</h3>
+                                <p>Routines, pets, plants & safety</p>
+                            </div>
+                        </div>
+                        <div class="ipad-slide">
+                            <div class="ipad-device">
+                                <img src="images/ipad/ipad-travel.png" alt="iPad Travel Mode" loading="lazy">
+                            </div>
+                            <div class="ipad-slide-info">
+                                <h3>Travel Mode</h3>
+                                <p>Plan trips with smart packing lists</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ipad-secondary">
-                    <div class="ipad-mockup small">
-                        <div class="ipad-frame">
-                            <img src="images/ipad/ipad-locations.png" alt="Before Leaving on iPad - Locations" loading="lazy">
-                        </div>
-                        <span class="ipad-label">25+ Locations</span>
-                    </div>
-                    <div class="ipad-mockup small">
-                        <div class="ipad-frame">
-                            <img src="images/ipad/ipad-hub.png" alt="Before Leaving on iPad - Home Hub" loading="lazy">
-                        </div>
-                        <span class="ipad-label">Home Hub</span>
-                    </div>
-                    <div class="ipad-mockup small">
-                        <div class="ipad-frame">
-                            <img src="images/ipad/ipad-travel.png" alt="Before Leaving on iPad - Travel" loading="lazy">
-                        </div>
-                        <span class="ipad-label">Travel Mode</span>
-                    </div>
-                </div>
+                
+                <button class="ipad-carousel-btn ipad-next" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
+            
+            <div class="ipad-carousel-dots"></div>
         </div>
     </section>
 
@@ -941,6 +967,60 @@
             const scrollPercent = (scrollTop / docHeight) * 100;
             scrollProgress.style.width = scrollPercent + '%';
         });
+
+        // iPad Carousel
+        const ipadTrack = document.querySelector('.ipad-carousel-track');
+        const ipadSlides = document.querySelectorAll('.ipad-slide');
+        const ipadPrev = document.querySelector('.ipad-prev');
+        const ipadNext = document.querySelector('.ipad-next');
+        const ipadDotsContainer = document.querySelector('.ipad-carousel-dots');
+        let ipadCurrentIndex = 0;
+
+        // Create dots
+        ipadSlides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.classList.add('ipad-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToIpadSlide(index));
+            ipadDotsContainer.appendChild(dot);
+        });
+
+        function updateIpadCarousel() {
+            ipadTrack.style.transform = `translateX(-${ipadCurrentIndex * 100}%)`;
+            document.querySelectorAll('.ipad-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === ipadCurrentIndex);
+            });
+        }
+
+        function goToIpadSlide(index) {
+            ipadCurrentIndex = Math.max(0, Math.min(index, ipadSlides.length - 1));
+            updateIpadCarousel();
+        }
+
+        ipadPrev.addEventListener('click', () => {
+            ipadCurrentIndex = ipadCurrentIndex <= 0 ? ipadSlides.length - 1 : ipadCurrentIndex - 1;
+            updateIpadCarousel();
+        });
+
+        ipadNext.addEventListener('click', () => {
+            ipadCurrentIndex = ipadCurrentIndex >= ipadSlides.length - 1 ? 0 : ipadCurrentIndex + 1;
+            updateIpadCarousel();
+        });
+
+        // Touch support for iPad carousel
+        let ipadTouchStartX = 0;
+        ipadTrack.addEventListener('touchstart', e => { ipadTouchStartX = e.changedTouches[0].screenX; }, { passive: true });
+        ipadTrack.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].screenX;
+            if (ipadTouchStartX - touchEndX > 50) {
+                ipadCurrentIndex = ipadCurrentIndex >= ipadSlides.length - 1 ? 0 : ipadCurrentIndex + 1;
+                updateIpadCarousel();
+            }
+            if (touchEndX - ipadTouchStartX > 50) {
+                ipadCurrentIndex = ipadCurrentIndex <= 0 ? ipadSlides.length - 1 : ipadCurrentIndex - 1;
+                updateIpadCarousel();
+            }
+        }, { passive: true });
     </script>
 </body>
 </html>

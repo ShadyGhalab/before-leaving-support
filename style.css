@@ -698,32 +698,98 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 /* ===== iPad Showcase ===== */
 .ipad-showcase { padding: var(--section-padding) 0; background: var(--bg-secondary); }
-.ipad-gallery { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; align-items: start; }
-.ipad-mockup {
-    background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
-    border-radius: 24px;
-    padding: 12px;
-    box-shadow: var(--shadow-xl);
-    transition: all var(--transition-base);
+
+/* iPad Carousel */
+.ipad-carousel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
-.ipad-mockup:hover { transform: translateY(-8px); box-shadow: var(--shadow-2xl); }
-.ipad-mockup.main { border-radius: 32px; padding: 16px; }
-.ipad-frame { background: var(--gray-800); border-radius: 16px; overflow: hidden; }
-.ipad-mockup.main .ipad-frame { border-radius: 20px; }
-.ipad-frame img { width: 100%; display: block; }
-.ipad-info { text-align: center; margin-top: 20px; }
-.ipad-info h3 { font-size: 1.25rem; margin-bottom: 8px; }
-.ipad-info p { color: var(--gray-500); font-size: 0.95rem; }
-.ipad-secondary { display: flex; flex-direction: column; gap: 24px; }
-.ipad-mockup.small { border-radius: 16px; padding: 8px; }
-.ipad-mockup.small .ipad-frame { border-radius: 10px; }
-.ipad-label {
+.ipad-carousel-container {
+    flex: 1;
+    overflow: hidden;
+}
+.ipad-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.ipad-slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.ipad-device {
+    background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: var(--shadow-2xl);
+    max-width: 500px;
+    width: 100%;
+}
+.ipad-device img {
+    width: 100%;
     display: block;
+    border-radius: 12px;
+}
+.ipad-slide-info {
     text-align: center;
-    margin-top: 12px;
-    font-weight: 600;
-    color: var(--gray-700);
-    font-size: 0.9rem;
+    margin-top: 24px;
+}
+.ipad-slide-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--gray-900);
+}
+.ipad-slide-info p {
+    color: var(--gray-500);
+    font-size: 1rem;
+}
+.ipad-carousel-btn {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    color: var(--gray-600);
+}
+.ipad-carousel-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: scale(1.1);
+}
+.ipad-carousel-btn svg {
+    width: 24px;
+    height: 24px;
+}
+.ipad-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.ipad-carousel-dots .ipad-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gray-300);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.ipad-carousel-dots .ipad-dot.active {
+    background: var(--primary);
+    transform: scale(1.2);
 }
 
 /* ===== Watch Showcase ===== */
@@ -814,12 +880,16 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 /* ===== Responsive for New Sections ===== */
 @media (max-width: 1024px) {
-    .ipad-gallery { grid-template-columns: 1fr; gap: 30px; }
-    .ipad-secondary { flex-direction: row; flex-wrap: wrap; justify-content: center; }
-    .ipad-mockup.small { flex: 0 0 calc(50% - 12px); max-width: 250px; }
+    .ipad-carousel { gap: 15px; }
+    .ipad-device { max-width: 400px; }
 }
 
 @media (max-width: 768px) {
+    .ipad-carousel-btn { width: 40px; height: 40px; }
+    .ipad-carousel-btn svg { width: 20px; height: 20px; }
+    .ipad-slide { padding: 0 10px; }
+    .ipad-device { border-radius: 16px; padding: 8px; }
+    .ipad-device img { border-radius: 10px; }
     .watch-gallery { gap: 30px; }
     .watch-frame { width: 130px; height: 160px; border-radius: 35px; }
     .watch-features { gap: 16px; }
