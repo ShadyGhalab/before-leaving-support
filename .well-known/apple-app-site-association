@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["EZKTHB6PL9.Com.SmartWings.BeforeLeaving"],
+        "paths": ["/join/*"],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Matches group invite links"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["EZKTHB6PL9.Com.SmartWings.BeforeLeaving"]
+  }
+}
