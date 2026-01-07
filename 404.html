@@ -11,6 +11,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Smart App Banner for iOS -->
+    <meta name="apple-itunes-app" content="app-id=652646958">
+    
+    <script>
+        // Handle deep link paths on 404
+        (function() {
+            var path = window.location.pathname;
+            
+            // Handle /join/{code} URLs - try to open the app
+            if (path.match(/^\/join\/[A-Za-z0-9]+$/)) {
+                var code = path.split('/').pop();
+                // Try to open the app via custom URL scheme
+                window.location.href = 'beforeleaving://join/' + code;
+            }
+        })();
+    </script>
+    
+    <style>
+        .join-card {
+            background: white;
+            border-radius: 24px;
+            padding: 48px 40px;
+            max-width: 420px;
+            margin: 0 auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .join-icon { font-size: 64px; margin-bottom: 24px; }
+        .invite-code {
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 24px;
+            font-weight: 600;
+            color: #667eea;
+            letter-spacing: 2px;
+            margin: 24px 0;
+        }
+        .join-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .join-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        #join-content { display: none; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -36,7 +99,8 @@
 
     <!-- 404 Content -->
     <main class="error-page">
-        <div class="error-content">
+        <!-- Default 404 error content -->
+        <div class="error-content" id="error-content">
             <h1>404</h1>
             <h2>Oops! Page Not Found</h2>
             <p>Looks like you forgot this page... before leaving! 🎒</p>
@@ -46,7 +110,49 @@
                 <a href="faq.html" class="btn btn-secondary">View FAQ</a>
             </div>
         </div>
+        
+        <!-- Join group content (shown for /join/* URLs) -->
+        <div id="join-content">
+            <div class="join-card">
+                <div class="join-icon">👋</div>
+                <h1 style="font-size: 28px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px;">You're Invited!</h1>
+                <p style="font-size: 16px; color: #64748b; line-height: 1.6;">Someone invited you to join their group on Before Leaving. Tap the button below to open the app.</p>
+                
+                <div class="invite-code" id="invite-code">Loading...</div>
+                
+                <a href="beforeleaving://join/" id="open-app-btn" class="join-btn">
+                    🎒 Open in Before Leaving
+                </a>
+                
+                <div style="margin-top: 24px;">
+                    <a href="https://apps.apple.com/app/id652646958">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 48px;">
+                    </a>
+                </div>
+                
+                <p style="margin-top: 24px; font-size: 14px; color: #94a3b8;">
+                    Don't have the app? <a href="https://apps.apple.com/app/id652646958" style="color: #667eea;">Download it free</a> from the App Store.
+                </p>
+            </div>
+        </div>
     </main>
+    
+    <script>
+        // Show join UI for /join/* paths after attempting app redirect
+        (function() {
+            var path = window.location.pathname;
+            if (path.match(/^\/join\/[A-Za-z0-9]+$/)) {
+                var code = path.split('/').pop();
+                // Show join UI after a brief delay (gives time for app to open)
+                setTimeout(function() {
+                    document.getElementById('error-content').style.display = 'none';
+                    document.getElementById('join-content').style.display = 'block';
+                    document.getElementById('invite-code').textContent = code;
+                    document.getElementById('open-app-btn').href = 'beforeleaving://join/' + code;
+                }, 500);
+            }
+        })();
+    </script>
 
     <!-- Footer -->
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%;">
