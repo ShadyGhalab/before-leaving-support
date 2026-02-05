@@ -13,11 +13,15 @@ Support and documentation website for the **Before Leaving** iOS app.
 
 ## Contact
 
-For support inquiries: [shadyghalab@gmail.com](mailto:shadyghalab@gmail.com)
+For support inquiries: [support@beforeleaving.app](mailto:support@beforeleaving.app)
 
 ---
 
 © 2013-2026 Shady Ghalab. All rights reserved.
+
+
+
+
 
 
 
