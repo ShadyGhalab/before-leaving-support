@@ -24,6 +24,7 @@ highlighter: rouge
 # Exclude from build
 exclude:
   - README.md
+  - OFFICIAL_LINKS.md
   - LICENSE
   - CNAME
   - Gemfile
