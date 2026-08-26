@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open an invitation in Before Leaving">
+    <meta name="apple-itunes-app" content="app-id=719622441">
+    <title>Invitation | Before Leaving</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .invitation-page {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 32px 20px;
+            background: #f7f8fb;
+        }
+
+        .invitation-card {
+            width: min(100%, 420px);
+            padding: 32px 28px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+            text-align: center;
+        }
+
+        .invitation-icon {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 20px;
+            border-radius: 18px;
+        }
+
+        .invitation-card h1 {
+            margin: 0 0 10px;
+            color: #111827;
+            font-size: 28px;
+        }
+
+        .invitation-card p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.55;
+        }
+
+        .invite-code {
+            margin: 24px 0;
+            padding: 14px 18px;
+            border-radius: 8px;
+            background: #f3f4f6;
+            color: #111827;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .open-app-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            border-radius: 8px;
+            background: #ff6268;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .open-app-button:hover,
+        .open-app-button:focus-visible {
+            background: #e84f56;
+            color: #ffffff;
+        }
+
+        .download-copy {
+            margin-top: 20px !important;
+            font-size: 14px;
+        }
+
+        .download-copy a {
+            color: #d83f48;
+            font-weight: 600;
+        }
+
+        .invalid-invite {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="invitation-page">
+        <section class="invitation-card" aria-labelledby="invitation-title">
+            <img src="/images/app-icon.png" alt="" class="invitation-icon">
+            <div id="valid-invite">
+                <h1 id="invitation-title">Join this trip</h1>
+                <p id="invitation-copy">Open Before Leaving to review and accept the invitation.</p>
+                <div class="invite-code" id="invite-code" aria-label="Invitation code"></div>
+                <a href="#" id="open-app-button" class="open-app-button">Open Before Leaving</a>
+                <p class="download-copy">
+                    Need the app?
+                    <a href="https://apps.apple.com/app/before-leaving/id719622441">Download it from the App Store</a>.
+                </p>
+            </div>
+            <div id="invalid-invite" class="invalid-invite">
+                <h1>Invitation unavailable</h1>
+                <p>This invitation link is incomplete. Ask the sender to share it again.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var type = params.get('type') === 'group' ? 'group' : 'travel';
+            var code = (params.get('code') || '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+
+            if (!code) {
+                document.getElementById('valid-invite').style.display = 'none';
+                document.getElementById('invalid-invite').style.display = 'block';
+                return;
+            }
+
+            var isTravel = type === 'travel';
+            var deepLink = isTravel
+                ? 'beforeleaving://travel/join/' + code
+                : 'beforeleaving://join/' + code;
+
+            document.title = (isTravel ? 'Join Trip' : 'Join Group') + ' | Before Leaving';
+            document.getElementById('invitation-title').textContent = isTravel
+                ? 'Join this trip'
+                : 'Join this group';
+            document.getElementById('invitation-copy').textContent = isTravel
+                ? 'Open Before Leaving to review and accept the trip invitation.'
+                : 'Open Before Leaving to review and accept the group invitation.';
+            document.getElementById('invite-code').textContent = code;
+            document.getElementById('open-app-button').href = deepLink;
+        })();
+    </script>
+</body>
+</html>

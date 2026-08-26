@@ -4,11 +4,15 @@
     "details": [
       {
         "appIDs": ["EZKTHB6PL9.Com.SmartWings.BeforeLeaving"],
-        "paths": ["/join/*"],
+        "paths": ["/join/*", "/travel/join/*"],
         "components": [
           {
             "/": "/join/*",
             "comment": "Matches group invite links"
+          },
+          {
+            "/": "/travel/join/*",
+            "comment": "Matches collaborative trip invite links"
           }
         ]
       }
