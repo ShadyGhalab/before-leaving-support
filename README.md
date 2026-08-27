@@ -13,6 +13,16 @@ Support and documentation website for the **Before Leaving** iOS app.
 - **Privacy Policy** - How we handle your data
 - **Terms of Service** - Usage terms
 
+## Marketing assets
+
+The homepage uses the English iPhone and iPad marketing renders and the current App Store icon from the iOS app repository. After regenerating screenshots or changing the app icon, refresh the website copies with:
+
+```bash
+./scripts/sync-marketing-screenshots.sh
+```
+
+The script reads screenshots from `../Before-Leaving/Screenshots/Rendered/default` and the icon from the iOS asset catalog by default. It validates all nine required scenes, writes full-resolution WebP screenshots to `images/marketing`, and regenerates the 1024 px press icon, 180 px website and Apple touch icons, and PNG/ICO favicons. Pass a different rendered screenshot root as the first argument or set `APP_ICON_SOURCE` when the repositories are stored elsewhere.
+
 ## Google Search Console (site verification)
 
 The file `google13c0e85923628e64.html` is served at:
@@ -30,9 +40,6 @@ For support inquiries: [support@beforeleaving.app](mailto:support@beforeleaving.
 ---
 
 © 2013-2026 Shady Ghalab. All rights reserved.
-
-
-
 
 
 
