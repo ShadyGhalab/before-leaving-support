@@ -633,9 +633,17 @@ h3 { font-size: 1.5rem; }
     .hero-title { font-size: 3.35rem; }
     .hero-promise { font-size: 1.4rem; }
     .hero-subtitle { font-size: 1rem; line-height: 1.55; }
-    .hero-gallery { height: 210px; }
+    .hero-gallery {
+        height: auto;
+        overflow: visible;
+        padding-bottom: 32px;
+    }
     .hero-shot-left, .hero-shot-right { display: none; }
-    .hero-shot-center { width: min(84%, 310px); border-radius: 20px 20px 0 0; transform: translateY(-112px); }
+    .hero-shot-center {
+        width: min(84%, 310px);
+        border-radius: 20px;
+        transform: none;
+    }
     .showcase-icon { width: 150px; height: 150px; border-radius: 36px; }
     .new-features-grid { grid-template-columns: 1fr; }
     .new-feature-card.highlight { grid-column: span 1; }
@@ -664,7 +672,6 @@ h3 { font-size: 1.5rem; }
     .hero-buttons { gap: 8px; margin-bottom: 8px; }
     .hero-rating { display: none; }
     .hero-platforms { font-size: 0.76rem; }
-    .hero-gallery { height: 135px; }
     .hero-shot-center { width: min(76%, 250px); }
     .new-feature-card.highlight { grid-template-columns: 1fr; }
     .new-feature-card.highlight .new-feature-icon,
@@ -690,8 +697,7 @@ h3 { font-size: 1.5rem; }
     .hero-buttons .btn-secondary { flex: 0.95; font-size: 0.76rem; }
     .hero-buttons .appstore-small { font-size: 0.55rem; }
     .hero-buttons .appstore-large { font-size: 0.9rem; white-space: nowrap; }
-    .hero-gallery { height: 105px; }
-    .hero-shot-center { width: min(74%, 220px); transform: translateY(-82px); }
+    .hero-shot-center { width: min(74%, 220px); }
 }
 
 /* ===== iPad Showcase ===== */
