@@ -245,24 +245,25 @@ h3 { font-size: 1.5rem; }
 /* Hero product art */
 .hero-gallery {
     width: min(1080px, 100%);
-    height: clamp(160px, 23vh, 270px);
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    overflow: hidden;
+    overflow: visible;
+    padding-bottom: 56px;
     animation: fadeInUp 0.8s ease-out 0.45s both;
 }
 .hero-shot {
     width: 29%;
     height: auto;
     display: block;
-    border-radius: 24px 24px 0 0;
+    border-radius: 24px;
     box-shadow: 0 18px 48px rgba(17, 24, 39, 0.12);
 }
-.hero-shot-left { transform: translateY(-58px); }
-.hero-shot-center { width: 34%; z-index: 2; transform: translateY(-112px); }
-.hero-shot-right { transform: translateY(-42px); }
+.hero-shot-left { transform: none; }
+.hero-shot-center { width: 34%; z-index: 2; transform: none; }
+.hero-shot-right { transform: none; }
 
 /* ===== App Showcase ===== */
 .app-showcase { padding: 80px 0; background: #F4FAFA; }
