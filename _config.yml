@@ -1,8 +1,8 @@
-# GitHub Pages Configuration for Before Leaving Support Site
+# GitHub Pages Configuration for ReadyKin Support Site
 # =========================================================
 
 # Site Settings
-title: Before Leaving - Support
+title: ReadyKin - Support
 description: >-
   Never forget anything when leaving home, work, or any location.
   Smart reminders with weather awareness, gamification, and Apple Watch support.
@@ -48,7 +48,7 @@ twitter:
 
 # Social links (optional)
 social:
-  name: Before Leaving
+  name: ReadyKin
   links:
     - https://apps.apple.com/app/before-leaving/id719622441
 

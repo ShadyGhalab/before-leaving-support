@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Open an invitation in Before Leaving">
+    <meta name="description" content="Open an invitation in ReadyKin">
     <meta name="apple-itunes-app" content="app-id=719622441">
-    <title>Invitation | Before Leaving</title>
+    <title>Invitation | ReadyKin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="/style.css">
@@ -102,9 +102,9 @@
             <img src="/images/app-icon.png" alt="" class="invitation-icon">
             <div id="valid-invite">
                 <h1 id="invitation-title">Join this trip</h1>
-                <p id="invitation-copy">Open Before Leaving to review and accept the invitation.</p>
+                <p id="invitation-copy">Open ReadyKin to review and accept the invitation.</p>
                 <div class="invite-code" id="invite-code" aria-label="Invitation code"></div>
-                <a href="#" id="open-app-button" class="open-app-button">Open Before Leaving</a>
+                <a href="#" id="open-app-button" class="open-app-button">Open ReadyKin</a>
                 <p class="download-copy">
                     Need the app?
                     <a href="https://apps.apple.com/app/before-leaving/id719622441">Download it from the App Store</a>.
@@ -133,13 +133,13 @@
                 ? 'beforeleaving://travel/join/' + code
                 : 'beforeleaving://join/' + code;
 
-            document.title = (isTravel ? 'Join Trip' : 'Join Group') + ' | Before Leaving';
+            document.title = (isTravel ? 'Join Trip' : 'Join Group') + ' | ReadyKin';
             document.getElementById('invitation-title').textContent = isTravel
                 ? 'Join this trip'
                 : 'Join this group';
             document.getElementById('invitation-copy').textContent = isTravel
-                ? 'Open Before Leaving to review and accept the trip invitation.'
-                : 'Open Before Leaving to review and accept the group invitation.';
+                ? 'Open ReadyKin to review and accept the trip invitation.'
+                : 'Open ReadyKin to review and accept the group invitation.';
             document.getElementById('invite-code').textContent = code;
             document.getElementById('open-app-button').href = deepLink;
         })();

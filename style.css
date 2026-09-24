@@ -1,15 +1,15 @@
 /* 
- * Before Leaving - Support Site Styles
+ * ReadyKin - Support Site Styles
  * A modern, beautiful design inspired by the app's aesthetic
  */
 
 /* ===== CSS Variables ===== */
 :root {
-    --primary: #FF6B6B;
-    --primary-dark: #EE5A5A;
-    --primary-light: #FF8E8E;
-    --primary-gradient: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-    --secondary: #4ECDC4;
+    --primary: #2D1736;
+    --primary-dark: #211128;
+    --primary-light: #6B4A75;
+    --primary-gradient: linear-gradient(135deg, #2D1736 0%, #FF8E53 100%);
+    --secondary: #D9FF35;
     --accent-purple: #A855F7;
     --accent-blue: #3B82F6;
     --accent-green: #10B981;
@@ -146,7 +146,7 @@ h3 { font-size: 1.5rem; }
 .section-badge {
     display: inline-block;
     padding: 8px 16px;
-    background: rgba(255, 107, 107, 0.1);
+    background: rgba(45, 23, 54, 0.08);
     color: var(--primary);
     font-size: 0.875rem;
     font-weight: 600;

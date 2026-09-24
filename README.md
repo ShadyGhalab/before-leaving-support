@@ -1,6 +1,6 @@
-# Before Leaving - Support Website
+# ReadyKin - Support Website
 
-Support and documentation website for the **Before Leaving** iOS app.
+Support and documentation website for the **ReadyKin** iOS app.
 
 🔗 **Live Site:** [https://beforeleaving.app](https://beforeleaving.app) (custom domain)
 

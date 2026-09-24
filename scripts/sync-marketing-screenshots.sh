@@ -5,7 +5,7 @@ set -euo pipefail
 site_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_root="${1:-"${site_root}/../Before-Leaving/Screenshots/Rendered/default"}"
 quality="${WEBP_QUALITY:-86}"
-app_icon_source="${APP_ICON_SOURCE:-"${site_root}/../Before-Leaving/Before Leaving/Images.xcassets/AppIcon.appiconset/ios-marketing-1024x1024.png"}"
+app_icon_source="${APP_ICON_SOURCE:-"${site_root}/../Before-Leaving/ReadyKin/Images.xcassets/AppIcon.appiconset/ios-marketing-1024x1024.png"}"
 
 command -v cwebp >/dev/null 2>&1 || {
     echo "cwebp is required. Install WebP tools before syncing screenshots." >&2

@@ -1,4 +1,4 @@
-# Before Leaving — official site URLs
+# ReadyKin — official site URLs
 
 Use these **exact URLs** in **Google Cloud OAuth consent screen**, **App Store Connect**, and anywhere a stable public link is required.
 
