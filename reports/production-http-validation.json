@@ -1,0 +1,547 @@
+{
+  "checked_at": "2026-10-01T10:38:22.993415+00:00",
+  "base_url": "https://beforeleaving.app",
+  "mode": "production",
+  "status": "failed",
+  "checks": 105,
+  "failures": [
+    {
+      "check": ".well-known/apple-app-site-association preserved",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "Apple association content type",
+      "passed": false,
+      "detail": "text/html; charset=utf-8"
+    }
+  ],
+  "results": [
+    {
+      "check": "/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/packing-list-app/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/packing-list-app/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/packing-list-app/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/packing-list-app/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/location-reminders/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/location-reminders/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/location-reminders/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/location-reminders/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/family-packing-list/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/family-packing-list/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/family-packing-list/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/family-packing-list/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/ai-packing-list/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/ai-packing-list/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/ai-packing-list/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/ai-packing-list/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/weather-packing-list/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/weather-packing-list/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/weather-packing-list/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/weather-packing-list/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/before-leaving-checklist/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/before-leaving-checklist/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/before-leaving-checklist/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/before-leaving-checklist/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/shared-travel-checklist/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/shared-travel-checklist/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/shared-travel-checklist/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/shared-travel-checklist/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/apple-watch-reminders/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/apple-watch-reminders/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/apple-watch-reminders/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/apple-watch-reminders/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/features/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/features/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/features/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/features/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/guides/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/guides/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/guides/weekend-trip-packing-checklist/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/guides/weekend-trip-packing-checklist/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/weekend-trip-packing-checklist/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/weekend-trip-packing-checklist/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/guides/leaving-home-checklist/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/guides/leaving-home-checklist/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/leaving-home-checklist/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/guides/leaving-home-checklist/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/faq.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/faq.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/faq.html canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/faq.html current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/about/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/about/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/about/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/about/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/press.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/press.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/press.html canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/press.html current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/changelog.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/changelog.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/changelog.html canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/changelog.html current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/privacy.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/privacy.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/privacy.html canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/privacy.html current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/terms.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/terms.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/terms.html canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/terms.html current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/join.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/join.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/join.html noindex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/404.html status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/404.html html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/404.html noindex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/site-map/ status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/site-map/ html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/site-map/ canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/site-map/ current generated HTML",
+      "passed": true,
+      "detail": "Exact file hash check; host HTML rewriting may need manual review."
+    },
+    {
+      "check": "/robots.txt status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/robots.txt content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/sitemap.xml status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/sitemap.xml content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/b80ed8e15df862d5d662e85165191594.txt status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/b80ed8e15df862d5d662e85165191594.txt content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "/images/social/readykin-social.jpg status",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "/images/social/readykin-social.jpg content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": ".well-known/apple-app-site-association preserved",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "check": "Apple association content type",
+      "passed": false,
+      "detail": "text/html; charset=utf-8"
+    },
+    {
+      "check": "Apple association no redirect",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "app-ads.txt preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Verification file exact content",
+      "passed": true,
+      "detail": "Does not confirm account verification."
+    },
+    {
+      "check": "Unknown URL is genuine HTTP 404",
+      "passed": true,
+      "detail": "HTTP 404"
+    },
+    {
+      "check": "Custom 404 is noindex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Source not published: /site-src/data/site.json",
+      "passed": true,
+      "detail": "HTTP 404"
+    },
+    {
+      "check": "Source not published: /scripts/build-site.py",
+      "passed": true,
+      "detail": "HTTP 404"
+    },
+    {
+      "check": "Source not published: /tests/protected-files.json",
+      "passed": true,
+      "detail": "HTTP 404"
+    },
+    {
+      "check": "Source not published: /docs/CONTENT_REVIEW.md",
+      "passed": true,
+      "detail": "HTTP 404"
+    }
+  ],
+  "scope": "Read-only HTTP checks. Not a crawl/indexing, security, privacy, performance or native-device certification."
+}
