@@ -63,11 +63,20 @@ jobs:
       - name: Configure Pages (explicit owner opt-in)
         if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
         uses: actions/configure-pages@v5
+      - name: Verify Apple association before upload
+        if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+        run: |
+          test -f dist/.well-known/apple-app-site-association
+          cmp .well-known/apple-app-site-association dist/.well-known/apple-app-site-association
+          python -m json.tool dist/.well-known/apple-app-site-association > /dev/null
+          # Local staging bookkeeping is not a public website asset.
+          rm -f dist/.readykin-staged
       - name: Upload public artifact
         if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+          # AASA and .nojekyll must survive GitHub Pages artifact packaging.
           include-hidden-files: true
 
   deploy:
@@ -93,14 +102,7 @@ jobs:
           CONTENT_DATE: ${{ needs.build.outputs.content_date }}
         run: python scripts/build-site.py --date "$CONTENT_DATE"
       - name: Check public deployment
-        run: |
-          for attempt in $(seq 1 12); do
-            if python scripts/check-live.py --production; then
-              exit 0
-            fi
-            sleep 10
-          done
-          exit 1
+        run: python scripts/check-live.py --production
       - name: Notify IndexNow (separate owner opt-in)
         if: ${{ vars.ENABLE_INDEXNOW == 'true' }}
         run: python scripts/indexnow.py --submit
