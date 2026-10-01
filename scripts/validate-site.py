@@ -56,7 +56,8 @@ def main():
         check(not any('google' in x.get('href','') and 'fonts.' in x.get('href','') for x in p.tags['link']),f'{path}: external font request')
         check('$discovery_section' not in text and '$app_store_url' not in text,f'{path}: unrendered template')
         for im in p.tags['img']:
-            check('alt' in im,f'{path}: image is missing alt: {im.get("src")}')
+            check('alt' in im, f'{path}: image is missing alt: {im.get("src")}')
+            check(bool(im.get('alt', '').strip()), f'{path}: image alt text is empty: {im.get("src")}')
             check(str(im.get('width','')).isdigit() and str(im.get('height','')).isdigit(),f'{path}: image missing dimensions: {im.get("src")}')
         robots=','.join(p.meta('robots'))
         if not entry['indexable']:

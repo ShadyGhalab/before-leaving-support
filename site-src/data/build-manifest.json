@@ -5,121 +5,121 @@
       "file": "index.html",
       "title": "ReadyKin | Smart Reminders, Packing Lists & Shared Trips",
       "indexable": true,
-      "sha256": "cf85cc16336ab3f24e6a2083cf9cf1d8b314b314e9c46cc1d187bb88dfbba5d6"
+      "sha256": "ae9070efc40ee27aa3b12d8d535610c8a941d42f0567461c764a821509997e0a"
     },
     "/packing-list-app/": {
       "file": "packing-list-app/index.html",
       "title": "Packing List App for iPhone & Shared Trips | ReadyKin",
       "indexable": true,
-      "sha256": "ecd9d6df3cfb43b49b462559622136a82d37b365a3f372436f944c3dd48bc80e"
+      "sha256": "e18a07deebf6f311d0e6cf6d8aed5b635cfd1b6b471576a436de6b1c2b524058"
     },
     "/location-reminders/": {
       "file": "location-reminders/index.html",
       "title": "Location-Based Reminders for iPhone | ReadyKin",
       "indexable": true,
-      "sha256": "f30e699e11efaffc1c00d2664a35791ed34f2b7bfda41f97bc6c4eed71a6e01e"
+      "sha256": "50455a19d3158de92b628a0f41480eb526d9844d40425bd51340de82db7f1da5"
     },
     "/family-packing-list/": {
       "file": "family-packing-list/index.html",
       "title": "Family Packing List App for iPhone | ReadyKin",
       "indexable": true,
-      "sha256": "c6ad8876b5b4d472c48c63c2d11d10ae01858382ade43f977fc07bb230e685ed"
+      "sha256": "04057c028727315c59ad6f2ed160797439bc404bd1da37990b566bc8d861bb10"
     },
     "/ai-packing-list/": {
       "file": "ai-packing-list/index.html",
       "title": "AI Packing List & Trip Planning for iPhone | ReadyKin",
       "indexable": true,
-      "sha256": "0c4fc049f0e555204eb956a3c736b15df02283056860cb4ff7294b2529abd344"
+      "sha256": "be9c3a83827a4b232230cd47cf7e316a51a959790fb896a42e45e7a005cae119"
     },
     "/weather-packing-list/": {
       "file": "weather-packing-list/index.html",
       "title": "Weather-Aware Packing & Reminder Ideas | ReadyKin",
       "indexable": true,
-      "sha256": "90478d4424bd24c2e3c90ec7c7cfdadbdf9d0a6f4ef8d1793798c03dd998d4d0"
+      "sha256": "5ff544cdf66089467181e1f45a7e1ad044a406f616e7e7622f4aab501f609bbf"
     },
     "/before-leaving-checklist/": {
       "file": "before-leaving-checklist/index.html",
       "title": "Before-Leaving Checklist & Reminder App | ReadyKin",
       "indexable": true,
-      "sha256": "b0c5745663fa6c74f48d1a4a2d424417e1de6806be89566b83b60072b18c6c4c"
+      "sha256": "085a64cfdbba263c0355b17c574c3ef75d79667005d5cca16a17b052d0206df0"
     },
     "/shared-travel-checklist/": {
       "file": "shared-travel-checklist/index.html",
       "title": "Shared Travel Checklists & Packing Lists | ReadyKin",
       "indexable": true,
-      "sha256": "4b8228ff7ad06c5b134c624af4fdb9a33a1502488f8ec76af7624c3e09fec900"
+      "sha256": "a2267dd563d5eb3435d0bfe9786d57fa28fb619f87f897fe6ae86d9b264cddd5"
     },
     "/apple-watch-reminders/": {
       "file": "apple-watch-reminders/index.html",
       "title": "Apple Watch Reminders & Checklists | ReadyKin",
       "indexable": true,
-      "sha256": "d313350c63e34a989db7767f1b1ff7f9a0ae5646190df3181fced09047405be4"
+      "sha256": "0441f531ce418bfecb12191463830574ee66c755326fcff5c2e14277fc57475b"
     },
     "/features/": {
       "file": "features/index.html",
       "title": "ReadyKin Features | Reminders, Packing & Shared Planning",
       "indexable": true,
-      "sha256": "c4198879d396712dcd4c0f531d47d5f8e7c9bcbc074ed4c08facf7c30a3b9cc4"
+      "sha256": "b930f68187a922c3d5140513bc6b52087298cf3023936563ba2cf5a09e6034fd"
     },
     "/guides/": {
       "file": "guides/index.html",
       "title": "Practical Packing & Leaving-Home Checklists | ReadyKin",
       "indexable": true,
-      "sha256": "ca4c23d81bfd5aa7548813be1cb4931324515425422937d14a6dc11a7124c80e"
+      "sha256": "2afdaca71ff60d46c7db52c0f478f484c45f82077836d236c7909aa8bf2a41d8"
     },
     "/guides/weekend-trip-packing-checklist/": {
       "file": "guides/weekend-trip-packing-checklist/index.html",
       "title": "Weekend Trip Packing Checklist | ReadyKin Guide",
       "indexable": true,
-      "sha256": "9b5a4c9c1e69939f3f6ad31db3ea86f0fd4040246d21d8fd0de896a827a39fe2"
+      "sha256": "86e511f28830b1e4b21bf44ef651cfac2280524ab0c846254b4728668fbf8c3a"
     },
     "/guides/leaving-home-checklist/": {
       "file": "guides/leaving-home-checklist/index.html",
       "title": "Leaving Home Checklist: A Simple Final Check | ReadyKin",
       "indexable": true,
-      "sha256": "2a85129f0521c7a39ae3096062e1f2f780b5ef5fe5b1b7708630a04b203b13dc"
+      "sha256": "c43d772629c17a6a59948e073715089a81836c0ab16f70ca7eb8c061771b9a73"
     },
     "/faq.html": {
       "file": "faq.html",
       "title": "ReadyKin Help & FAQ | Reminders, Trips and App Support",
       "indexable": true,
-      "sha256": "87bf4df87d28dd8eee519b40356e5c26b373b8a6bb832f06f502cb1203f95609"
+      "sha256": "e3b2c2009d1e18276e7fe69fda96d813b64cd2b7b2a5892bda3af6d8eb721f0f"
     },
     "/about/": {
       "file": "about/index.html",
       "title": "About ReadyKin | Formerly the Before Leaving App",
       "indexable": true,
-      "sha256": "c38c31394ce6fede7fcdfc8e94fecb47b4f101c294441d6e539ba21ad966a918"
+      "sha256": "254a5ee713524a65be81bc6b7fcd302b624877363eba81a879a77031378d0580"
     },
     "/press.html": {
       "file": "press.html",
       "title": "ReadyKin Press Kit | App Facts, Icons & Screenshots",
       "indexable": true,
-      "sha256": "ce7d628f061d6ae1a63ac5701148ea7970c4a6fd616aea01fee63ff819d62935"
+      "sha256": "0af2ff5a5778c4794ce06a22b2d0a106968504e781a64364ba39b23c177664d9"
     },
     "/changelog.html": {
       "file": "changelog.html",
       "title": "ReadyKin Release Notes & Historical Website Updates",
       "indexable": true,
-      "sha256": "2f97c168b97ca2e21cf341c7e5b4b53114cedc9266608f40d63d5d082fd03c5f"
+      "sha256": "0a3ee06e32cf89b208fec030581699df91154ff1664e948e353be2ff7eb5e6ba"
     },
     "/privacy.html": {
       "file": "privacy.html",
       "title": "Privacy Policy | ReadyKin",
       "indexable": true,
-      "sha256": "b82deab87e2c7d0cecc2addafacb57a357be3472080faf237636071a3ec95de9"
+      "sha256": "79d89475935fd447e858d39047a24e8120679e02ed6dfc91fa573e442bdc2e2d"
     },
     "/terms.html": {
       "file": "terms.html",
       "title": "Terms of Service | ReadyKin",
       "indexable": true,
-      "sha256": "c3ba7e539d4d7f9c5068594b1a19b851fcd1fe60ded1a29141aacdc0038209f3"
+      "sha256": "09cc9c5ec5fcf40719886668b5296f62499431fcd645c5f122a84c72f346e629"
     },
     "/join.html": {
       "file": "join.html",
       "title": "Invitation",
       "indexable": false,
-      "sha256": "64e6213fb0ed0129b0e5f19b3a41a1aaff0b0957f0ef4a9da12fa556e25a53d7"
+      "sha256": "98857272aea4657fb26f9f93ec52116fce305a49c5cf7024fb10f8b9d9569203"
     },
     "/404.html": {
       "file": "404.html",
@@ -131,10 +131,12 @@
       "file": "site-map/index.html",
       "title": "ReadyKin Site Map | Features, Checklists & Support",
       "indexable": true,
-      "sha256": "303bb9de213bf9d2fee3a143cbd335a593448cf7676ec889905af50efb5dcafe"
+      "sha256": "8b3699d97238222d6d08c9c60d86a7e4df9540ac04a7e144d6bf1173e1a27ae0"
     }
   },
   "indexnow_key_file": "b80ed8e15df862d5d662e85165191594.txt",
   "verification_file": "google13c0e85923628e64.html",
-  "changed_urls": []
+  "changed_urls": [
+    "https://beforeleaving.app/"
+  ]
 }

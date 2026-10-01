@@ -50,13 +50,14 @@ def app_url(campaign: str = 'website') -> str:
     return CONFIG['app_store_url'] + '?' + urlencode({'pt': str(token), 'ct': 'readykin-' + campaign, 'mt': '8'})
 
 
-def image(src: str, alt: str, *, eager: bool = False, css: str = '') -> str:
+def image(src: str, alt: str, *, eager: bool = False, css: str = '', hidden: bool = False) -> str:
     dim = IMAGES.get(src)
     if not dim:
         raise ValueError(f'Image dimensions missing from site-src/data/images.json: {src}')
     attrs = f' class="{e(css)}"' if css else ''
     priority = ' fetchpriority="high"' if eager else ''
-    return f'<img src="{e(src)}" alt="{e(alt)}" width="{dim["width"]}" height="{dim["height"]}" loading="{"eager" if eager else "lazy"}" decoding="async"{priority}{attrs}>'
+    accessibility = ' aria-hidden="true"' if hidden else ''
+    return f'<img src="{e(src)}" alt="{e(alt)}" width="{dim["width"]}" height="{dim["height"]}" loading="{"eager" if eager else "lazy"}" decoding="async"{priority}{accessibility}{attrs}>'
 
 
 def button(placement: str = 'hero', label: str = 'View ReadyKin on the App Store', campaign: str = 'website') -> str:
@@ -66,7 +67,7 @@ def button(placement: str = 'hero', label: str = 'View ReadyKin on the App Store
 def nav() -> str:
     return f'''<a class="skip-link" href="#main">Skip to content</a>
 <nav class="site-nav" id="siteNav" aria-label="Primary navigation"><div class="nav-inner">
-<a class="brand" href="/" aria-label="ReadyKin home">{image('/images/readykin/brand-icon-88.webp','',css='brand-icon')}<span>ReadyKin</span></a>
+<a class="brand" href="/" aria-label="ReadyKin home">{image('/images/readykin/brand-icon-88.webp','ReadyKin app icon',css='brand-icon',hidden=True)}<span>ReadyKin</span></a>
 <button class="menu-button" type="button" id="menuButton" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
 <div class="nav-links" id="navLinks"><a href="/features/">Features</a><a href="/guides/">Checklists</a><a href="/faq.html">Help &amp; FAQ</a><a href="/about/">About</a></div>
 <a class="app-store-button nav-cta" href="{e(app_url())}" data-cta="navigation">App Store <span aria-hidden="true">↗</span></a>
@@ -75,7 +76,7 @@ def nav() -> str:
 
 def footer() -> str:
     return f'''<footer class="site-footer"><div class="footer-inner">
-<div class="footer-brand-row"><a class="brand footer-brand" href="/">{image('/images/readykin/brand-icon-88.webp','',css='brand-icon')}<span>ReadyKin</span></a><p>Formerly Before Leaving. A little more ready for your day.</p></div>
+<div class="footer-brand-row"><a class="brand footer-brand" href="/">{image('/images/readykin/brand-icon-88.webp','ReadyKin app icon',css='brand-icon',hidden=True)}<span>ReadyKin</span></a><p>Formerly Before Leaving. A little more ready for your day.</p></div>
 <div class="footer-directory"><div><h2>Prepare</h2><a href="/packing-list-app/">Packing lists</a><a href="/ai-packing-list/">AI packing ideas</a><a href="/weather-packing-list/">Weather-aware suggestions</a><a href="/before-leaving-checklist/">Before-leaving checklists</a></div>
 <div><h2>Plan together</h2><a href="/family-packing-list/">Family packing</a><a href="/shared-travel-checklist/">Shared travel checklists</a><a href="/location-reminders/">Location reminders</a><a href="/apple-watch-reminders/">Apple Watch reminders</a></div>
 <div><h2>Explore</h2><a href="/guides/">Practical checklists</a><a href="/features/">All features</a><a href="/about/">About ReadyKin</a><a href="/press.html">Press kit</a></div>
