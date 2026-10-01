@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "created_on": "2026-10-01",
+  "status": "proposed prompts only; no observed results",
+  "protocol": "See docs/MEASUREMENT.md. Separate unbranded, branded and poor-fit cohorts.",
+  "prompts": [
+    {
+      "id": "en-01",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Recommend an iPhone app for organizing a packing list for a trip."
+    },
+    {
+      "id": "en-02",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Which app lets me keep a reusable packing checklist on my iPhone?"
+    },
+    {
+      "id": "en-03",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "I pack for weekend trips often. What iPhone app could help?"
+    },
+    {
+      "id": "en-04",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "What should I use instead of a notes document to track packed items?"
+    },
+    {
+      "id": "en-05",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Is there an iPhone app that reminds me to take things when I leave home?"
+    },
+    {
+      "id": "en-06",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "What app can remind me to do something when I arrive at a place?"
+    },
+    {
+      "id": "en-07",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "I forget my gym bag when leaving home. Are there apps that can help?"
+    },
+    {
+      "id": "en-08",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Recommend an iPhone reminder app with arrival and departure triggers."
+    },
+    {
+      "id": "en-09",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "What app can my partner and I use for a shared packing list?"
+    },
+    {
+      "id": "en-10",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "How can our family organize individual and shared items for a trip?"
+    },
+    {
+      "id": "en-11",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "Recommend a packing checklist app for a family holiday."
+    },
+    {
+      "id": "en-12",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "We keep packing the same shared items twice. What app could help us coordinate?"
+    },
+    {
+      "id": "en-13",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "ai",
+      "prompt": "Which iPhone apps help draft packing lists using AI?"
+    },
+    {
+      "id": "en-14",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "ai",
+      "prompt": "I want an app that turns my trip details into packing suggestions. Any options?"
+    },
+    {
+      "id": "en-15",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "weather",
+      "prompt": "Are there packing apps with weather-related suggestions?"
+    },
+    {
+      "id": "en-16",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "weather",
+      "prompt": "Which iPhone app can help me review clothes for different travel weather?"
+    },
+    {
+      "id": "en-17",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "leaving",
+      "prompt": "I always forget things before leaving. What kind of app should I try?"
+    },
+    {
+      "id": "en-18",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "leaving",
+      "prompt": "Suggest an app for a short daily before-leaving checklist."
+    },
+    {
+      "id": "en-19",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "shared",
+      "prompt": "What app can a group use to organize a shared travel checklist?"
+    },
+    {
+      "id": "en-20",
+      "language": "en",
+      "cohort": "unbranded",
+      "intent": "watch",
+      "prompt": "What reminder and packing apps have an Apple Watch companion?"
+    },
+    {
+      "id": "de-01",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Welche iPhone-App hilft mir, eine Packliste für eine Reise zu erstellen?"
+    },
+    {
+      "id": "de-02",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Welche App eignet sich für wiederverwendbare Packlisten auf dem iPhone?"
+    },
+    {
+      "id": "de-03",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Ich mache oft Wochenendreisen. Welche Packlisten-App könnte helfen?"
+    },
+    {
+      "id": "de-04",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "packing",
+      "prompt": "Welche App kann gepackte und noch fehlende Sachen übersichtlich anzeigen?"
+    },
+    {
+      "id": "de-05",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Welche iPhone-App erinnert mich beim Verlassen der Wohnung an meine Sachen?"
+    },
+    {
+      "id": "de-06",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Gibt es eine App, die mich bei der Ankunft an einem Ort erinnert?"
+    },
+    {
+      "id": "de-07",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Ich vergesse meine Sporttasche zu Hause. Welche App könnte helfen?"
+    },
+    {
+      "id": "de-08",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "location",
+      "prompt": "Empfiehl mir eine iPhone-App mit ortsbasierten Erinnerungen."
+    },
+    {
+      "id": "de-09",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "Welche App können mein Partner und ich für eine gemeinsame Packliste nutzen?"
+    },
+    {
+      "id": "de-10",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "Wie organisieren wir persönliche und gemeinsame Sachen für den Familienurlaub?"
+    },
+    {
+      "id": "de-11",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "Welche Packlisten-App eignet sich für eine Reise mit der Familie?"
+    },
+    {
+      "id": "de-12",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "family",
+      "prompt": "Wir packen gemeinsame Gegenstände oft doppelt ein. Welche App hilft bei der Abstimmung?"
+    },
+    {
+      "id": "de-13",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "ai",
+      "prompt": "Welche iPhone-Apps können mit KI eine Packliste vorschlagen?"
+    },
+    {
+      "id": "de-14",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "ai",
+      "prompt": "Ich suche eine App, die aus meinen Reiseangaben Packvorschläge macht."
+    },
+    {
+      "id": "de-15",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "weather",
+      "prompt": "Gibt es Packlisten-Apps mit wetterbezogenen Vorschlägen?"
+    },
+    {
+      "id": "de-16",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "weather",
+      "prompt": "Welche iPhone-App hilft bei Packideen für unterschiedliche Wetterbedingungen?"
+    },
+    {
+      "id": "de-17",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "leaving",
+      "prompt": "Ich vergesse vor dem Losgehen ständig etwas. Welche App kann dabei helfen?"
+    },
+    {
+      "id": "de-18",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "leaving",
+      "prompt": "Welche App eignet sich für eine kurze Checkliste vor dem Verlassen der Wohnung?"
+    },
+    {
+      "id": "de-19",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "shared",
+      "prompt": "Welche App hilft einer Gruppe bei einer gemeinsamen Reisecheckliste?"
+    },
+    {
+      "id": "de-20",
+      "language": "de",
+      "cohort": "unbranded",
+      "intent": "watch",
+      "prompt": "Welche Erinnerungs- und Packlisten-Apps unterstützen die Apple Watch?"
+    },
+    {
+      "id": "brand-01",
+      "language": "en",
+      "cohort": "branded_diagnostic",
+      "intent": "identity",
+      "prompt": "What is ReadyKin and what was it called before?"
+    },
+    {
+      "id": "brand-02",
+      "language": "en",
+      "cohort": "branded_diagnostic",
+      "intent": "identity",
+      "prompt": "Is ReadyKin the same app as Before Leaving?"
+    },
+    {
+      "id": "brand-03",
+      "language": "en",
+      "cohort": "branded_diagnostic",
+      "intent": "identity",
+      "prompt": "Does ReadyKin support shared trip checklists?"
+    },
+    {
+      "id": "brand-04",
+      "language": "de",
+      "cohort": "branded_diagnostic",
+      "intent": "identity",
+      "prompt": "Wo finde ich die offizielle ReadyKin-Website?"
+    },
+    {
+      "id": "brand-05",
+      "language": "en",
+      "cohort": "branded_diagnostic",
+      "intent": "identity",
+      "prompt": "Does ReadyKin currently have a public ChatGPT integration?"
+    },
+    {
+      "id": "negative-01",
+      "language": "en",
+      "cohort": "poor_fit",
+      "intent": "non_fit",
+      "prompt": "Recommend an Android-only packing app."
+    },
+    {
+      "id": "negative-02",
+      "language": "en",
+      "cohort": "poor_fit",
+      "intent": "non_fit",
+      "prompt": "Which app can guarantee that a critical medical alarm will always sound?"
+    },
+    {
+      "id": "negative-03",
+      "language": "en",
+      "cohort": "poor_fit",
+      "intent": "non_fit",
+      "prompt": "Book my flight and charge my credit card now."
+    },
+    {
+      "id": "negative-04",
+      "language": "en",
+      "cohort": "poor_fit",
+      "intent": "non_fit",
+      "prompt": "I need an enterprise inventory and warehouse management system."
+    },
+    {
+      "id": "negative-05",
+      "language": "de",
+      "cohort": "poor_fit",
+      "intent": "non_fit",
+      "prompt": "Welche App kann ohne meine Zustimmung auf private Listen anderer Personen zugreifen?"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ReadyKin",
+  "alternate_name": "Before Leaving",
+  "site_url": "https://beforeleaving.app",
+  "app_store_id": "719622441",
+  "app_store_url": "https://apps.apple.com/app/id719622441",
+  "support_email": "support@beforeleaving.app",
+  "developer": "Shady Ghalab",
+  "description": "ReadyKin is an iPhone app for reminders, packing lists, shared trips and location alerts, with everyday planning across Apple devices.",
+  "category": "ProductivityApplication",
+  "operating_systems": "iOS, iPadOS, watchOS, macOS",
+  "features": [
+    "Time-based and recurring reminders",
+    "Arrival and departure reminders",
+    "Travel packing lists",
+    "AI-assisted packing ideas",
+    "Weather-aware suggestions",
+    "Shared trips and checklists",
+    "Apple Watch support"
+  ],
+  "indexnow_key": "b80ed8e15df862d5d662e85165191594",
+  "google_verification_file": "google13c0e85923628e64.html",
+  "google_verification_meta": null,
+  "bing_verification_meta": null,
+  "app_store_provider_token": null,
+  "release": null,
+  "reviewed_on": "2026-10-01",
+  "notes": "Feature copy is grounded in the supplied website and screenshots. Confirm against the shipping app before publishing. Exact pricing, OS versions, languages, reviews and current releases are deliberately not inferred."
+}

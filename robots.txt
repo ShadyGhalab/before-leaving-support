@@ -1,0 +1,24 @@
+# Public search access. No ranking or recommendation is guaranteed.
+# The GPTBot training policy is unchanged from the previously unrestricted site.
+# Invitation and 404 pages use noindex; do not block their crawl here.
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /site-src/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/
+Disallow: /reports/
+Disallow: /.github/
+Disallow: /dist/
+
+User-agent: *
+Allow: /
+Disallow: /site-src/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/
+Disallow: /reports/
+Disallow: /.github/
+Disallow: /dist/
+
+Sitemap: https://beforeleaving.app/sitemap.xml

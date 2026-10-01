@@ -1,0 +1,98 @@
+name: Build, validate and optionally publish ReadyKin
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: readykin-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      content_date: ${{ steps.build_date.outputs.value }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record content-change date
+        id: build_date
+        run: echo "value=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+      - name: Build static pages
+        env:
+          CONTENT_DATE: ${{ steps.build_date.outputs.value }}
+        run: python scripts/build-site.py --date "$CONTENT_DATE"
+      - name: Stage only public files
+        run: python scripts/stage-site.py
+      - name: Validate the website
+        run: python scripts/validate-site.py
+      - name: Check Python syntax
+        run: python -m compileall -q scripts tests
+      - name: Install optional browser test dependencies
+        run: |
+          python -m pip install -r tests/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Browser and HTTP smoke tests
+        run: |
+          python scripts/serve.py > /tmp/readykin-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          python - <<'PY'
+          import time, urllib.request
+          for attempt in range(40):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/', timeout=2).close()
+                  break
+              except OSError:
+                  time.sleep(0.25)
+          else:
+              raise SystemExit('Preview server failed to start')
+          PY
+          python scripts/check-live.py
+          python tests/browser-smoke.py --full
+      - name: Configure Pages (explicit owner opt-in)
+        if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+        uses: actions/configure-pages@v5
+      - name: Upload public artifact
+        if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recreate the exact expected deployment files
+        env:
+          CONTENT_DATE: ${{ needs.build.outputs.content_date }}
+        run: python scripts/build-site.py --date "$CONTENT_DATE"
+      - name: Check public deployment
+        run: python scripts/check-live.py --production
+      - name: Notify IndexNow (separate owner opt-in)
+        if: ${{ vars.ENABLE_INDEXNOW == 'true' }}
+        run: python scripts/indexnow.py --submit

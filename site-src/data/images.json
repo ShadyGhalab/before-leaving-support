@@ -1,0 +1,310 @@
+{
+  "/images/items.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/plant-tracker.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/locations.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/travel.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/time-picker.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/bills.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/home-hub.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/groups.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/shopping.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/settings.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/app-icon-large.png": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/hero-home.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/app-icon.png": {
+    "width": 192,
+    "height": 192
+  },
+  "/images/notes.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/pet-care.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/hero-groups.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/home-screen.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/group-detail.png": {
+    "width": 400,
+    "height": 869
+  },
+  "/images/health-fitness.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/hero-hub.png": {
+    "width": 552,
+    "height": 1200
+  },
+  "/images/readykin/story-reminders.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/story-pet.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/ipad-travel.webp": {
+    "width": 1050,
+    "height": 1400
+  },
+  "/images/readykin/brand-icon-180.webp": {
+    "width": 180,
+    "height": 180
+  },
+  "/images/readykin/story-travel.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/brand-icon.png": {
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/readykin/ipad-ecosystem.webp": {
+    "width": 1050,
+    "height": 1400
+  },
+  "/images/readykin/hero-assistant.webp": {
+    "width": 840,
+    "height": 1829
+  },
+  "/images/readykin/story-groups.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/story-errands.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/story-plant.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/brand-icon-88.webp": {
+    "width": 88,
+    "height": 88
+  },
+  "/images/readykin/brand-icon-220.webp": {
+    "width": 220,
+    "height": 220
+  },
+  "/images/readykin/hero-reminders.webp": {
+    "width": 840,
+    "height": 1746
+  },
+  "/images/readykin/story-location.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/story-ecosystem.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/story-assistant.webp": {
+    "width": 760,
+    "height": 1651
+  },
+  "/images/readykin/ipad-assistant.webp": {
+    "width": 1050,
+    "height": 1400
+  },
+  "/images/ipad/ipad-locations.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/ipad/ipad-safety.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/ipad/ipad-time.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/ipad/ipad-travel.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-bills.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-items.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/ipad/ipad-group-detail.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/ipad/ipad-plants.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-shopping.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-home.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-groups.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-hub.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-pets.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-health.png": {
+    "width": 900,
+    "height": 1200
+  },
+  "/images/ipad/ipad-settings.png": {
+    "width": 1024,
+    "height": 1365
+  },
+  "/images/watch/watch-debug.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/watch/watch-reminder.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/watch/watch-today.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/watch/watch-stats.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/watch/watch-actions.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/watch/watch-routines.png": {
+    "width": 396,
+    "height": 484
+  },
+  "/images/marketing/iphone/11_errands.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/07_pet_care.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/09_groups.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/08_plant_care.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/01_departure.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/02_assistant.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/03_location.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/06_ecosystem.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/iphone/04_travel.webp": {
+    "width": 1320,
+    "height": 2868
+  },
+  "/images/marketing/ipad/11_errands.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/07_pet_care.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/09_groups.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/08_plant_care.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/01_departure.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/02_assistant.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/03_location.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/06_ecosystem.webp": {
+    "width": 2064,
+    "height": 2752
+  },
+  "/images/marketing/ipad/04_travel.webp": {
+    "width": 2064,
+    "height": 2752
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": 1753,
+  "html_pages": 22,
+  "indexable_pages": 20,
+  "errors": [],
+  "warnings": [],
+  "scope": "Local static checks only; does not assert indexing, rich-result eligibility, ranking, production availability, legal compliance or app feature verification."
+}

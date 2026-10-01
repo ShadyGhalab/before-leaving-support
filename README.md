@@ -1,49 +1,77 @@
-# ReadyKin - Support Website
+# ReadyKin website: search, discovery and conversion
 
-Support and documentation website for the **ReadyKin** iOS app.
+ReadyKin, formerly Before Leaving. Production origin: **https://beforeleaving.app**.
 
-🔗 **Live Site:** [https://beforeleaving.app](https://beforeleaving.app) (custom domain)
+**Start with [START_HERE.md](START_HERE.md).** This package contains editable source, generated website files, tests and an opt-in GitHub Pages deployment workflow. It has not been deployed or submitted to a search engine.
 
-**Official URLs** (OAuth, App Store, legal): see **[OFFICIAL_LINKS.md](./OFFICIAL_LINKS.md)** — homepage, privacy, terms, FAQ, press, changelog.
+## Preview and validate
 
-## Pages
-
-- **Home** - App overview and features
-- **FAQ** - Frequently asked questions
-- **Privacy Policy** - How we handle your data
-- **Terms of Service** - Usage terms
-
-## Marketing assets
-
-The homepage uses the English iPhone and iPad marketing renders and the current App Store icon from the iOS app repository. After regenerating screenshots or changing the app icon, refresh the website copies with:
+Python **3.10 or newer**; no npm, Python package installation, paid service, database or API key is needed to build the website.
 
 ```bash
-./scripts/sync-marketing-screenshots.sh
+python3 scripts/build-site.py
+python3 scripts/stage-site.py
+python3 scripts/validate-site.py
+python3 scripts/serve.py
 ```
 
-The script reads screenshots from `../Before-Leaving/Screenshots/Rendered/default` and the icon from the iOS asset catalog by default. It validates all nine required scenes, writes full-resolution WebP screenshots to `images/marketing`, and regenerates the 1024 px press icon, 180 px website and Apple touch icons, and PNG/ICO favicons. Pass a different rendered screenshot root as the first argument or set `APP_ICON_SOURCE` when the repositories are stored elsewhere.
+Open `http://127.0.0.1:8765`. Stop with Control-C. Use the server, not a file:// URL: the site deliberately uses root-relative URLs and genuine 404 routing for existing app invitations.
 
-## Google Search Console (site verification)
+## Edit here, then rebuild
 
-The file `google13c0e85923628e64.html` is served at:
+| Change | Editable source |
+|---|---|
+| Name, App Store URL, support contact, verified release, optional verification tokens | `site-src/data/site.json` |
+| Eight detailed feature landing pages | `site-src/data/landing-pages.json` |
+| Support questions | `site-src/data/faqs.json` |
+| Two practical browser checklists | `site-src/data/guides.json` |
+| Existing homepage layout and product story | `site-src/templates/home.html` |
+| Shared navigation, metadata, structured data and page layouts | `scripts/build-site.py` |
+| Responsive discovery page styles | `discovery.css` |
+| Progressive navigation | `readykin.js` |
+| Checklists and local, non-transmitting attribution event | `discovery.js` |
+| Legal policy bodies | `site-src/legal/` — owner review required before editing |
 
-`https://beforeleaving.app/google13c0e85923628e64.html`
+Generated HTML is included for convenient inspection. Edit the source files, not the generated output. The next build overwrites generated pages. `page-history.json` is generated state: commit it to preserve genuine sitemap change dates.
 
-It uses Jekyll front matter (`layout: null`, `permalink`) so GitHub Pages keeps the exact URL (not “pretty” permalinks).
+## Public output
 
-**If verification fails:** Your Desktop file was only a one-line DNS-style string, not the real HTML. In Search Console → **HTML file** → **Download** again, open the file, copy the **`content="..."`** value from the `<meta name="google-site-verification"` tag, and paste it into `google13c0e85923628e64.html` replacing the current `content="google13c0e85923628e64"` value. Push, then click **VERIFY**.
+22 generated HTML pages: 20 indexable pages plus a noindex invitation page and 404 page. `scripts/stage-site.py` creates `dist/` using an explicit public-file allowlist, including the Apple association file and app-ads.txt. Only publish **dist/**. Do not upload the whole source repository to a generic static host.
 
-## Contact
+## Documentation
 
-For support inquiries: [support@beforeleaving.app](mailto:support@beforeleaving.app)
+- [Deployment, owner review and account setup](START_HERE.md)
+- [Implementation report](docs/IMPLEMENTATION_REPORT.md)
+- [Feature verification checklist](docs/CONTENT_REVIEW.md)
+- [Search Console verification](SEARCH_CONSOLE_VERIFICATION.md)
+- [SEO, genuine App Store ASO and outreach](docs/SEO_ASO_PLAYBOOK.md)
+- [Measuring referrals and recommendation visibility](docs/MEASUREMENT.md)
+- [Separate ChatGPT integration plan](docs/CHATGPT_INTEGRATION_PLAN.md)
+- [Primary technical sources](docs/SOURCES.md)
+- [Official public links](OFFICIAL_LINKS.md)
 
----
+## Optional checks
 
-© 2013-2026 Shady Ghalab. All rights reserved.
+```bash
+# Read-only HTTP checks: local by default; use --production only after deployment.
+python3 scripts/check-live.py
 
+# Review notification payload; does not contact any search engine.
+python3 scripts/indexnow.py
 
+# Optional browser test dependencies; not required to build or publish.
+python3 -m pip install -r tests/requirements.txt
+python3 -m playwright install chromium
+# Keep the preview server running in another terminal:
+python3 tests/browser-smoke.py --full
+```
 
+The browser report included with this delivery identifies the exact local rendering mode and limitations. This is not a Lighthouse result, a Safari certification or proof of indexing.
 
+## Existing app integrations
 
+Keep `.well-known/apple-app-site-association`, `app-ads.txt`, `CNAME`, the legacy `beforeleaving://` scheme, `/join/*` and `/travel/join/*`. Renaming the product does not mean renaming its bundle identifier or invitation scheme. Their protected file hashes are tested.
 
+The original `scripts/sync-marketing-screenshots.sh` is retained. It imports assets from a sibling iOS repository. Re-review the affected images and regenerate intrinsic image dimensions when importing replacements. No fonts are bundled; the supplied social card is a rendered JPEG using owned screenshots and artwork.
 
+Support: support@beforeleaving.app

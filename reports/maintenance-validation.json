@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "checks": 18,
+  "results": [
+    {
+      "name": "privacy original policy body unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terms original policy body unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unchanged build preserves page dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unchanged build preserves sitemap bytes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "visibility-report.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "serve.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "generate-social.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stage-site.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "indexnow.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "check-live.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validate-site.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "build-site.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sync-app-store.py Python 3.10 syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Workflow YAML parses and opt-in deploy guard exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Workflow stages only dist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source/deploy package has no font files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Brand name candidate <= 30",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Subtitle candidate <= 30",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

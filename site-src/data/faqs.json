@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Is ReadyKin the same app as Before Leaving?",
+    "answer": "Yes. ReadyKin is the current name of Before Leaving. The official website still uses beforeleaving.app, and the App Store app ID is 719622441.",
+    "category": "Getting started"
+  },
+  {
+    "question": "What is ReadyKin used for?",
+    "answer": "ReadyKin helps organize reminders, travel packing lists, shared trips, location alerts and everyday care routines. Start with one task or trip and add the details that are useful to you.",
+    "category": "Getting started"
+  },
+  {
+    "question": "How do I create a useful first reminder?",
+    "answer": "Create a reminder in the app, give it a clear action, add any items you need and choose the appropriate time or location trigger. Review the details before saving. Screen labels can differ between versions.",
+    "category": "Getting started"
+  },
+  {
+    "question": "Can I use recurring reminders?",
+    "answer": "ReadyKin supports recurring reminders for routines as well as one-time reminders. Check the recurrence options available when you create or edit the reminder.",
+    "category": "Reminders"
+  },
+  {
+    "question": "Can a reminder trigger when I arrive or leave?",
+    "answer": "Yes. ReadyKin supports arrival and departure reminders at a selected place. They depend on the relevant device permissions, settings and location detection.",
+    "category": "Reminders"
+  },
+  {
+    "question": "What should I use for something I must remember before departure?",
+    "answer": "Set a time-based reminder early enough to act, and use a short final checklist. A location departure event should not be assumed to trigger before you leave the building.",
+    "category": "Reminders"
+  },
+  {
+    "question": "What should I check if a notification does not appear?",
+    "answer": "Review the reminder’s time or trigger, notification permission, and Focus settings on your device. For location reminders, also check the selected place and requested location permissions. Contact support if the problem continues.",
+    "category": "Reminders"
+  },
+  {
+    "question": "Can I make a packing list for a trip?",
+    "answer": "Yes. ReadyKin includes trip planning and packing lists. Add the things you need, review suggestions where available and check items off while you prepare.",
+    "category": "Trips and sharing"
+  },
+  {
+    "question": "Can I prepare a trip with my partner or family?",
+    "answer": "Yes. ReadyKin supports shared trips, groups and checklists. Invite the people who need to participate and agree responsibilities for the shared items.",
+    "category": "Trips and sharing"
+  },
+  {
+    "question": "What happens when I open an invitation link?",
+    "answer": "An invitation link is intended to open the relevant trip or group invitation in ReadyKin. Install the app if needed, then review the invitation before joining. Ask the sender for a new link if the invitation is incomplete.",
+    "category": "Trips and sharing"
+  },
+  {
+    "question": "Does ReadyKin include AI-assisted packing ideas?",
+    "answer": "Yes. The in-app assistant can help with packing ideas and preparation. Review and edit suggestions, because AI output can be incomplete or incorrect. Availability depends on your device, language and version.",
+    "category": "Suggestions"
+  },
+  {
+    "question": "Does the website have a live ChatGPT integration?",
+    "answer": "No public ChatGPT integration is advertised here. ReadyKin’s in-app AI assistant is separate from any future integration with ChatGPT.",
+    "category": "Suggestions"
+  },
+  {
+    "question": "How should I use weather-aware suggestions?",
+    "answer": "Use them as a starting point and check the forecast for the location and dates that matter to you. Review the packing list yourself when conditions or plans change.",
+    "category": "Suggestions"
+  },
+  {
+    "question": "Which Apple devices does ReadyKin support?",
+    "answer": "ReadyKin supports iPhone, iPad, Apple Watch and Mac. Check the current App Store compatibility section for supported devices and operating system requirements.",
+    "category": "Compatibility"
+  },
+  {
+    "question": "Why are exact operating system versions not listed here?",
+    "answer": "Requirements can change with a release. The App Store listing gives the compatibility information for the version currently available, so it is more useful than a stale version number on a support page.",
+    "category": "Compatibility"
+  },
+  {
+    "question": "Which languages are available?",
+    "answer": "ReadyKin is localized into multiple languages. Check the Languages section of the current App Store listing for the complete supported list. Availability of individual features may vary.",
+    "category": "Compatibility"
+  },
+  {
+    "question": "Are all features free?",
+    "answer": "Do not assume that every feature is included without payment. Check the current App Store listing and the purchase options shown inside ReadyKin for pricing and included features in your region.",
+    "category": "Purchases and data"
+  },
+  {
+    "question": "Will reinstalling the app preserve all of my data?",
+    "answer": "Do not assume that it will. Review your backup and synchronization settings before deleting the app, and contact support when you are unsure. Local data may be lost when an app is removed.",
+    "category": "Purchases and data"
+  },
+  {
+    "question": "Where can I learn about privacy or request deletion?",
+    "answer": "Read the privacy policy for information about data handling and deletion options. For questions or a deletion request, contact support@beforeleaving.app.",
+    "category": "Purchases and data"
+  },
+  {
+    "question": "How do I report a problem or request a feature?",
+    "answer": "Email support@beforeleaving.app. For a problem, include your device model, operating system version, ReadyKin version and the steps that led to it. Remove private information from any screenshots.",
+    "category": "Support"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "slug": "weekend-trip-packing-checklist",
+    "title": "Weekend Trip Packing Checklist | ReadyKin Guide",
+    "h1": "A weekend packing checklist you can actually finish.",
+    "description": "Use a practical weekend-trip packing checklist for documents, clothes, toiletries and last-minute items. Check it on this page, copy it or print it.",
+    "intro": "Start with what your plans require, not everything you own. This example is designed for a short trip and is deliberately small. Adapt it to your activities, luggage and personal needs. It is a planning template, not travel advice or a complete list for every traveler.",
+    "sections": [
+      [
+        "Documents and trip details",
+        [
+          "The travel documents required for your own journey",
+          "Booking details and the address you need on arrival",
+          "A way to pay and the essential contact details"
+        ]
+      ],
+      [
+        "Clothing and daily essentials",
+        [
+          "Outfits for the days and activities you have planned",
+          "Underwear, socks and sleepwear",
+          "Comfortable shoes and a useful extra layer",
+          "The toiletries and other daily-use essentials you personally need"
+        ]
+      ],
+      [
+        "Electronics and shared items",
+        [
+          "Phone and charger",
+          "An adapter if your destination requires one",
+          "The shared items you agreed to bring"
+        ]
+      ],
+      [
+        "The last-minute check",
+        [
+          "Items that were charging or still in use",
+          "A quick review of the forecast and your packing choices",
+          "Keys, bag and the documents you need to reach your destination"
+        ]
+      ]
+    ],
+    "paragraphs": [
+      [
+        "Reduce duplicates before adding extras",
+        "Review the list once you have gathered the main items. Can the same layer work for two activities? Has someone else agreed to bring the shared adapter? Remove duplicates you do not need, but keep the essentials that are specific to your own trip."
+      ],
+      [
+        "Give late items their own reminder",
+        "A checklist is easy to finish too early when the phone is still charging or an item is still in use. Keep those items unchecked and give yourself a time-based reminder before departure. The final check should confirm what is actually with you, not simply what you planned to pack."
+      ]
+    ],
+    "related": [
+      "packing-list-app",
+      "family-packing-list",
+      "weather-packing-list"
+    ]
+  },
+  {
+    "slug": "leaving-home-checklist",
+    "title": "Leaving Home Checklist: A Simple Final Check | ReadyKin",
+    "h1": "A calmer final check before you leave home.",
+    "description": "Try a short leaving-home checklist for keys, phone, your bag and last-minute tasks. Use the browser checklist, copy it or print your own version.",
+    "intro": "A final check works best when it is short and specific. Use this example to make sure the things you need are actually with you. Replace anything that does not fit your day. This checklist is an organizational aid, not a guarantee of home safety or a substitute for your own judgment.",
+    "sections": [
+      [
+        "What needs to come with you?",
+        [
+          "Keys and the access card you need",
+          "Phone, wallet or other payment essentials",
+          "Your bag and the documents for today",
+          "The charger or other item that was still in use"
+        ]
+      ],
+      [
+        "What is different today?",
+        [
+          "Something needed for work, school, sport or an appointment",
+          "An item kept elsewhere, such as lunch in the fridge",
+          "Any item you agreed to bring for somebody else"
+        ]
+      ],
+      [
+        "What needs attention before you go?",
+        [
+          "A final review of your plans and timing",
+          "Confirmation of any care task you agreed to handle",
+          "A check that the last-minute items are really in your bag"
+        ]
+      ]
+    ],
+    "paragraphs": [
+      [
+        "Prepare earlier, check later",
+        "Do most preparation before the final few minutes. Put useful items together and give unfinished tasks an earlier reminder. Keep the departure checklist for the things that are easy to miss at the last moment."
+      ],
+      [
+        "Use a reminder before the moment you need it",
+        "Set a timed reminder with enough time to respond. Do not assume that a location departure alert will appear while you are still inside. For important tasks, check directly rather than relying on any one notification."
+      ]
+    ],
+    "related": [
+      "before-leaving-checklist",
+      "location-reminders",
+      "shared-travel-checklist"
+    ]
+  }
+]

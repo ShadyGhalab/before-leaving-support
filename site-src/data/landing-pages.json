@@ -1,0 +1,634 @@
+[
+  {
+    "slug": "packing-list-app",
+    "title": "Packing List App for iPhone & Shared Trips | ReadyKin",
+    "h1": "A packing list app for everything you meant to bring.",
+    "description": "Organize trip essentials with ReadyKin for iPhone. Build a packing list, check off what is ready and keep shared travel plans together before you leave.",
+    "lede": "Organize trip essentials with ReadyKin for iPhone. Build a packing list, check off what is ready and keep shared travel plans together before you leave.",
+    "image": "/images/readykin/story-travel.webp",
+    "alt": "ReadyKin trip screen with a categorized packing list and packing progress",
+    "intro": "ReadyKin is a packing list app for iPhone that brings trip preparation, reminders and shared planning together. Instead of keeping a list in one place and remembering last-minute tasks somewhere else, you can organize the trip and the things you need around it. ReadyKin was previously called Before Leaving.",
+    "steps": [
+      [
+        "Start with your trip",
+        "Create your trip in ReadyKin and add the details you already know. Think about how long you will be away, what you plan to do and who is coming."
+      ],
+      [
+        "Build a practical list",
+        "Add essentials, use packing suggestions where available and edit the result. Include the items you actually use rather than accepting every possible suggestion."
+      ],
+      [
+        "Check what is ready",
+        "Mark items as packed as you prepare. Give last-minute items, such as a charger or passport, a separate reminder so they are not lost in the rest of the list."
+      ]
+    ],
+    "sections": [
+      [
+        "A packing list and a reminder solve different problems",
+        [
+          "A packing list tells you what belongs in the bag. A reminder tells you when to deal with something that is not ready yet. You may pack clothes the night before, but still need your charging phone until you leave.",
+          "Use the trip list for the complete picture and a timed reminder for the final tasks. For anything that must happen before departure, choose a time that leaves enough room to act."
+        ]
+      ],
+      [
+        "Start small, then make it yours",
+        [
+          "A useful first list can be as simple as documents, clothing, toiletries, electronics and the things needed for your activities. Remove items you do not need and add the details that make the trip different from your last one.",
+          "For a shared trip, decide who is responsible for common items. One person can bring the adapter while another brings the shared charger. The goal is less duplication, not a longer list."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: a two-night city break",
+      "text": "Start with this short list, then adapt it to your plans. This is an example, not a generated forecast or an exhaustive travel checklist.",
+      "items": [
+        "Travel documents and booking details",
+        "Outfits for your plans and comfortable shoes",
+        "Toiletries you use every day",
+        "Phone, charger and the right adapter",
+        "A layer or rain protection after checking the forecast",
+        "A reminder for the items you use until departure"
+      ]
+    },
+    "limitations": [
+      "Packing suggestions are a starting point. Review the list for your own needs and travel requirements.",
+      "Feature availability and paid options can vary. Check the current App Store listing and the app before choosing a plan."
+    ],
+    "faqs": [
+      {
+        "question": "Can I use ReadyKin as an iPhone packing list app?",
+        "answer": "Yes. ReadyKin includes trip planning and packing lists so you can organize essentials and check items off as you prepare."
+      },
+      {
+        "question": "Can I combine a packing list with reminders?",
+        "answer": "Yes. Use the packing list for what needs to come with you and reminders for tasks or items that need attention at a particular time or place."
+      },
+      {
+        "question": "Can other people help with trip preparation?",
+        "answer": "ReadyKin supports shared trips and checklists. Invite the people you are traveling with and agree who is responsible for shared items."
+      },
+      {
+        "question": "Is Before Leaving the same app as ReadyKin?",
+        "answer": "Yes. Before Leaving is the former name of ReadyKin. The App Store app ID remains 719622441."
+      }
+    ],
+    "related": [
+      "ai-packing-list",
+      "family-packing-list",
+      "shared-travel-checklist"
+    ],
+    "kicker": "Trip preparation"
+  },
+  {
+    "slug": "location-reminders",
+    "title": "Location-Based Reminders for iPhone | ReadyKin",
+    "h1": "The right reminder. At the right place.",
+    "description": "Create arrival and departure reminders in ReadyKin for iPhone. Connect a task to a place and learn when a timed reminder is the better choice.",
+    "lede": "Create arrival and departure reminders in ReadyKin for iPhone. Connect a task to a place and learn when a timed reminder is the better choice.",
+    "image": "/images/readykin/story-location.webp",
+    "alt": "ReadyKin location reminder showing time, departure and arrival choices",
+    "intro": "ReadyKin supports location-based reminders for arriving at or leaving a chosen place. Use them for tasks connected to home, work or another location. Keep a timed reminder as well when something must be done before you cross the location boundary.",
+    "steps": [
+      [
+        "Choose the place",
+        "Create a reminder and choose the location relevant to the task. Check the selected place carefully, especially when several locations have similar names."
+      ],
+      [
+        "Choose arrival or departure",
+        "Use arrival for something you can do after reaching a place. Use departure for a task associated with leaving. Add a clear action, such as “Pick up the parcel”."
+      ],
+      [
+        "Check permissions and try it",
+        "Allow the location and notification permissions requested by the app for your setup. Test the reminder on an ordinary trip before depending on it for an important task."
+      ]
+    ],
+    "sections": [
+      [
+        "Arrival, departure or a specific time?",
+        [
+          "An arrival reminder can be useful for asking a question when you get to work or dealing with an errand at a destination. A departure reminder is useful when the task is connected with moving on from a place.",
+          "A passport, keys or a packed lunch should usually be checked before you leave. Set a time-based reminder early enough to act and use a before-leaving checklist for the final check. A location event should not be treated as a guaranteed warning before you walk out."
+        ]
+      ],
+      [
+        "Write the action, not just the object",
+        [
+          "“Put the charger in my bag” is easier to act on than “Charger”. Add the detail you will need when the alert appears so you do not have to remember why you made it.",
+          "For a repeat routine, review the place, schedule and notification settings after making changes. If an alert is not behaving as expected, note what happened and send the details to support rather than repeatedly relying on the same setup."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: the workday handover",
+      "text": "These are ways to think about reminder timing, not promises about exact alert delivery.",
+      "items": [
+        "Before leaving: put your laptop and access card in your bag",
+        "At a chosen time: check the train or meeting details",
+        "On arrival: ask about the parcel at reception",
+        "On departure: start the next part of your after-work routine"
+      ]
+    },
+    "limitations": [
+      "Location reminders depend on device settings, permissions and location detection. They are not guaranteed to trigger at an exact instant.",
+      "Use a time-based reminder in advance for essential before-departure checks. Do not rely on this app as a safety-critical alarm."
+    ],
+    "faqs": [
+      {
+        "question": "Can ReadyKin remind me when I arrive somewhere?",
+        "answer": "Yes. You can create a reminder associated with arrival at a chosen location, with the appropriate permissions and settings enabled."
+      },
+      {
+        "question": "Can ReadyKin remind me when I leave home?",
+        "answer": "ReadyKin supports departure reminders. For items that must already be in your bag before leaving, also set a timed reminder in advance."
+      },
+      {
+        "question": "Why might a location reminder not appear when I expect it?",
+        "answer": "Check the selected place, trigger and permissions, along with notification and Focus settings. Location detection and alert timing can vary. Contact support with your device and app details if the issue continues."
+      },
+      {
+        "question": "Does this replace an alarm for important tasks?",
+        "answer": "No. Treat location reminders as an organizational aid, not a guaranteed or safety-critical alarm."
+      }
+    ],
+    "related": [
+      "before-leaving-checklist",
+      "packing-list-app",
+      "apple-watch-reminders"
+    ],
+    "kicker": "Reminders by place"
+  },
+  {
+    "slug": "family-packing-list",
+    "title": "Family Packing List App for iPhone | ReadyKin",
+    "h1": "Pack for the family. Not just your own suitcase.",
+    "description": "Use ReadyKin to prepare a family packing list, separate personal essentials from shared items and coordinate the last few tasks before a family trip.",
+    "lede": "Use ReadyKin to prepare a family packing list, separate personal essentials from shared items and coordinate the last few tasks before a family trip.",
+    "image": "/images/readykin/story-groups.webp",
+    "alt": "ReadyKin family group with shared reminders, members and progress",
+    "intro": "A family packing list needs to answer two questions: what does each person need, and who is bringing the things everyone shares? ReadyKin combines packing lists, shared trips and reminders so the preparation is easier to discuss and follow.",
+    "steps": [
+      [
+        "Separate personal and shared items",
+        "Start with each traveler’s essentials, then identify common items such as chargers, toiletries or a travel game. Make it clear when something is needed once for the group."
+      ],
+      [
+        "Agree who is doing what",
+        "Share the trip or checklist and assign responsibility for common essentials. Decide who will check each child’s things rather than assuming someone else has done it."
+      ],
+      [
+        "Review the last-minute tasks",
+        "Check progress together before departure. Add reminders for things that cannot be packed early, such as a comfort item still in use or a phone that is charging."
+      ]
+    ],
+    "sections": [
+      [
+        "Think in people, not only categories",
+        [
+          "A list organized only as “clothes, electronics, toiletries” can hide the important question of whose items are missing. In your item names, use clear descriptions such as “Child’s rain layer” or “Shared charging cable”.",
+          "Give each person a manageable part of the preparation. Shared visibility is useful, but an adult should still check essential items and age-appropriate responsibilities."
+        ]
+      ],
+      [
+        "Give shared items one owner",
+        [
+          "When an item belongs to everybody, it can end up belonging to nobody. Agree who is bringing it and how the group will know it is packed. This is particularly useful when family members prepare in different rooms or at different times.",
+          "ReadyKin also supports everyday care planning. Keep trip preparation separate from the tasks that need to happen at home while you are away, and make those responsibilities explicit."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: one shared family travel bag",
+      "text": "Adapt the names and responsibilities to your family. This example does not imply a special per-child account or packing algorithm.",
+      "items": [
+        "One named person checks travel documents",
+        "Each traveler’s clothing and daily-use essentials",
+        "Shared cables and adapters, with an agreed owner",
+        "Comfort items and activities for the journey",
+        "A final reminder for anything still in use at home",
+        "A separate plan for pet or plant care while away"
+      ]
+    },
+    "limitations": [
+      "Shared preparation still needs human agreement about responsibilities. Marking an item complete is not proof that it is in the bag.",
+      "Check the sharing options, account requirements and purchase options available in your version of ReadyKin."
+    ],
+    "faqs": [
+      {
+        "question": "Can I share family trip preparation with my partner?",
+        "answer": "Yes. ReadyKin supports shared trips, groups and checklists so you can coordinate preparation and see progress."
+      },
+      {
+        "question": "Can I make it clear which items belong to each traveler?",
+        "answer": "Use clear item names and organize the list around your family’s needs. The important distinction is between personal essentials and things the group only needs once."
+      },
+      {
+        "question": "Is a separate device required for every child?",
+        "answer": "You can prepare and check a family list together on one device. Use sharing when another person needs to participate from their own supported device."
+      },
+      {
+        "question": "Can I use this for everyday family preparation too?",
+        "answer": "Yes. The same approach works for school bags, sports equipment and other routines: name the item, agree who is responsible and review what remains."
+      }
+    ],
+    "related": [
+      "shared-travel-checklist",
+      "packing-list-app",
+      "before-leaving-checklist"
+    ],
+    "kicker": "Prepare together"
+  },
+  {
+    "slug": "ai-packing-list",
+    "title": "AI Packing List & Trip Planning for iPhone | ReadyKin",
+    "h1": "A clearer packing plan starts with a simple request.",
+    "description": "Turn trip ideas into an editable packing plan with ReadyKin’s AI assistant. Describe your trip, review the suggestions and keep the items that fit.",
+    "lede": "Turn trip ideas into an editable packing plan with ReadyKin’s AI assistant. Describe your trip, review the suggestions and keep the items that fit.",
+    "image": "/images/readykin/story-assistant.webp",
+    "alt": "ReadyKin AI assistant suggesting passport, rain jacket, adapter and power bank for a trip",
+    "intro": "ReadyKin includes an in-app AI assistant for packing ideas and preparation. Describe the trip in ordinary language, review the suggestions and shape the result into a list you can actually use. The assistant is a starting point, not a substitute for checking important details.",
+    "steps": [
+      [
+        "Describe the useful details",
+        "Say where you are going, how long you will be away and what you plan to do. Add constraints such as limited bag space or access to laundry when they matter."
+      ],
+      [
+        "Review the suggestions",
+        "Remove irrelevant items and add anything personal that the assistant cannot know. Check quantities, duplicates and the things you already plan to wear."
+      ],
+      [
+        "Keep the plan editable",
+        "Bring the useful items into your preparation workflow in ReadyKin and continue editing as the trip takes shape. Make a separate reminder for anything that needs attention later."
+      ]
+    ],
+    "sections": [
+      [
+        "Specific context makes a more useful starting point",
+        [
+          "“Packing ideas for a three-night city break with a small bag” gives a clearer task than “What should I pack?” Activities also matter: a work meeting, a day outdoors and an evening event can call for different items.",
+          "You do not need to put sensitive personal information into a packing prompt. Describe the practical needs of the trip and add private details to your own plan only when necessary."
+        ]
+      ],
+      [
+        "Review before you rely on the list",
+        [
+          "Look for missing personal essentials, unnecessary duplicates and assumptions that do not fit the trip. A short list you understand is more useful than an impressive-looking list that has not been checked.",
+          "The assistant should not be your authority for entry requirements, airline rules or other important travel conditions. Check the relevant official information separately and use ReadyKin to organize the actions that follow."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Try a focused packing prompt",
+      "text": "Example wording to adapt inside ReadyKin:",
+      "items": [
+        "“Help me plan what to pack for a three-night city break.”",
+        "“I am taking one small bag and can reuse outfits.”",
+        "“Include comfortable walking clothes and a charger.”",
+        "“Keep the list short; I will review and add my personal essentials.”"
+      ]
+    },
+    "limitations": [
+      "AI suggestions can be incomplete or inaccurate. Review the result before making decisions.",
+      "AI features and availability depend on your device, language and app version. See the app and privacy policy for current details.",
+      "This describes ReadyKin’s in-app assistant, not a published ChatGPT integration."
+    ],
+    "faqs": [
+      {
+        "question": "Does ReadyKin have an AI packing assistant?",
+        "answer": "Yes. ReadyKin’s in-app assistant can help with packing ideas and practical trip preparation. Review and edit its suggestions before using them."
+      },
+      {
+        "question": "What should I include in a packing request?",
+        "answer": "Include the destination, length of stay, planned activities and any important packing constraints. Avoid unnecessary sensitive information."
+      },
+      {
+        "question": "Will the assistant know every item I personally need?",
+        "answer": "No. Add your own essentials and check the final list. AI-generated suggestions can miss important details or include irrelevant items."
+      },
+      {
+        "question": "Is the in-app assistant the same as a ChatGPT plugin?",
+        "answer": "No. This page describes the assistant inside ReadyKin. It does not advertise a public ChatGPT plugin or an automatic connection to your ReadyKin account."
+      }
+    ],
+    "related": [
+      "packing-list-app",
+      "weather-packing-list",
+      "family-packing-list"
+    ],
+    "kicker": "AI-assisted preparation"
+  },
+  {
+    "slug": "weather-packing-list",
+    "title": "Weather-Aware Packing & Reminder Ideas | ReadyKin",
+    "h1": "Make room for the weather. Not every possibility.",
+    "description": "Use weather-aware suggestions in ReadyKin as a starting point for packing. Review the forecast, choose useful extras and leave unnecessary items behind.",
+    "lede": "Use weather-aware suggestions in ReadyKin as a starting point for packing. Review the forecast, choose useful extras and leave unnecessary items behind.",
+    "image": "/images/readykin/story-travel.webp",
+    "alt": "ReadyKin travel plan with destination information and a packing list",
+    "intro": "ReadyKin includes weather-aware suggestions to help you think about useful items. Combine those ideas with your own forecast check, planned activities and packing list. Weather information is context for preparation, not a promise about the conditions you will experience.",
+    "steps": [
+      [
+        "Check the right place and dates",
+        "Review the forecast for the places and dates that matter to your trip. Do not assume a forecast for your current location describes your destination."
+      ],
+      [
+        "Turn conditions into a few useful items",
+        "Think about a rain layer, sun protection, a warm layer or other items that match the conditions and what you plan to do. Avoid adding every possible weather item."
+      ],
+      [
+        "Review near departure",
+        "Look again before you leave and update your packing list. Give yourself a reminder if there are items you need to collect or pack at the last moment."
+      ]
+    ],
+    "sections": [
+      [
+        "Use the forecast as a packing input",
+        [
+          "A forecast is most useful when connected to the day you expect to have. Rain matters differently on a mostly indoor city visit than on a day spent outside. A warm afternoon does not tell you everything about an early start or late return.",
+          "Keep the basic list stable and adjust only the small number of items affected by the conditions. This makes it easier to see what changed and why."
+        ]
+      ],
+      [
+        "Do not confuse a suggestion with a guarantee",
+        [
+          "Weather can change, and forecast availability depends on the information available to the app. Review the forecast details you are using rather than relying only on a suggested item.",
+          "For your destination, confirm the actual location and dates yourself. This page does not promise continuous destination monitoring, a specific forecast provider or automatic changes to an existing packing list."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: adjust a simple city-break list",
+      "text": "These are illustrative packing considerations, not a live forecast.",
+      "items": [
+        "Possible rain: consider a compact rain layer",
+        "A cooler evening: consider one additional layer",
+        "Sunny outdoor plans: review sun-protection needs",
+        "A long walking day: check footwear and what you will carry",
+        "Before departure: review the forecast once more"
+      ]
+    },
+    "limitations": [
+      "Forecasts and suggestions can change and may be unavailable without connectivity or the relevant permissions.",
+      "This is general packing organization, not a live weather service or a safety assessment for outdoor activities."
+    ],
+    "faqs": [
+      {
+        "question": "Can ReadyKin use weather as a reminder or packing cue?",
+        "answer": "ReadyKin includes weather-aware suggestions. Use them as one input and review the forecast and your plans yourself."
+      },
+      {
+        "question": "Does this page show the live weather for my trip?",
+        "answer": "No. The examples are not a live forecast. Check the relevant location and dates in a current weather source."
+      },
+      {
+        "question": "Will my existing packing list automatically change whenever the forecast changes?",
+        "answer": "Do not assume that it will. Review and edit your packing list yourself when your plans or the forecast change."
+      },
+      {
+        "question": "Should I pack every suggested weather item?",
+        "answer": "No. Keep only the items that fit your activities, luggage and the conditions you are preparing for."
+      }
+    ],
+    "related": [
+      "packing-list-app",
+      "ai-packing-list",
+      "before-leaving-checklist"
+    ],
+    "kicker": "Weather-aware preparation"
+  },
+  {
+    "slug": "before-leaving-checklist",
+    "title": "Before-Leaving Checklist & Reminder App | ReadyKin",
+    "h1": "Leave with what you need. And a little less doubt.",
+    "description": "Build a before-leaving checklist with ReadyKin. Organize everyday essentials, set reminders in advance and make the last few minutes less rushed.",
+    "lede": "Build a before-leaving checklist with ReadyKin. Organize everyday essentials, set reminders in advance and make the last few minutes less rushed.",
+    "image": "/images/readykin/story-reminders.webp",
+    "alt": "ReadyKin reminder timeline with a passport reminder and a trip packing list",
+    "intro": "ReadyKin, formerly Before Leaving, helps you prepare for the moment you head out. Keep a short checklist of what belongs with you and use reminders for tasks that need to happen beforehand. Start with one routine you repeat often, such as leaving for work or the gym.",
+    "steps": [
+      [
+        "Pick one departure routine",
+        "Choose a situation you want to make easier. A workday, a gym visit and a weekend trip each need a different short list."
+      ],
+      [
+        "Write a small, actionable checklist",
+        "Name the things you can physically check: keys in hand, charger in bag or the right documents ready. Leave out items that never need checking."
+      ],
+      [
+        "Give yourself time to act",
+        "Set a reminder before the expected departure time. Check the essentials while you still have time to find or finish something."
+      ]
+    ],
+    "sections": [
+      [
+        "Separate packing from the final check",
+        [
+          "Prepare most things earlier, then use the final checklist for items that are easy to miss. Your phone may be charging, your lunch may still be in the fridge and the umbrella may be by a different door.",
+          "A final check works best when it is short enough to finish. If the list is getting long, move preparation tasks to an earlier reminder rather than making departure more complicated."
+        ]
+      ],
+      [
+        "Choose the reminder for the moment",
+        [
+          "A timed reminder can bring the routine to mind before you leave. A location reminder connects a task with arriving or departing, but may be too late for an item that must already be in your bag.",
+          "For essentials, combine a checklist with an advance time-based reminder. Review notification settings and try the routine on an ordinary day before relying on it for an important departure."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: the everyday five",
+      "text": "Use this as a small starting point and replace items that do not belong in your day.",
+      "items": [
+        "Keys and access card",
+        "Phone and anything that was charging",
+        "Wallet or the documents you need",
+        "Your bag and the items for today’s plans",
+        "Any last-minute item kept elsewhere at home"
+      ]
+    },
+    "limitations": [
+      "Checklists support preparation; they do not guarantee that every task is complete or every alert will arrive on time.",
+      "Do not use the app as the only safeguard for medical, security or other safety-critical tasks."
+    ],
+    "faqs": [
+      {
+        "question": "Is ReadyKin the app that used to be called Before Leaving?",
+        "answer": "Yes. ReadyKin is the current name of Before Leaving. The existing website domain and App Store app ID connect the two names."
+      },
+      {
+        "question": "Can I use it for everyday routines rather than travel?",
+        "answer": "Yes. Reminders and checklists can be used for work, gym visits, errands and other preparation routines."
+      },
+      {
+        "question": "Should I use a departure reminder for my passport or keys?",
+        "answer": "Use an advance time-based reminder and a final checklist for items you need before going out. A departure trigger should not be assumed to arrive before you cross the door."
+      },
+      {
+        "question": "Where can I find a simple checklist to try?",
+        "answer": "The leaving-home guide on this website includes a short, printable example you can adapt. The website checklist is separate from the ReadyKin app."
+      }
+    ],
+    "related": [
+      "location-reminders",
+      "packing-list-app",
+      "family-packing-list"
+    ],
+    "kicker": "Everyday preparation"
+  },
+  {
+    "slug": "shared-travel-checklist",
+    "title": "Shared Travel Checklists & Packing Lists | ReadyKin",
+    "h1": "One trip. A clearer view of who is ready.",
+    "description": "Coordinate a shared travel checklist in ReadyKin. Agree who brings common essentials, share trip preparation and keep track of what still needs doing.",
+    "lede": "Coordinate a shared travel checklist in ReadyKin. Agree who brings common essentials, share trip preparation and keep track of what still needs doing.",
+    "image": "/images/readykin/story-groups.webp",
+    "alt": "ReadyKin shared group showing members and checklist progress",
+    "intro": "ReadyKin supports shared trips and checklists for people preparing together. Use a shared plan to agree responsibilities, check progress and avoid keeping multiple versions of the same packing conversation. This is useful for a couple, family or group of friends.",
+    "steps": [
+      [
+        "Create the shared plan",
+        "Set up the trip or group in ReadyKin and invite the people who need to participate. Confirm that everyone is looking at the same plan."
+      ],
+      [
+        "Give common items a clear owner",
+        "Agree who will bring shared essentials and who will handle preparation tasks. Avoid vague items that nobody can confidently mark as done."
+      ],
+      [
+        "Use a final group review",
+        "Before departure, review outstanding tasks together. A progress indicator is helpful, but it is worth confirming important shared items directly."
+      ]
+    ],
+    "sections": [
+      [
+        "Share responsibility, not just another list",
+        [
+          "A shared list is useful when it removes uncertainty. “Someone bring the adapter” creates work for the whole group. “I will bring the shared adapter” gives everyone a clear answer.",
+          "Be specific about the meaning of completion. Does a checked item mean purchased, packed or handed over? Agree this once so everybody reads the same status in the same way."
+        ]
+      ],
+      [
+        "Keep private and shared preparation distinct",
+        [
+          "Share only the information the group needs to coordinate. A common charger belongs in the shared plan; personal information does not need to be included just because the trip is shared.",
+          "If someone is not participating in the app, agree how you will confirm their responsibilities outside it. Do not assume every traveler will see every update immediately."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: a weekend away with friends",
+      "text": "Agree the owners in your group and use the list to keep the handover clear.",
+      "items": [
+        "One person brings the shared charging adapter",
+        "One person checks the accommodation details",
+        "Each traveler checks their own documents",
+        "The group agrees what “packed” means for common items",
+        "Everyone reviews the remaining tasks before leaving"
+      ]
+    },
+    "limitations": [
+      "Sharing depends on the account, connectivity and feature options available in your app version. Updates may not be visible immediately on every device.",
+      "Review who you invite and avoid adding sensitive information that other group members do not need."
+    ],
+    "faqs": [
+      {
+        "question": "Can my partner and I share a packing list?",
+        "answer": "ReadyKin supports shared trips and checklists so you can coordinate the things you need to prepare together."
+      },
+      {
+        "question": "Can this work for a group of friends?",
+        "answer": "Yes. Use a shared trip or group and agree which people are responsible for the common items and tasks."
+      },
+      {
+        "question": "Should everything be shared with the group?",
+        "answer": "No. Share the details that help coordination and keep unnecessary personal information out of shared content."
+      },
+      {
+        "question": "Does checking an item guarantee someone has packed it?",
+        "answer": "No. A check mark records progress in the app. Agree what completion means and confirm important items with the responsible person."
+      }
+    ],
+    "related": [
+      "family-packing-list",
+      "packing-list-app",
+      "before-leaving-checklist"
+    ],
+    "kicker": "Shared planning"
+  },
+  {
+    "slug": "apple-watch-reminders",
+    "title": "Apple Watch Reminders & Checklists | ReadyKin",
+    "h1": "Keep the next little task close at hand.",
+    "description": "Use ReadyKin with Apple Watch to keep reminders close while preparing to leave. Review companion-device requirements and organize your plan on iPhone.",
+    "lede": "Use ReadyKin with Apple Watch to keep reminders close while preparing to leave. Review companion-device requirements and organize your plan on iPhone.",
+    "image": "/images/readykin/story-ecosystem.webp",
+    "alt": "ReadyKin across Apple devices with reminders and preparation tools",
+    "intro": "ReadyKin includes Apple Watch support alongside its iPhone and iPad experience. Use the watch as a convenient companion for reminders while keeping your larger planning tasks on the device that suits them. Check the current App Store listing for supported devices and system requirements.",
+    "steps": [
+      [
+        "Set up the app on your devices",
+        "Install the current compatible version of ReadyKin and make sure the companion experience is available on your watch. Check the App Store rather than relying on an old requirements list."
+      ],
+      [
+        "Prepare the plan on iPhone",
+        "Create the reminder or checklist with clear, short item names. Do the detailed trip planning and editing where you have enough room to review everything."
+      ],
+      [
+        "Check the watch experience",
+        "Open ReadyKin on the watch and check which reminders and actions are available. Test notifications and companion behavior before relying on them for an important task."
+      ]
+    ],
+    "sections": [
+      [
+        "Make the reminder easy to understand at a glance",
+        [
+          "A watch is most useful when the next action is short and specific. “Pack the charger” is clearer than a long note about all the electronics you might need. Keep extra explanation in the plan you prepare on iPhone.",
+          "For a larger trip, finish the main packing work first. Let the watch support the remaining small actions rather than expecting it to replace every planning screen."
+        ]
+      ],
+      [
+        "Compatibility is a current-version question",
+        [
+          "Device requirements can change as the app develops. Check the App Store compatibility section for the version available to you, and review the watch companion settings on your own devices.",
+          "If the watch does not show what you expect, make a note of your iPhone model, watch model, operating system versions and ReadyKin version. Those details make it easier for support to investigate."
+        ]
+      ]
+    ],
+    "example": {
+      "title": "Example: the final few minutes",
+      "text": "Prepare these short reminders on your phone, then check the companion experience available to you.",
+      "items": [
+        "Put the charging cable in the bag",
+        "Bring the access card",
+        "Check the last few packing items",
+        "Review the remaining task before leaving"
+      ]
+    },
+    "limitations": [
+      "Apple Watch is a companion experience. This page does not promise every iPhone feature works independently on the watch.",
+      "Compatibility, notification delivery and synchronization depend on your devices and settings. Verify them before relying on an important reminder."
+    ],
+    "faqs": [
+      {
+        "question": "Does ReadyKin support Apple Watch?",
+        "answer": "Yes. ReadyKin includes Apple Watch support. Check the current App Store listing for compatibility and the companion options available in your version."
+      },
+      {
+        "question": "Is every iPhone feature available on Apple Watch?",
+        "answer": "Do not assume full feature parity. Use iPhone or iPad for detailed planning and check the actions supported by the watch app."
+      },
+      {
+        "question": "Where can I check the minimum system version?",
+        "answer": "The App Store compatibility section is the place to check the requirements of the current release."
+      },
+      {
+        "question": "What should I send support about a watch issue?",
+        "answer": "Include your iPhone and Apple Watch models, their operating system versions, your ReadyKin version and a description of what you expected and what happened."
+      }
+    ],
+    "related": [
+      "before-leaving-checklist",
+      "location-reminders",
+      "packing-list-app"
+    ],
+    "kicker": "Across Apple devices"
+  }
+]

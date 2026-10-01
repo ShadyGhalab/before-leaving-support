@@ -1,65 +1,18 @@
-# GitHub Pages Configuration for ReadyKin Support Site
-# =========================================================
-
-# Site Settings
-title: ReadyKin - Support
-description: >-
-  Never forget anything when leaving home, work, or any location.
-  Smart reminders with weather awareness, gamification, and Apple Watch support.
+# Legacy compatibility only. The supported build is scripts/build-site.py + stage-site.py.
+# .nojekyll means these exclusions are NOT a security boundary. Publish only dist/.
+title: ReadyKin
 url: "https://beforeleaving.app"
 baseurl: ""
-
-# Author
-author:
-  name: Shady Ghalab
-  email: support@beforeleaving.app
-
-# Build Settings
-markdown: kramdown
-highlighter: rouge
-
-# Theme (optional - we're using custom CSS)
-# theme: minima
-
-# Exclude from build
+include:
+  - .well-known
 exclude:
+  - site-src
+  - scripts
+  - tests
+  - docs
+  - reports
+  - dist
   - README.md
+  - START_HERE.md
   - OFFICIAL_LINKS.md
   - SEARCH_CONSOLE_VERIFICATION.md
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
-# Include specific files
-include:
-  - _pages
-  - .well-known
-
-# Plugins (GitHub Pages supported)
-plugins:
-  - jekyll-seo-tag
-
-# SEO Settings
-twitter:
-  card: summary
-
-# Social links (optional)
-social:
-  name: ReadyKin
-  links:
-    - https://apps.apple.com/app/before-leaving/id719622441
-
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-# Permalink structure
-permalink: pretty
-

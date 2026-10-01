@@ -1,34 +1,39 @@
-# Google Search Console — HTML file verification
+# Search Console and Bing verification
 
-Per Google’s guide: **[Verify your site ownership → HTML file upload](https://support.google.com/webmasters/answer/9008080#html_verification&zippy=%2Chtml-file-upload)**
+Verification proves ownership in your account. A website file by itself does not show that an account has completed verification.
 
-## Why verification failed
+## Google: choose one actual method
 
-> **Your verification file has the wrong content**  
-> The verification file that Search Console provides must be used **exactly as provided**, without modifying the **file name** or **content** of the file.
+**Domain property:** enter `beforeleaving.app` in Search Console, use the TXT record Google gives you and add it at your DNS provider. This cannot be accomplished by adding an HTML meta tag. Existing domain verification can remain in place.
 
-We previously set `content="google13c0e85923628e64"` because that matched the **file name**. Google’s real token inside the downloaded file is **different** and is unique to your account.
+**URL-prefix / HTML file:** use the property for `https://beforeleaving.app/`, choose HTML file and download the actual file from your account. Google-file verification uses content such as:
 
-## Fix (do this once)
+```text
+google-site-verification: google13c0e85923628e64.html
+```
 
-1. Open [Google Search Console](https://search.google.com/search-console) → your property (`https://beforeleaving.app/`).
-2. Go to **Settings** → **Ownership verification** (or add property → **HTML file**).
-3. Click **Download** next to the HTML verification file.
-4. Open the downloaded file in a text editor (TextEdit, VS Code, etc.).  
-   You will see the real HTML, for example:
-   ```html
-   <meta name="google-site-verification" content="AbCdEfGhIj...actual_token..." />
-   ```
-5. **Replace the file in this repo** with Google’s file:
-   - If the downloaded name is `google13c0e85923628e64.html`, **overwrite** `google13c0e85923628e64.html` with the **entire** contents of the download (byte-for-byte).  
-   - If Google gives a **different** file name (e.g. `google1234567890.html`), add that file to the repo root with **that exact name** and the **exact** contents from the download. You can remove the old wrong file if the name changed.
-6. **Do not** edit the file after download (no extra spaces, no changing the `content` value).
-7. Commit, push, wait for the site to deploy (~1–2 minutes).
-8. In a private window, open:  
-   `https://beforeleaving.app/<exact-filename-from-google>.html`  
-   → **View Page Source** and confirm the meta tag matches the download.
-9. In Search Console, click **VERIFY**.
+The package corrects the format of the filename already present in your repository. Confirm the exact downloaded filename and content in your account. When different, change `google_verification_file` in `site-src/data/site.json`, build and deploy the matching file. Remove an obsolete verification file only after checking whether another owner/account still depends on it.
 
-## Alternative: HTML tag method
+**URL-prefix / HTML meta tag:** copy the actual content token from the tag Google provides into `google_verification_meta` in `site.json`. The builder adds the meta tag to the public page head. An HTML-file name without its extension is not a substitute for that meta token.
 
-If file upload keeps failing, use **[HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification)** instead: copy the `<meta name="google-site-verification" content="..." />` Search Console gives you and paste it into the `<head>` of **`index.html`** on this site, then deploy and verify.
+After deployment, open the file URL or inspect View Source for the chosen meta tag, then click Verify in Search Console. Keep the verified method in place. Use URL Inspection to identify robots, canonical, response-code and indexing issues.
+
+## Bing
+
+Use Bing Webmaster Tools to add/import the actual site and complete its offered verification flow. For HTML-meta verification, put the real token in `bing_verification_meta`, rebuild and redeploy. Do not use the Google token for Bing.
+
+## Sitemap
+
+After ownership is verified, submit:
+
+```text
+https://beforeleaving.app/sitemap.xml
+```
+
+The sitemap includes only canonical indexable pages. Invitation URLs, 404, source, docs, reports and assets are excluded. Search engines can ignore submitted URLs; check indexing reports rather than treating submission as completion.
+
+## Important deployment detail
+
+This is a static `.nojekyll` site built by Python. Jekyll front matter is not needed in a verification file and can corrupt its expected content. `_config.yml` does not protect source directories when Jekyll is bypassed; the supplied staging workflow does.
+
+Official instructions: https://support.google.com/webmasters/answer/9008080 and https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b.

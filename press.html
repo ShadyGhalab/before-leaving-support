@@ -1,199 +1,99 @@
----
-layout: null
-permalink: /press.html
----
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ReadyKin Press Kit - Download app icon, screenshots, and media resources.">
-    <title>Press Kit - ReadyKin</title>
-    <link rel="canonical" href="https://beforeleaving.app/press.html">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        .press-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 60px; }
-        .press-card { background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; text-align: center; }
-        .press-card:hover { box-shadow: var(--shadow-lg); }
-        .press-icon { width: 120px; height: 120px; border-radius: 28px; margin: 0 auto 20px; box-shadow: var(--shadow-md); }
-        .press-card h3 { margin-bottom: 12px; }
-        .press-card p { color: var(--gray-500); margin-bottom: 20px; font-size: 0.95rem; }
-        .press-download { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: var(--primary); color: var(--white); border-radius: var(--radius-full); font-weight: 600; transition: all var(--transition-base); }
-        .press-download:hover { background: var(--primary-dark); transform: translateY(-2px); }
-        .screenshots-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px; }
-        .screenshot-thumb { background: var(--gray-100); border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 9/19.5; }
-        .screenshot-thumb img { width: 100%; height: 100%; object-fit: cover; }
-        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
-        .info-card { background: var(--gray-50); padding: 24px; border-radius: var(--radius-md); }
-        .info-card h4 { color: var(--gray-900); margin-bottom: 8px; }
-        .info-card p { color: var(--gray-600); font-size: 0.95rem; }
-        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } }
-    </style>
-</head>
-<body>
-    <nav class="navbar scrolled">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <img src="/images/app-icon.png" alt="ReadyKin" class="nav-icon">
-                <span class="logo-text">ReadyKin</span>
-            </a>
-            <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/#screenshots" class="nav-link">Screenshots</a>
-                <a href="/faq.html" class="nav-link">FAQ</a>
-                <a href="/press.html" class="nav-link active">Press</a>
-                <a href="/#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <header class="page-header">
-        <div class="container">
-            <h1>Press Kit</h1>
-            <p>Download media resources for ReadyKin. All assets are free to use for press and media coverage.</p>
-        </div>
-    </header>
-
-    <section class="legal-content">
-        <div class="container" style="max-width: 1000px;">
-            
-            <div class="section-header" style="margin-bottom: 40px;">
-                <h2>App Icon</h2>
-                <p class="section-subtitle">High-resolution app icon in various sizes.</p>
-            </div>
-            
-            <div class="press-grid">
-                <div class="press-card">
-                    <img src="/images/app-icon-large.png" alt="ReadyKin App Icon" class="press-icon">
-                    <h3>App Icon (1024x1024)</h3>
-                    <p>Full resolution app icon for print and high-DPI displays.</p>
-                    <a href="/images/app-icon-large.png" download="before-leaving-icon-1024.png" class="press-download">
-                        📥 Download PNG
-                    </a>
-                </div>
-                <div class="press-card">
-                    <img src="/images/app-icon.png" alt="ReadyKin App Icon" class="press-icon" style="width: 80px; height: 80px;">
-                    <h3>App Icon (180x180)</h3>
-                    <p>Web-optimized icon for websites and articles.</p>
-                    <a href="/images/app-icon.png" download="before-leaving-icon-180.png" class="press-download">
-                        📥 Download PNG
-                    </a>
-                </div>
-            </div>
-
-            <div class="section-header" style="margin-bottom: 40px;">
-                <h2>Screenshots</h2>
-                <p class="section-subtitle">iPhone 17 Pro Max screenshots showcasing key features.</p>
-            </div>
-            
-            <div class="screenshots-grid">
-                <div class="screenshot-thumb"><img src="/images/home-screen.png" alt="Reminders" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/groups.png" alt="Groups" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/pet-care.png" alt="Pet Care" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/plant-tracker.png" alt="Plant Tracker" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/travel.png" alt="Travel & Trips" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/health-fitness.png" alt="Health & Fitness" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/bills.png" alt="Bills & Subscriptions" loading="lazy"></div>
-                <div class="screenshot-thumb"><img src="/images/shopping.png" alt="Shopping" loading="lazy"></div>
-            </div>
-
-            <div class="section-header" style="margin-bottom: 40px;">
-                <h2>App Information</h2>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-card">
-                    <h4>App Name</h4>
-                    <p>ReadyKin</p>
-                </div>
-                <div class="info-card">
-                    <h4>Tagline</h4>
-                    <p>Never Forget!</p>
-                </div>
-                <div class="info-card">
-                    <h4>Category</h4>
-                    <p>Lifestyle / Productivity</p>
-                </div>
-                <div class="info-card">
-                    <h4>Price</h4>
-                    <p>Free (with In-App Purchases)</p>
-                </div>
-                <div class="info-card">
-                    <h4>Platforms</h4>
-                    <p>iOS 17+, iPadOS 17+, watchOS 10+, macOS (Catalyst), Widgets</p>
-                </div>
-                <div class="info-card">
-                    <h4>Languages</h4>
-                    <p>22 languages including English, German, Spanish, French, Italian, Japanese, Chinese, Korean, Portuguese, Arabic, Hindi, Russian, and more</p>
-                </div>
-                <div class="info-card">
-                    <h4>Developer</h4>
-                    <p>Shady Ghalab</p>
-                </div>
-                <div class="info-card">
-                    <h4>First Release</h4>
-                    <p>January 24, 2013</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 60px;">
-                <div class="section-header" style="margin-bottom: 40px;">
-                    <h2>About ReadyKin</h2>
-                </div>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    <strong>ReadyKin</strong> is your complete life organizer — a smart reminder app that helps you never forget anything when leaving home, work, gym, or any location. With weather-aware suggestions, family group sharing, gamification, and support for iPhone, iPad, Apple Watch, and Mac, it transforms staying organized into an enjoyable experience.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 16px;">
-                    Beyond reminders, ReadyKin now includes Family Groups, Pet Care, Plant Tracker, Travel & Trips, Health & Fitness tracking, Bills & Subscriptions management, shared Shopping Lists, and the Home Hub dashboard — making it the ultimate all-in-one companion for your daily life.
-                </p>
-            </div>
-
-            <div style="margin-top: 60px;">
-                <div class="section-header" style="margin-bottom: 40px;">
-                    <h2>Contact for Press Inquiries</h2>
-                </div>
-                <p>For interviews, reviews, or additional assets, please contact:</p>
-                <p style="margin-top: 16px;">
-                    <strong>Email:</strong> <a href="mailto:support@beforeleaving.app" style="color: var(--primary);">support@beforeleaving.app</a>
-                </p>
-                <p style="margin-top: 8px;">
-                    <strong>Instagram:</strong> <a href="https://www.instagram.com/before.leaving.app/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">@before.leaving.app</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom" style="border: none; padding-top: 0;">
-                <p>&copy; 2013-2026 Shady Ghalab. All rights reserved.</p>
-                <p class="footer-made">Made with ❤️ for iOS</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReadyKin Press Kit | App Facts, Icons &amp; Screenshots</title>
+<meta name="description" content="Download ReadyKin app artwork and screenshots for editorial coverage. Find official app facts, descriptions, the former Before Leaving name and press contact.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#2d1736">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="apple-itunes-app" content="app-id=719622441">
+<link rel="canonical" href="https://beforeleaving.app/press.html">
+<link rel="icon" type="image/png" href="/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ReadyKin">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://beforeleaving.app/press.html">
+<meta property="og:title" content="ReadyKin Press Kit | App Facts, Icons &amp; Screenshots">
+<meta property="og:description" content="Download ReadyKin app artwork and screenshots for editorial coverage. Find official app facts, descriptions, the former Before Leaving name and press contact.">
+<meta property="og:image" content="https://beforeleaving.app/images/social/readykin-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="ReadyKin, formerly Before Leaving — reminders, packing lists and shared trips">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ReadyKin Press Kit | App Facts, Icons &amp; Screenshots">
+<meta name="twitter:description" content="Download ReadyKin app artwork and screenshots for editorial coverage. Find official app facts, descriptions, the former Before Leaving name and press contact.">
+<meta name="twitter:image" content="https://beforeleaving.app/images/social/readykin-social.jpg">
+<meta name="twitter:image:alt" content="ReadyKin — reminders, packing lists and shared trips">
+<link rel="stylesheet" href="/readykin.css">
+<link rel="stylesheet" href="/discovery.css">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://beforeleaving.app/#website",
+      "name": "ReadyKin",
+      "alternateName": "Before Leaving",
+      "url": "https://beforeleaving.app/",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://beforeleaving.app/press.html#webpage",
+      "url": "https://beforeleaving.app/press.html",
+      "name": "ReadyKin Press Kit | App Facts, Icons \u0026 Screenshots",
+      "description": "Download ReadyKin app artwork and screenshots for editorial coverage. Find official app facts, descriptions, the former Before Leaving name and press contact.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://beforeleaving.app/#website"
+      },
+      "about": {
+        "@id": "https://beforeleaving.app/#app"
+      },
+      "breadcrumb": {
+        "@id": "https://beforeleaving.app/press.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://beforeleaving.app/press.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://beforeleaving.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Press kit",
+          "item": "https://beforeleaving.app/press.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<script src="/readykin.js" defer></script>
+<script src="/discovery.js" defer></script>
+</head><body data-page="/press.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" id="siteNav" aria-label="Primary navigation"><div class="nav-inner">
+<a class="brand" href="/" aria-label="ReadyKin home"><img src="/images/readykin/brand-icon-88.webp" alt="" width="88" height="88" loading="lazy" decoding="async" class="brand-icon"><span>ReadyKin</span></a>
+<button class="menu-button" type="button" id="menuButton" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
+<div class="nav-links" id="navLinks"><a href="/features/">Features</a><a href="/guides/">Checklists</a><a href="/faq.html">Help &amp; FAQ</a><a href="/about/">About</a></div>
+<a class="app-store-button nav-cta" href="https://apps.apple.com/app/id719622441" data-cta="navigation">App Store <span aria-hidden="true">↗</span></a>
+</div></nav>
+<main id="main"><header class="content-hero section-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Press kit</span></li></ol></nav><p class="section-kicker">For writers and reviewers</p><h1>Everything you need to introduce ReadyKin.</h1><p class="page-lede">App facts, a short description and downloadable artwork for editorial coverage. Please use ReadyKin as the current name and Before Leaving as its former name.</p></header><article class="section-shell prose-document wide-document"><dl class="facts"><div><dt>Current app name</dt><dd>ReadyKin</dd></div><div><dt>Former name</dt><dd>Before Leaving</dd></div><div><dt>Developer</dt><dd>Shady Ghalab</dd></div><div><dt>App Store ID</dt><dd>719622441</dd></div><div><dt>Official website</dt><dd>beforeleaving.app</dd></div><div><dt>Support</dt><dd><a href="mailto:support@beforeleaving.app">support@beforeleaving.app</a></dd></div></dl><section><h2>Descriptions you can use.</h2><h3>One sentence</h3><p>ReadyKin, formerly Before Leaving, is an iPhone app for reminders, packing lists, shared trips and location-based preparation.</p><h3>Short description</h3><p>ReadyKin helps people organize what to bring and what to do before everyday departures and trips. The app combines reminders, packing lists, shared planning and an in-app AI assistant, with support across Apple devices. It was previously called Before Leaving. Review current compatibility, purchase options and available features in the App Store.</p></section><section><h2>App icon</h2><div class="press-icon-row"><img src="/images/readykin/brand-icon-220.webp" alt="ReadyKin app icon" width="220" height="220" loading="lazy" decoding="async"><div><p>Use the supplied artwork without changing the app identity.</p><a href="/images/readykin/brand-icon.png" download>Download the 1024 × 1024 PNG app icon</a></div></div></section><section><h2>App screenshots</h2><p>These supplied screenshots illustrate the app experience. Screens and available options can change with releases.</p><div class="press-assets"><article class="press-asset"><img src="/images/readykin/story-reminders.webp" alt="ReadyKin reminders screenshot" width="760" height="1651" loading="lazy" decoding="async"><h3>Reminders</h3><a href="/images/readykin/story-reminders.webp" download>Download screenshot</a></article><article class="press-asset"><img src="/images/readykin/story-travel.webp" alt="ReadyKin packing lists screenshot" width="760" height="1651" loading="lazy" decoding="async"><h3>Packing lists</h3><a href="/images/readykin/story-travel.webp" download>Download screenshot</a></article><article class="press-asset"><img src="/images/readykin/story-groups.webp" alt="ReadyKin shared planning screenshot" width="760" height="1651" loading="lazy" decoding="async"><h3>Shared planning</h3><a href="/images/readykin/story-groups.webp" download>Download screenshot</a></article><article class="press-asset"><img src="/images/readykin/story-assistant.webp" alt="ReadyKin ai assistant screenshot" width="760" height="1651" loading="lazy" decoding="async"><h3>AI assistant</h3><a href="/images/readykin/story-assistant.webp" download>Download screenshot</a></article><article class="press-asset"><img src="/images/readykin/story-location.webp" alt="ReadyKin location reminders screenshot" width="760" height="1651" loading="lazy" decoding="async"><h3>Location reminders</h3><a href="/images/readykin/story-location.webp" download>Download screenshot</a></article><article class="press-asset"><img src="/images/readykin/ipad-ecosystem.webp" alt="ReadyKin apple devices screenshot" width="1050" height="1400" loading="lazy" decoding="async"><h3>Apple devices</h3><a href="/images/readykin/ipad-ecosystem.webp" download>Download screenshot</a></article></div></section><section><h2>Current product details</h2><p>Use the <a href="https://apps.apple.com/app/id719622441">App Store listing</a> for current pricing, compatibility, language availability and release notes. This kit does not claim awards, ratings, download counts or a published ChatGPT integration.</p><p>For an interview, review question or additional information, contact <a href="mailto:support@beforeleaving.app">support@beforeleaving.app</a>.</p></section></article><section class="section-shell ending-cta"><div class="cta-panel"><div><p class="section-kicker light">Make the next step easier</p><h2>A little more ready.</h2><p>Choose the reminders and lists that fit your day.</p></div><div><a class="app-store-button" href="https://apps.apple.com/app/id719622441" data-cta="closing">View ReadyKin on the App Store <span aria-hidden="true">↗</span></a><p class="cta-note">Pricing, purchases and compatibility are listed in the App Store.</p></div></div></section></main>
+<footer class="site-footer"><div class="footer-inner">
+<div class="footer-brand-row"><a class="brand footer-brand" href="/"><img src="/images/readykin/brand-icon-88.webp" alt="" width="88" height="88" loading="lazy" decoding="async" class="brand-icon"><span>ReadyKin</span></a><p>Formerly Before Leaving. A little more ready for your day.</p></div>
+<div class="footer-directory"><div><h2>Prepare</h2><a href="/packing-list-app/">Packing lists</a><a href="/ai-packing-list/">AI packing ideas</a><a href="/weather-packing-list/">Weather-aware suggestions</a><a href="/before-leaving-checklist/">Before-leaving checklists</a></div>
+<div><h2>Plan together</h2><a href="/family-packing-list/">Family packing</a><a href="/shared-travel-checklist/">Shared travel checklists</a><a href="/location-reminders/">Location reminders</a><a href="/apple-watch-reminders/">Apple Watch reminders</a></div>
+<div><h2>Explore</h2><a href="/guides/">Practical checklists</a><a href="/features/">All features</a><a href="/about/">About ReadyKin</a><a href="/press.html">Press kit</a></div>
+<div><h2>Support</h2><a href="/faq.html">Help &amp; FAQ</a><a href="/changelog.html">Release notes</a><a href="mailto:support@beforeleaving.app">Email support</a><a href="/site-map/">Site map</a></div></div>
+<div class="footer-links-row"><div class="footer-links"><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of service</a></div><p>© 2026 Shady Ghalab. All rights reserved.</p></div>
+</div></footer>
+</body></html>
