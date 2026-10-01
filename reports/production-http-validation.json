@@ -1,21 +1,10 @@
 {
-  "checked_at": "2026-10-01T10:38:22.993415+00:00",
+  "checked_at": "2026-10-01T11:35:34.277114+00:00",
   "base_url": "https://beforeleaving.app",
   "mode": "production",
-  "status": "failed",
+  "status": "passed",
   "checks": 105,
-  "failures": [
-    {
-      "check": ".well-known/apple-app-site-association preserved",
-      "passed": false,
-      "detail": ""
-    },
-    {
-      "check": "Apple association content type",
-      "passed": false,
-      "detail": "text/html; charset=utf-8"
-    }
-  ],
+  "failures": [],
   "results": [
     {
       "check": "/ status",
@@ -489,13 +478,13 @@
     },
     {
       "check": ".well-known/apple-app-site-association preserved",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "check": "Apple association content type",
-      "passed": false,
-      "detail": "text/html; charset=utf-8"
+      "passed": true,
+      "detail": "application/json"
     },
     {
       "check": "Apple association no redirect",
