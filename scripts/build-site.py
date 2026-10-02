@@ -69,7 +69,7 @@ def nav() -> str:
 <nav class="site-nav" id="siteNav" aria-label="Primary navigation"><div class="nav-inner">
 <a class="brand" href="/" aria-label="ReadyKin home">{image('/images/readykin/brand-icon-88.webp','ReadyKin app icon',css='brand-icon',hidden=True)}<span>ReadyKin</span></a>
 <button class="menu-button" type="button" id="menuButton" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
-<div class="nav-links" id="navLinks"><a href="/features/">Features</a><a href="/guides/">Checklists</a><a href="/faq.html">Help &amp; FAQ</a><a href="/about/">About</a></div>
+<div class="nav-links" id="navLinks"><a href="/features/">Features</a><a href="/guides/">Checklists</a><a href="/ai-assistants/">AI connections</a><a href="/faq.html">Help &amp; FAQ</a><a href="/about/">About</a></div>
 <a class="app-store-button nav-cta" href="{e(app_url())}" data-cta="navigation">App Store <span aria-hidden="true">↗</span></a>
 </div></nav>'''
 
@@ -80,7 +80,7 @@ def footer() -> str:
 <div class="footer-directory"><div><h2>Prepare</h2><a href="/packing-list-app/">Packing lists</a><a href="/ai-packing-list/">AI packing ideas</a><a href="/weather-packing-list/">Weather-aware suggestions</a><a href="/before-leaving-checklist/">Before-leaving checklists</a></div>
 <div><h2>Plan together</h2><a href="/family-packing-list/">Family packing</a><a href="/shared-travel-checklist/">Shared travel checklists</a><a href="/location-reminders/">Location reminders</a><a href="/apple-watch-reminders/">Apple Watch reminders</a></div>
 <div><h2>Explore</h2><a href="/guides/">Practical checklists</a><a href="/features/">All features</a><a href="/about/">About ReadyKin</a><a href="/press.html">Press kit</a></div>
-<div><h2>Support</h2><a href="/faq.html">Help &amp; FAQ</a><a href="/changelog.html">Release notes</a><a href="mailto:{e(CONFIG['support_email'])}">Email support</a><a href="/site-map/">Site map</a></div></div>
+<div><h2>Support</h2><a href="/ai-assistants/">Connect an AI assistant</a><a href="/faq.html">Help &amp; FAQ</a><a href="/changelog.html">Release notes</a><a href="mailto:{e(CONFIG['support_email'])}">Email support</a><a href="/site-map/">Site map</a></div></div>
 <div class="footer-links-row"><div class="footer-links"><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of service</a></div><p>© 2026 {e(CONFIG['developer'])}. All rights reserved.</p></div>
 </div></footer>'''
 
@@ -318,6 +318,64 @@ def build_utility_pages() -> None:
         INDEX[f'/{name}.html']={'file':f'{name}.html','title':'Invitation' if name=='join' else 'Page not found','indexable':False,'sha256':hashlib.sha256(text.encode()).hexdigest()}
 
 
+def build_ai_assistants() -> None:
+    path='/ai-assistants/'
+    title='Use ReadyKin with ChatGPT, Claude and AI coding agents'
+    description='Connect ReadyKin to ChatGPT, Claude, Cursor, Google Antigravity, Gemini CLI or OpenCode using its secure remote MCP server.'
+    breadcrumb,bcs=crumbs(path,'AI connections',('/faq.html','Help & FAQ'))
+    endpoint='https://mcp.beforeleaving.app/mcp'
+    clients=[
+        ('ChatGPT','message.circle.fill','In ChatGPT, open Settings → Apps & Connectors → Advanced settings → Developer mode. Add a custom connector named ReadyKin, paste the server URL, turn on Requires sign-in, and leave Client ID and Client secret blank.'),
+        ('Claude','sparkles','Open Customize → Connectors → Add → Custom → Web. Name it ReadyKin, paste the server URL, choose Sign in now, then use Claude’s published identity or automatic registration. No client secret is needed.'),
+        ('Claude Code','terminal.fill',f'Run <code>claude mcp add --transport http readykin {endpoint}</code>. In Claude Code, run <code>/mcp</code>, select ReadyKin and complete sign-in in your browser.'),
+        ('Cursor','cursorarrow.rays','Open Cursor Settings → Tools & MCP → New MCP Server. Add the JSON below to <code>~/.cursor/mcp.json</code>, return to MCP settings and choose Connect when ReadyKin asks you to sign in.'),
+        ('Google Antigravity','atom','Open the Agent panel menu → MCP Servers → Manage MCP Servers → View raw config. Add the JSON below to <code>~/.gemini/config/mcp_config.json</code>, then authenticate ReadyKin in Agent Settings → Customizations.'),
+        ('Gemini CLI','diamond.fill','Add the JSON below to <code>~/.gemini/settings.json</code>. Start Gemini CLI, run <code>/mcp auth readykin</code>, and finish the browser sign-in.'),
+        ('OpenCode','chevron.left.forwardslash.chevron.right','Run <code>opencode mcp add readykin --url https://mcp.beforeleaving.app/mcp</code>, then <code>opencode mcp auth readykin</code>. OpenCode discovers OAuth and registers automatically.'),
+    ]
+    cards=''.join(f'''<article class="ai-client-card"><div class="ai-client-mark" aria-hidden="true">{e(name[0])}</div><div><h3>{e(name)}</h3><p>{detail}</p></div></article>''' for name,_symbol,detail in clients)
+    configs=f'''<div class="ai-config-grid">
+<section class="ai-config"><h3>Cursor · <code>~/.cursor/mcp.json</code></h3><pre><code>{{
+  "mcpServers": {{
+    "readykin": {{
+      "url": "{endpoint}"
+    }}
+  }}
+}}</code></pre></section>
+<section class="ai-config"><h3>Google Antigravity · <code>mcp_config.json</code></h3><pre><code>{{
+  "mcpServers": {{
+    "readykin": {{
+      "serverUrl": "{endpoint}"
+    }}
+  }}
+}}</code></pre></section>
+<section class="ai-config"><h3>Gemini CLI · <code>~/.gemini/settings.json</code></h3><pre><code>{{
+  "mcpServers": {{
+    "readykin": {{
+      "httpUrl": "{endpoint}"
+    }}
+  }}
+}}</code></pre></section>
+<section class="ai-config"><h3>OpenCode · <code>opencode.jsonc</code></h3><pre><code>{{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {{
+    "servers": {{
+      "readykin": {{
+        "type": "remote",
+        "url": "{endpoint}"
+      }}
+    }}
+  }}
+}}</code></pre></section></div>'''
+    body=f'''<main id="main" class="ai-guide"><header class="content-hero section-shell">{breadcrumb}<p class="section-kicker">ReadyKin for your favorite AI</p><h1>Bring your plans into the conversation.</h1><p class="page-lede">Connect ReadyKin once, then ask a supported AI assistant to review trips, build packing lists and update packing progress—with your approval before changes are saved.</p><div class="ai-endpoint" aria-label="ReadyKin MCP server URL"><span>Remote MCP server</span><code>{endpoint}</code></div></header>
+<section class="section-shell ai-trust-strip" aria-labelledby="before-heading"><div><p class="section-kicker">Before you connect</p><h2 id="before-heading">Your ReadyKin account stays in control.</h2></div><ul><li>Sign in on ReadyKin’s own secure page.</li><li>Review requested permissions before connecting.</li><li>Changes use a prepare, review and apply flow.</li><li>Disconnect an assistant whenever you want.</li></ul></section>
+<section class="section-shell ai-client-section"><div class="section-heading"><p class="section-kicker">Choose your assistant</p><h2>Setup instructions</h2><p>Use the same server URL everywhere. Clients that support OAuth discovery register themselves automatically, so you do not need to create or paste a secret.</p></div><div class="ai-client-grid">{cards}</div></section>
+<section class="section-shell ai-config-section"><div class="section-heading"><p class="section-kicker">Configuration examples</p><h2>Copy the block for your client.</h2></div>{configs}</section>
+<section class="section-shell ai-usage"><div><p class="section-kicker">After connecting</p><h2>Just ask in chat.</h2><p>Enable ReadyKin in the chat’s tools or connectors menu, then describe the outcome you want. Your assistant can select the right ReadyKin tool.</p></div><div class="ai-prompt-list"><blockquote>“Show me my upcoming trips and what is still unpacked.”</blockquote><blockquote>“Prepare a beach packing list for my Mallorca trip.”</blockquote><blockquote>“Mark Passport and Charger as packed.”</blockquote></div></section>
+<section class="section-shell landing-faq"><h2>Connection help</h2><div class="faq-list"><details><summary>Do I need a client ID or secret?</summary><p>No. Leave those fields blank unless your client specifically requires them. ReadyKin supports secure automatic client registration for public MCP clients.</p></details><details><summary>How do I use ReadyKin in a chat?</summary><p>Turn on ReadyKin from the chat’s tools or connectors menu, then ask naturally. The assistant may request approval before calling a tool or saving a change.</p></details><details><summary>What if sign-in does not open?</summary><p>Confirm that the server address is exactly <code>{endpoint}</code>, reload the client’s MCP connections, and choose Authenticate or Connect again. Command-line clients need access to a local browser callback.</p></details><details><summary>Can I remove access later?</summary><p>Yes. Disconnect ReadyKin in the AI client and revoke the connection from ReadyKin’s connection-management page.</p></details></div></section></main>'''
+    save_page(path,title,description,body,breadcrumb=bcs)
+
+
 def build_site_map() -> None:
     path='/site-map/'
     header,bc=intro(path,'Find your way around ReadyKin.','A simple directory of the app’s feature guides, practical checklists, support information and official pages.','Site map',kicker='Explore the website')
@@ -381,7 +439,7 @@ def main() -> None:
     args=ap.parse_args();date.fromisoformat(args.date)
     if not BASE.startswith('https://') or urlsplit(BASE).path:
         raise ValueError('site_url must be an HTTPS origin, without a path')
-    build_home();build_landing_pages();build_hubs();build_guides();build_faq();build_about_press();build_changelog_legal();build_utility_pages();build_site_map();build_crawler_files(args.date)
+    build_home();build_landing_pages();build_hubs();build_guides();build_faq();build_about_press();build_changelog_legal();build_utility_pages();build_ai_assistants();build_site_map();build_crawler_files(args.date)
 
 if __name__ == '__main__':
     main()

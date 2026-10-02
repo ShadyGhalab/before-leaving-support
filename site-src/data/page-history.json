@@ -1,79 +1,79 @@
 {
   "/": {
-    "sha256": "ae9070efc40ee27aa3b12d8d535610c8a941d42f0567461c764a821509997e0a",
-    "lastmod": "2026-10-01"
+    "sha256": "e1d255b02b442f9b5f6e04be4e0f34e48b9b04a141b6fea1b23741ac89fbb82e",
+    "lastmod": "2026-10-03"
   },
   "/packing-list-app/": {
-    "sha256": "e18a07deebf6f311d0e6cf6d8aed5b635cfd1b6b471576a436de6b1c2b524058",
-    "lastmod": "2026-10-01"
+    "sha256": "0624eb8d7f23c89afa0c29eb9f831e7caf1983b9b437ccd3ab4ad0004937243d",
+    "lastmod": "2026-10-03"
   },
   "/location-reminders/": {
-    "sha256": "50455a19d3158de92b628a0f41480eb526d9844d40425bd51340de82db7f1da5",
-    "lastmod": "2026-10-01"
+    "sha256": "bcbb7eb765bd4c8cd5e29f25854500478df2124af25dfd273db86ad7ac2dd39a",
+    "lastmod": "2026-10-03"
   },
   "/family-packing-list/": {
-    "sha256": "04057c028727315c59ad6f2ed160797439bc404bd1da37990b566bc8d861bb10",
-    "lastmod": "2026-10-01"
+    "sha256": "8131133bb496e57be1cd9b4408be4cfb4244e8b71c821fa0c7b9193693b2db54",
+    "lastmod": "2026-10-03"
   },
   "/ai-packing-list/": {
-    "sha256": "be9c3a83827a4b232230cd47cf7e316a51a959790fb896a42e45e7a005cae119",
-    "lastmod": "2026-10-01"
+    "sha256": "4fd5c5a6b3563059d280589ab0c51ef4ea21bbb6ee36d7bc477160dcd13d38f6",
+    "lastmod": "2026-10-03"
   },
   "/weather-packing-list/": {
-    "sha256": "5ff544cdf66089467181e1f45a7e1ad044a406f616e7e7622f4aab501f609bbf",
-    "lastmod": "2026-10-01"
+    "sha256": "9191b0dc717bff08162c172c9a6cd974d59841921df0269d7b3381fe3ff3466f",
+    "lastmod": "2026-10-03"
   },
   "/before-leaving-checklist/": {
-    "sha256": "085a64cfdbba263c0355b17c574c3ef75d79667005d5cca16a17b052d0206df0",
-    "lastmod": "2026-10-01"
+    "sha256": "be9bd33a7f30b51f3d4cf0758be619bfd74ecd2907e421deff6d3d76da87a047",
+    "lastmod": "2026-10-03"
   },
   "/shared-travel-checklist/": {
-    "sha256": "a2267dd563d5eb3435d0bfe9786d57fa28fb619f87f897fe6ae86d9b264cddd5",
-    "lastmod": "2026-10-01"
+    "sha256": "04d09c0f53d8ff4bb61f4e157afd8ad2788560ff1ab39d0de9ddb3561e6bb9b0",
+    "lastmod": "2026-10-03"
   },
   "/apple-watch-reminders/": {
-    "sha256": "0441f531ce418bfecb12191463830574ee66c755326fcff5c2e14277fc57475b",
-    "lastmod": "2026-10-01"
+    "sha256": "a3eb1708ddfdfa060ce83a5c84ecad4562aca6270ed80384e0c6eb2c4ef2cdc9",
+    "lastmod": "2026-10-03"
   },
   "/features/": {
-    "sha256": "b930f68187a922c3d5140513bc6b52087298cf3023936563ba2cf5a09e6034fd",
-    "lastmod": "2026-10-01"
+    "sha256": "32b37c83f360d8d8c6f312a200e75236d5b50379b4f68563c542edb6b489e03c",
+    "lastmod": "2026-10-03"
   },
   "/guides/": {
-    "sha256": "2afdaca71ff60d46c7db52c0f478f484c45f82077836d236c7909aa8bf2a41d8",
-    "lastmod": "2026-10-01"
+    "sha256": "80b1ca8edfd613cd1c94e1d4c7ba88127e53345cb8e7a0d0cc24f9f345fb6243",
+    "lastmod": "2026-10-03"
   },
   "/guides/weekend-trip-packing-checklist/": {
-    "sha256": "86e511f28830b1e4b21bf44ef651cfac2280524ab0c846254b4728668fbf8c3a",
-    "lastmod": "2026-10-01"
+    "sha256": "351bd1833a14a22d9776ad397ba101586bf63eb9f7df706be675840d5d6f20b9",
+    "lastmod": "2026-10-03"
   },
   "/guides/leaving-home-checklist/": {
-    "sha256": "c43d772629c17a6a59948e073715089a81836c0ab16f70ca7eb8c061771b9a73",
-    "lastmod": "2026-10-01"
+    "sha256": "4a4a42a30b6dfbc09f52ed7f5852ea062579f723d7411d773d93c6edfa0b698b",
+    "lastmod": "2026-10-03"
   },
   "/faq.html": {
-    "sha256": "e3b2c2009d1e18276e7fe69fda96d813b64cd2b7b2a5892bda3af6d8eb721f0f",
-    "lastmod": "2026-10-01"
+    "sha256": "be0c9c21ff46f133486c6b6232064a07e53f65dfbb115eb1963921a0066ec17b",
+    "lastmod": "2026-10-03"
   },
   "/about/": {
-    "sha256": "254a5ee713524a65be81bc6b7fcd302b624877363eba81a879a77031378d0580",
-    "lastmod": "2026-10-01"
+    "sha256": "60594cf9eff2ac309c7de6ccbd23998cb953cbeb5bf7488ea15c6b2010a3ab25",
+    "lastmod": "2026-10-03"
   },
   "/press.html": {
-    "sha256": "0af2ff5a5778c4794ce06a22b2d0a106968504e781a64364ba39b23c177664d9",
-    "lastmod": "2026-10-01"
+    "sha256": "fdc80187caeb1aee96fdaaab4d07b1c3c5cfbc32373d94800fc50627203b2be8",
+    "lastmod": "2026-10-03"
   },
   "/changelog.html": {
-    "sha256": "0a3ee06e32cf89b208fec030581699df91154ff1664e948e353be2ff7eb5e6ba",
-    "lastmod": "2026-10-01"
+    "sha256": "8278815f9c056b1394975ec457d0cdfd98db5d5c4691347bfe929f02c98952fc",
+    "lastmod": "2026-10-03"
   },
   "/privacy.html": {
-    "sha256": "79d89475935fd447e858d39047a24e8120679e02ed6dfc91fa573e442bdc2e2d",
-    "lastmod": "2026-10-01"
+    "sha256": "fa629525ddfc3d7915e59241803c5fe0b22b7a0a885acee48e1d6aa0bff4a978",
+    "lastmod": "2026-10-03"
   },
   "/terms.html": {
-    "sha256": "09cc9c5ec5fcf40719886668b5296f62499431fcd645c5f122a84c72f346e629",
-    "lastmod": "2026-10-01"
+    "sha256": "29a2c84a703fb674ecf442db37ba06a9015a6f8d1ab38e9243749649dd5dbbd9",
+    "lastmod": "2026-10-03"
   },
   "/join.html": {
     "sha256": "98857272aea4657fb26f9f93ec52116fce305a49c5cf7024fb10f8b9d9569203",
@@ -83,8 +83,12 @@
     "sha256": "61c2cc2ffd9259ad6a08c7660757a3c5b5e3421be4b6eea2ac43d16c3b62b218",
     "lastmod": "2026-10-01"
   },
+  "/ai-assistants/": {
+    "sha256": "0c9c4f832be580f439e7b5322cf748dfe84966c490498416070f108b2be3f9ec",
+    "lastmod": "2026-10-03"
+  },
   "/site-map/": {
-    "sha256": "8b3699d97238222d6d08c9c60d86a7e4df9540ac04a7e144d6bf1173e1a27ae0",
-    "lastmod": "2026-10-01"
+    "sha256": "d76c6b79a6429b9bbfb4bdd34e7525e18cf0a8a5bef34e3eaec6b20d070881cd",
+    "lastmod": "2026-10-03"
   }
 }

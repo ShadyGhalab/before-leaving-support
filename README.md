@@ -36,7 +36,7 @@ Generated HTML is included for convenient inspection. Edit the source files, not
 
 ## Public output
 
-22 generated HTML pages: 20 indexable pages plus a noindex invitation page and 404 page. `scripts/stage-site.py` creates `dist/` using an explicit public-file allowlist, including the Apple association file and app-ads.txt. Only publish **dist/**. Do not upload the whole source repository to a generic static host.
+23 generated HTML pages: 21 indexable pages plus a noindex invitation page and 404 page. `scripts/stage-site.py` creates `dist/` using an explicit public-file allowlist, including the Apple association file and app-ads.txt. Only publish **dist/**. Do not upload the whole source repository to a generic static host.
 
 ## Documentation
 
