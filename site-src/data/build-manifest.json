@@ -107,7 +107,7 @@
       "file": "privacy.html",
       "title": "Privacy Policy | ReadyKin",
       "indexable": true,
-      "sha256": "fa629525ddfc3d7915e59241803c5fe0b22b7a0a885acee48e1d6aa0bff4a978"
+      "sha256": "82df8d6bbf2b0336d4e013aa2043c277f3347eff9b53bbdfd12fa0862c369c06"
     },
     "/terms.html": {
       "file": "terms.html",
@@ -143,26 +143,6 @@
   "indexnow_key_file": "b80ed8e15df862d5d662e85165191594.txt",
   "verification_file": "google13c0e85923628e64.html",
   "changed_urls": [
-    "https://beforeleaving.app/",
-    "https://beforeleaving.app/packing-list-app/",
-    "https://beforeleaving.app/location-reminders/",
-    "https://beforeleaving.app/family-packing-list/",
-    "https://beforeleaving.app/ai-packing-list/",
-    "https://beforeleaving.app/weather-packing-list/",
-    "https://beforeleaving.app/before-leaving-checklist/",
-    "https://beforeleaving.app/shared-travel-checklist/",
-    "https://beforeleaving.app/apple-watch-reminders/",
-    "https://beforeleaving.app/features/",
-    "https://beforeleaving.app/guides/",
-    "https://beforeleaving.app/guides/weekend-trip-packing-checklist/",
-    "https://beforeleaving.app/guides/leaving-home-checklist/",
-    "https://beforeleaving.app/faq.html",
-    "https://beforeleaving.app/about/",
-    "https://beforeleaving.app/press.html",
-    "https://beforeleaving.app/changelog.html",
-    "https://beforeleaving.app/privacy.html",
-    "https://beforeleaving.app/terms.html",
-    "https://beforeleaving.app/ai-assistants/",
-    "https://beforeleaving.app/site-map/"
+    "https://beforeleaving.app/privacy.html"
   ]
 }

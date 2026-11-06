@@ -90,7 +90,7 @@
 <main id="main"><header class="content-hero section-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Privacy Policy</span></li></ol></nav><p class="section-kicker">ReadyKin</p><h1>Privacy Policy</h1><p class="page-lede">Official information for the ReadyKin app.</p></header><section class="legal-content section-shell">
 <div class="container">
 <div class="last-updated">
-<strong>Last Updated:</strong> March 1, 2026
+<strong>Last Updated:</strong> November 6, 2026
             </div>
 <p>ReadyKin ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
 <h2>1. Information We Collect</h2>
@@ -100,6 +100,7 @@
 <li><strong>Profile Information:</strong> Name and preferences when using group features</li>
 <li><strong>Photos:</strong> Images you upload for pet/plant profiles (stored locally by default)</li>
 <li><strong>Voice Notes:</strong> Audio recordings you create for reminders (stored locally)</li>
+<li><strong>Assistant Conversations:</strong> Messages you send to the AI assistant and its replies (stored locally)</li>
 </ul>
 <h3>Automatically Collected Information</h3>
 <ul>
@@ -119,7 +120,7 @@
 <li><strong>Group Features:</strong> To enable sharing reminders with family and friends when you choose to use these features</li>
 </ul>
 <h3>Smart and Natural Language Features</h3>
-<p>When you use natural language or "smart" input to create reminders (e.g. typing or speaking phrases like "remind me to bring my laptop to work tomorrow at 9am"), that text is processed <strong>only on your device</strong> using Apple's built-in frameworks (such as the Natural Language framework and, where supported, Apple's on-device language models). <strong>No reminder text or natural language input is sent to third-party AI services or to the cloud for AI processing.</strong> We do not use any external or cloud-based AI providers to parse or understand your reminder content.</p>
+<p>When you use natural language or "smart" input to create reminders (e.g. typing or speaking phrases like "remind me to bring my laptop to work tomorrow at 9am"), that text is processed <strong>on your device</strong> using Apple's built-in frameworks (such as the Natural Language framework and, where supported, Apple Intelligence's on-device model). On iOS 27 and later, some AI features can also use Apple's Private Cloud Compute, but <strong>only if you allow it</strong>, as described under "AI Assistant" below. <strong>Your text is never sent to AI providers other than Apple.</strong></p>
 <h2>3. Data Storage and Security</h2>
 <h3>Local Storage</h3>
 <p>The majority of your data is stored locally on your device using Apple's Core Data framework. This includes:</p>
@@ -130,6 +131,12 @@
 <li>Travel lists and packing information</li>
 <li>Voice notes and photos</li>
 </ul>
+<h3>AI Assistant</h3>
+<p>The AI assistant uses Apple Intelligence. Your requests are processed by Apple's on-device model, so they stay on your device.</p>
+<p>On iOS 27 and later, the assistant can also use Apple's Private Cloud Compute for requests the on-device model can't handle. It only does this if you choose it in the notice the assistant shows before your first message. If you choose to keep processing on your device, or haven't answered yet, nothing is sent to Private Cloud Compute. You can change this choice in the assistant's menu at any time. AI suggestions elsewhere in ReadyKin follow the same choice.</p>
+<p>To answer a request, the assistant reads the app data it needs, such as your reminders, errands or bills, and your location for weather questions. Apple processes Private Cloud Compute requests only to answer them and says it doesn't store them or make them available to Apple. See <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">apple.com/privacy</a>.</p>
+<p>Your conversation with the assistant is saved on your device so it's still there next time. It's excluded from device backups and kept until you tap Clear chat or delete the app. Up to the last 100 messages are kept. We never receive the text of your messages. Our analytics record only events such as how long a message was, within a range, and whether a reply succeeded.</p>
+<p>When you import a travel document, ReadyKin may ask to use Private Cloud Compute to read an image you pick. It asks each time, and you can keep it on your device instead.</p>
 <h3>Cloud Services</h3>
 <p>We use the following cloud services:</p>
 <ul>
@@ -155,7 +162,7 @@
 <h3>Weather Services</h3>
 <p>We may use weather APIs to provide weather-based suggestions. Only your general location (city-level) is shared to retrieve weather data.</p>
 <h3>AI and Natural Language</h3>
-<p>We do not use any third-party AI services. Natural language and smart parsing of your reminder text are performed entirely on your device using Apple's frameworks; no such data is sent to or shared with external AI providers.</p>
+<p>The assistant and smart features in ReadyKin use only Apple's frameworks and Apple Intelligence. They run on your device, or on Apple's Private Cloud Compute only if you allow it (see "AI Assistant" above). Your data isn't sent to or shared with other AI providers.</p>
 <h2>5. Data Sharing and Disclosure</h2>
 <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
 <ul>
@@ -173,6 +180,7 @@
 <ul>
 <li><strong>Account deletion:</strong> If you have created an account (e.g. for Groups), you can permanently delete your account in the app: go to <strong>Settings → Privacy &amp; Data → Delete account</strong>, or open the <strong>Groups</strong> tab → tap your profile icon → <strong>Delete account</strong>. This permanently removes your account and associated cloud data (profile, group membership, and related data). You can sign up again later if you choose.</li>
 <li>Delete individual reminders, items, or locations within the app</li>
+<li>Delete your assistant conversation with Clear chat in the assistant</li>
 <li><strong>Delete all app data:</strong> In the app, use Settings → Privacy &amp; Data → Delete All Data to remove all locally stored data. You may also uninstall the app.</li>
 <li>For any other deletion requests, contact us at <a href="mailto:support@beforeleaving.app">support@beforeleaving.app</a></li>
 </ul>
@@ -191,6 +199,7 @@
 <p>We retain your data for as long as you use the app:</p>
 <ul>
 <li><strong>Local Data:</strong> Retained until you delete it or uninstall the app</li>
+<li><strong>Assistant Conversations:</strong> Kept on your device until you clear the chat or delete the app (up to the last 100 messages), and not included in backups</li>
 <li><strong>Analytics Data:</strong> Retained for up to 14 months (Firebase default)</li>
 <li><strong>Crash Reports:</strong> Retained for 90 days</li>
 <li><strong>Group Data:</strong> Retained until you leave the group or request deletion</li>
