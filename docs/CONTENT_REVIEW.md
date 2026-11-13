@@ -15,7 +15,7 @@ Scope: supplied website archive and its owned screenshots. The running iOS binar
 | Languages | FAQ said seven; press had a different list/count | Exact counts removed; App Store listing is the current availability reference. No translated website pages or fictitious hreflang alternates added. |
 | Sync and backup | Existing pages made conflicting automatic-sync and local-data assertions | FAQ avoids universal lossless-sync/backup assurances; owner should provide specific current rules. |
 | Version / price / rating | Stale changelog; no independently verified current listing | No invented current version, price, star rating, review count or install count. Archived release notes labeled historical. |
-| Developer and email | Original website identifies Shady Ghalab and support@beforeleaving.app | Used those source facts, not an unverified company identity from earlier chat. Confirm the preferred public legal/developer name. |
+| Developer and email | Original website identifies Shady Mostafa and support@beforeleaving.app | Used those source facts, not an unverified company identity from earlier chat. Confirm the preferred public legal/developer name. |
 | Legal disclosures | Original privacy and terms bodies | Body text preserved. Review whether on-device AI, Firebase/AdMob, data processing and subscription claims still match the current app. This is not a legal certification. |
 | Web analytics | No confirmed analytics account/provider supplied | No new collector, cookies or persistence. Local opt-in integration event only. |
 | Invitation links | Existing join.html, 404.html and association file | Same native schemes and paths; noindex/no-referrer on utility pages. No invitation code enters the attribution event. |
