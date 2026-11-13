@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: read
@@ -82,7 +82,7 @@ jobs:
   deploy:
     if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
